@@ -2,7 +2,7 @@
   "paths": [
     {
       "type": "file",
-      "value": "01-index.md"
+      "value": "index.md"
     },
     {
       "type": "dir",
@@ -183,8 +183,8 @@
   ],
   "contents": [
     {
-      "path": "01-index.md",
-      "url": "01-index.html",
+      "path": "index.md",
+      "url": "index.html",
       "content": "Hello friend, welcome to my site. I'm Walter, a Ph.D. Candidate studying dexterous robotic manipulation in Prof. Aaron Dollar's GRAB Lab at Yale University. ",
       "html": "<p>Hello friend, welcome to my site. I’m Walter, a Ph.D. Candidate studying dexterous robotic manipulation in Prof. Aaron Dollar’s GRAB Lab at Yale University.</p>\n",
       "id": 0
