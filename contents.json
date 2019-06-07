@@ -2,7 +2,7 @@
   "paths": [
     {
       "type": "file",
-      "value": "01-Home.md"
+      "value": "index.md"
     },
     {
       "type": "dir",
@@ -183,8 +183,8 @@
   ],
   "contents": [
     {
-      "path": "01-Home.md",
-      "url": "01-Home.html",
+      "path": "index.md",
+      "url": "index.html",
       "content": "Coming soon!",
       "html": "<p>Coming soon!</p>\n",
       "id": 0
