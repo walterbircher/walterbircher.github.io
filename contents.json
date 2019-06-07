@@ -2,11 +2,11 @@
   "paths": [
     {
       "type": "file",
-      "value": "index.md"
+      "value": "01-index.md"
     },
     {
       "type": "dir",
-      "name": "03-Academic_Research",
+      "name": "02-Academic_Research",
       "children": [
         {
           "type": "dir",
@@ -14,23 +14,23 @@
           "children": [
             {
               "type": "file",
-              "value": "03-Academic_Research/01-Robotic_Manipulation/Kinematic_Optimization.md"
+              "value": "02-Academic_Research/01-Robotic_Manipulation/Kinematic_Optimization.md"
             },
             {
               "type": "file",
-              "value": "03-Academic_Research/01-Robotic_Manipulation/Learning_Manipulation_Modes.md"
+              "value": "02-Academic_Research/01-Robotic_Manipulation/Learning_Manipulation_Modes.md"
             },
             {
               "type": "file",
-              "value": "03-Academic_Research/01-Robotic_Manipulation/Particle_Filter_Spatial_Manipulation.md"
+              "value": "02-Academic_Research/01-Robotic_Manipulation/Particle_Filter_Spatial_Manipulation.md"
             },
             {
               "type": "file",
-              "value": "03-Academic_Research/01-Robotic_Manipulation/Sliding_Manipulation.md"
+              "value": "02-Academic_Research/01-Robotic_Manipulation/Sliding_Manipulation.md"
             },
             {
               "type": "file",
-              "value": "03-Academic_Research/01-Robotic_Manipulation/Underactuated_Caging.md"
+              "value": "02-Academic_Research/01-Robotic_Manipulation/Underactuated_Caging.md"
             }
           ]
         },
@@ -40,19 +40,19 @@
           "children": [
             {
               "type": "file",
-              "value": "03-Academic_Research/02-Surgical_Robotics/Inspection_Arm.md"
+              "value": "02-Academic_Research/02-Surgical_Robotics/Inspection_Arm.md"
             },
             {
               "type": "file",
-              "value": "03-Academic_Research/02-Surgical_Robotics/Miniature_Surgical_Robot.md"
+              "value": "02-Academic_Research/02-Surgical_Robotics/Miniature_Surgical_Robot.md"
             },
             {
               "type": "file",
-              "value": "03-Academic_Research/02-Surgical_Robotics/Multifunctional_Tooltip.md"
+              "value": "02-Academic_Research/02-Surgical_Robotics/Multifunctional_Tooltip.md"
             },
             {
               "type": "file",
-              "value": "03-Academic_Research/02-Surgical_Robotics/Telesurgery.md"
+              "value": "02-Academic_Research/02-Surgical_Robotics/Telesurgery.md"
             }
           ]
         },
@@ -62,11 +62,11 @@
           "children": [
             {
               "type": "file",
-              "value": "03-Academic_Research/03-Assorted/Variable_Stiffness_Revolute_Joint.md"
+              "value": "02-Academic_Research/03-Assorted/Variable_Stiffness_Revolute_Joint.md"
             },
             {
               "type": "file",
-              "value": "03-Academic_Research/03-Assorted/Vertical_Rail_Track_Deflection_Measurement.md"
+              "value": "02-Academic_Research/03-Assorted/Vertical_Rail_Track_Deflection_Measurement.md"
             }
           ]
         }
@@ -74,75 +74,75 @@
     },
     {
       "type": "dir",
-      "name": "04-Industry",
+      "name": "03-Industry",
       "children": [
         {
           "type": "file",
-          "value": "04-Industry/Honeybee_(Internship).md"
+          "value": "03-Industry/Honeybee_(Internship).md"
         },
         {
           "type": "file",
-          "value": "04-Industry/JPL_(Internship).md"
+          "value": "03-Industry/JPL_(Internship).md"
         },
         {
           "type": "file",
-          "value": "04-Industry/Tethon3D.md"
+          "value": "03-Industry/Tethon3D.md"
         }
       ]
     },
     {
       "type": "dir",
-      "name": "05-Projects",
+      "name": "04-Projects",
       "children": [
         {
           "type": "file",
-          "value": "05-Projects/Axolotl_Pin.md"
+          "value": "04-Projects/Axolotl_Pin.md"
         },
         {
           "type": "file",
-          "value": "05-Projects/FDM_Caulk_Nozzle.md"
+          "value": "04-Projects/FDM_Caulk_Nozzle.md"
         },
         {
           "type": "file",
-          "value": "05-Projects/Low_Cost_3D_Scanner.md"
+          "value": "04-Projects/Low_Cost_3D_Scanner.md"
         },
         {
           "type": "file",
-          "value": "05-Projects/Macaque_Brain_Coasters.md"
+          "value": "04-Projects/Macaque_Brain_Coasters.md"
         },
         {
           "type": "file",
-          "value": "05-Projects/OpenHand_Workshop_2018.md"
+          "value": "04-Projects/OpenHand_Workshop_2018.md"
         },
         {
           "type": "file",
-          "value": "05-Projects/PotBot.md"
+          "value": "04-Projects/PotBot.md"
         },
         {
           "type": "file",
-          "value": "05-Projects/SmartGrasp.md"
+          "value": "04-Projects/SmartGrasp.md"
         },
         {
           "type": "file",
-          "value": "05-Projects/Wise_Grip_(Trombone_Handrest).md"
+          "value": "04-Projects/Wise_Grip_(Trombone_Handrest).md"
         },
         {
           "type": "file",
-          "value": "05-Projects/Worm_Collector_(Mentored).md"
+          "value": "04-Projects/Worm_Collector_(Mentored).md"
         }
       ]
     },
     {
       "type": "dir",
-      "name": "06-Hobbies",
+      "name": "05-Hobbies",
       "children": [
         {
           "type": "file",
-          "value": "06-Hobbies/Music.md"
+          "value": "05-Hobbies/Music.md"
         },
         {
           "type": "file",
-          "value": "06-Hobbies/Photography.md"
+          "value": "05-Hobbies/Photography.md"
         },
         {
           "type": "dir",
@@ -150,31 +150,31 @@
           "children": [
             {
               "type": "file",
-              "value": "06-Hobbies/Travel/01-Singapore_&_Vietnam_(2017).md"
+              "value": "05-Hobbies/Travel/01-Singapore_&_Vietnam_(2017).md"
             },
             {
               "type": "file",
-              "value": "06-Hobbies/Travel/02-Montreal_(2016).md"
+              "value": "05-Hobbies/Travel/02-Montreal_(2016).md"
             },
             {
               "type": "file",
-              "value": "06-Hobbies/Travel/03-Sweden_(2014).md"
+              "value": "05-Hobbies/Travel/03-Sweden_(2014).md"
             },
             {
               "type": "file",
-              "value": "06-Hobbies/Travel/04-China_(2013).md"
+              "value": "05-Hobbies/Travel/04-China_(2013).md"
             },
             {
               "type": "file",
-              "value": "06-Hobbies/Travel/05-Bursa,_Turkey_(CLS_2011).md"
+              "value": "05-Hobbies/Travel/05-Bursa,_Turkey_(CLS_2011).md"
             },
             {
               "type": "file",
-              "value": "06-Hobbies/Travel/06-Ankara,_Turkey_(NSLI_2010).md"
+              "value": "05-Hobbies/Travel/06-Ankara,_Turkey_(NSLI_2010).md"
             },
             {
               "type": "file",
-              "value": "06-Hobbies/Travel/07-Europe_(2008).md"
+              "value": "05-Hobbies/Travel/07-Europe_(2008).md"
             }
           ]
         }
@@ -183,232 +183,232 @@
   ],
   "contents": [
     {
-      "path": "index.md",
-      "url": "index.html",
-      "content": "Coming soon!",
-      "html": "<p>Coming soon!</p>\n",
+      "path": "01-index.md",
+      "url": "01-index.html",
+      "content": "Hello friend, welcome to my site. I'm Walter, a Ph.D. Candidate studying dexterous robotic manipulation in Prof. Aaron Dollar's GRAB Lab at Yale University. ",
+      "html": "<p>Hello friend, welcome to my site. I’m Walter, a Ph.D. Candidate studying dexterous robotic manipulation in Prof. Aaron Dollar’s GRAB Lab at Yale University.</p>\n",
       "id": 0
     },
     {
-      "path": "03-Academic_Research/01-Robotic_Manipulation/Kinematic_Optimization.md",
-      "url": "03-Academic_Research/01-Robotic_Manipulation/Kinematic_Optimization.html",
+      "path": "02-Academic_Research/01-Robotic_Manipulation/Kinematic_Optimization.md",
+      "url": "02-Academic_Research/01-Robotic_Manipulation/Kinematic_Optimization.html",
       "content": "Coming soon!",
       "html": "<p>Coming soon!</p>\n",
       "id": 1
     },
     {
-      "path": "03-Academic_Research/01-Robotic_Manipulation/Learning_Manipulation_Modes.md",
-      "url": "03-Academic_Research/01-Robotic_Manipulation/Learning_Manipulation_Modes.html",
+      "path": "02-Academic_Research/01-Robotic_Manipulation/Learning_Manipulation_Modes.md",
+      "url": "02-Academic_Research/01-Robotic_Manipulation/Learning_Manipulation_Modes.html",
       "content": "Coming soon!",
       "html": "<p>Coming soon!</p>\n",
       "id": 2
     },
     {
-      "path": "03-Academic_Research/01-Robotic_Manipulation/Particle_Filter_Spatial_Manipulation.md",
-      "url": "03-Academic_Research/01-Robotic_Manipulation/Particle_Filter_Spatial_Manipulation.html",
+      "path": "02-Academic_Research/01-Robotic_Manipulation/Particle_Filter_Spatial_Manipulation.md",
+      "url": "02-Academic_Research/01-Robotic_Manipulation/Particle_Filter_Spatial_Manipulation.html",
       "content": "Coming soon!",
       "html": "<p>Coming soon!</p>\n",
       "id": 3
     },
     {
-      "path": "03-Academic_Research/01-Robotic_Manipulation/Sliding_Manipulation.md",
-      "url": "03-Academic_Research/01-Robotic_Manipulation/Sliding_Manipulation.html",
+      "path": "02-Academic_Research/01-Robotic_Manipulation/Sliding_Manipulation.md",
+      "url": "02-Academic_Research/01-Robotic_Manipulation/Sliding_Manipulation.html",
       "content": "Coming soon!",
       "html": "<p>Coming soon!</p>\n",
       "id": 4
     },
     {
-      "path": "03-Academic_Research/01-Robotic_Manipulation/Underactuated_Caging.md",
-      "url": "03-Academic_Research/01-Robotic_Manipulation/Underactuated_Caging.html",
+      "path": "02-Academic_Research/01-Robotic_Manipulation/Underactuated_Caging.md",
+      "url": "02-Academic_Research/01-Robotic_Manipulation/Underactuated_Caging.html",
       "content": "Coming soon!",
       "html": "<p>Coming soon!</p>\n",
       "id": 5
     },
     {
-      "path": "03-Academic_Research/02-Surgical_Robotics/Inspection_Arm.md",
-      "url": "03-Academic_Research/02-Surgical_Robotics/Inspection_Arm.html",
+      "path": "02-Academic_Research/02-Surgical_Robotics/Inspection_Arm.md",
+      "url": "02-Academic_Research/02-Surgical_Robotics/Inspection_Arm.html",
       "content": "Coming soon!",
       "html": "<p>Coming soon!</p>\n",
       "id": 6
     },
     {
-      "path": "03-Academic_Research/02-Surgical_Robotics/Miniature_Surgical_Robot.md",
-      "url": "03-Academic_Research/02-Surgical_Robotics/Miniature_Surgical_Robot.html",
+      "path": "02-Academic_Research/02-Surgical_Robotics/Miniature_Surgical_Robot.md",
+      "url": "02-Academic_Research/02-Surgical_Robotics/Miniature_Surgical_Robot.html",
       "content": "Coming soon!",
       "html": "<p>Coming soon!</p>\n",
       "id": 7
     },
     {
-      "path": "03-Academic_Research/02-Surgical_Robotics/Multifunctional_Tooltip.md",
-      "url": "03-Academic_Research/02-Surgical_Robotics/Multifunctional_Tooltip.html",
+      "path": "02-Academic_Research/02-Surgical_Robotics/Multifunctional_Tooltip.md",
+      "url": "02-Academic_Research/02-Surgical_Robotics/Multifunctional_Tooltip.html",
       "content": "Coming soon!",
       "html": "<p>Coming soon!</p>\n",
       "id": 8
     },
     {
-      "path": "03-Academic_Research/02-Surgical_Robotics/Telesurgery.md",
-      "url": "03-Academic_Research/02-Surgical_Robotics/Telesurgery.html",
+      "path": "02-Academic_Research/02-Surgical_Robotics/Telesurgery.md",
+      "url": "02-Academic_Research/02-Surgical_Robotics/Telesurgery.html",
       "content": "Coming soon!",
       "html": "<p>Coming soon!</p>\n",
       "id": 9
     },
     {
-      "path": "03-Academic_Research/03-Assorted/Variable_Stiffness_Revolute_Joint.md",
-      "url": "03-Academic_Research/03-Assorted/Variable_Stiffness_Revolute_Joint.html",
+      "path": "02-Academic_Research/03-Assorted/Variable_Stiffness_Revolute_Joint.md",
+      "url": "02-Academic_Research/03-Assorted/Variable_Stiffness_Revolute_Joint.html",
       "content": "Coming soon!",
       "html": "<p>Coming soon!</p>\n",
       "id": 10
     },
     {
-      "path": "03-Academic_Research/03-Assorted/Vertical_Rail_Track_Deflection_Measurement.md",
-      "url": "03-Academic_Research/03-Assorted/Vertical_Rail_Track_Deflection_Measurement.html",
+      "path": "02-Academic_Research/03-Assorted/Vertical_Rail_Track_Deflection_Measurement.md",
+      "url": "02-Academic_Research/03-Assorted/Vertical_Rail_Track_Deflection_Measurement.html",
       "content": "Coming soon!",
       "html": "<p>Coming soon!</p>\n",
       "id": 11
     },
     {
-      "path": "04-Industry/Honeybee_(Internship).md",
-      "url": "04-Industry/Honeybee_(Internship).html",
+      "path": "03-Industry/Honeybee_(Internship).md",
+      "url": "03-Industry/Honeybee_(Internship).html",
       "content": "Coming soon!",
       "html": "<p>Coming soon!</p>\n",
       "id": 12
     },
     {
-      "path": "04-Industry/JPL_(Internship).md",
-      "url": "04-Industry/JPL_(Internship).html",
+      "path": "03-Industry/JPL_(Internship).md",
+      "url": "03-Industry/JPL_(Internship).html",
       "content": "Coming soon!",
       "html": "<p>Coming soon!</p>\n",
       "id": 13
     },
     {
-      "path": "04-Industry/Tethon3D.md",
-      "url": "04-Industry/Tethon3D.html",
+      "path": "03-Industry/Tethon3D.md",
+      "url": "03-Industry/Tethon3D.html",
       "content": "Coming soon!",
       "html": "<p>Coming soon!</p>\n",
       "id": 14
     },
     {
-      "path": "05-Projects/Axolotl_Pin.md",
-      "url": "05-Projects/Axolotl_Pin.html",
+      "path": "04-Projects/Axolotl_Pin.md",
+      "url": "04-Projects/Axolotl_Pin.html",
       "content": "Coming soon!",
       "html": "<p>Coming soon!</p>\n",
       "id": 15
     },
     {
-      "path": "05-Projects/FDM_Caulk_Nozzle.md",
-      "url": "05-Projects/FDM_Caulk_Nozzle.html",
+      "path": "04-Projects/FDM_Caulk_Nozzle.md",
+      "url": "04-Projects/FDM_Caulk_Nozzle.html",
       "content": "Coming soon!",
       "html": "<p>Coming soon!</p>\n",
       "id": 16
     },
     {
-      "path": "05-Projects/Low_Cost_3D_Scanner.md",
-      "url": "05-Projects/Low_Cost_3D_Scanner.html",
+      "path": "04-Projects/Low_Cost_3D_Scanner.md",
+      "url": "04-Projects/Low_Cost_3D_Scanner.html",
       "content": "Coming soon!",
       "html": "<p>Coming soon!</p>\n",
       "id": 17
     },
     {
-      "path": "05-Projects/Macaque_Brain_Coasters.md",
-      "url": "05-Projects/Macaque_Brain_Coasters.html",
+      "path": "04-Projects/Macaque_Brain_Coasters.md",
+      "url": "04-Projects/Macaque_Brain_Coasters.html",
       "content": "Coming soon!",
       "html": "<p>Coming soon!</p>\n",
       "id": 18
     },
     {
-      "path": "05-Projects/OpenHand_Workshop_2018.md",
-      "url": "05-Projects/OpenHand_Workshop_2018.html",
+      "path": "04-Projects/OpenHand_Workshop_2018.md",
+      "url": "04-Projects/OpenHand_Workshop_2018.html",
       "content": "Coming soon!",
       "html": "<p>Coming soon!</p>\n",
       "id": 19
     },
     {
-      "path": "05-Projects/PotBot.md",
-      "url": "05-Projects/PotBot.html",
+      "path": "04-Projects/PotBot.md",
+      "url": "04-Projects/PotBot.html",
       "content": "Coming soon!",
       "html": "<p>Coming soon!</p>\n",
       "id": 20
     },
     {
-      "path": "05-Projects/SmartGrasp.md",
-      "url": "05-Projects/SmartGrasp.html",
+      "path": "04-Projects/SmartGrasp.md",
+      "url": "04-Projects/SmartGrasp.html",
       "content": "Coming soon!",
       "html": "<p>Coming soon!</p>\n",
       "id": 21
     },
     {
-      "path": "05-Projects/Wise_Grip_(Trombone_Handrest).md",
-      "url": "05-Projects/Wise_Grip_(Trombone_Handrest).html",
+      "path": "04-Projects/Wise_Grip_(Trombone_Handrest).md",
+      "url": "04-Projects/Wise_Grip_(Trombone_Handrest).html",
       "content": "Coming soon!",
       "html": "<p>Coming soon!</p>\n",
       "id": 22
     },
     {
-      "path": "05-Projects/Worm_Collector_(Mentored).md",
-      "url": "05-Projects/Worm_Collector_(Mentored).html",
+      "path": "04-Projects/Worm_Collector_(Mentored).md",
+      "url": "04-Projects/Worm_Collector_(Mentored).html",
       "content": "Coming soon!",
       "html": "<p>Coming soon!</p>\n",
       "id": 23
     },
     {
-      "path": "06-Hobbies/Music.md",
-      "url": "06-Hobbies/Music.html",
+      "path": "05-Hobbies/Music.md",
+      "url": "05-Hobbies/Music.html",
       "content": "Coming soon!",
       "html": "<p>Coming soon!</p>\n",
       "id": 24
     },
     {
-      "path": "06-Hobbies/Photography.md",
-      "url": "06-Hobbies/Photography.html",
+      "path": "05-Hobbies/Photography.md",
+      "url": "05-Hobbies/Photography.html",
       "content": "Coming soon!",
       "html": "<p>Coming soon!</p>\n",
       "id": 25
     },
     {
-      "path": "06-Hobbies/Travel/01-Singapore_&_Vietnam_(2017).md",
-      "url": "06-Hobbies/Travel/01-Singapore_&_Vietnam_(2017).html",
+      "path": "05-Hobbies/Travel/01-Singapore_&_Vietnam_(2017).md",
+      "url": "05-Hobbies/Travel/01-Singapore_&_Vietnam_(2017).html",
       "content": "Coming soon!",
       "html": "<p>Coming soon!</p>\n",
       "id": 26
     },
     {
-      "path": "06-Hobbies/Travel/02-Montreal_(2016).md",
-      "url": "06-Hobbies/Travel/02-Montreal_(2016).html",
+      "path": "05-Hobbies/Travel/02-Montreal_(2016).md",
+      "url": "05-Hobbies/Travel/02-Montreal_(2016).html",
       "content": "Coming soon!",
       "html": "<p>Coming soon!</p>\n",
       "id": 27
     },
     {
-      "path": "06-Hobbies/Travel/03-Sweden_(2014).md",
-      "url": "06-Hobbies/Travel/03-Sweden_(2014).html",
+      "path": "05-Hobbies/Travel/03-Sweden_(2014).md",
+      "url": "05-Hobbies/Travel/03-Sweden_(2014).html",
       "content": "Coming soon!",
       "html": "<p>Coming soon!</p>\n",
       "id": 28
     },
     {
-      "path": "06-Hobbies/Travel/04-China_(2013).md",
-      "url": "06-Hobbies/Travel/04-China_(2013).html",
+      "path": "05-Hobbies/Travel/04-China_(2013).md",
+      "url": "05-Hobbies/Travel/04-China_(2013).html",
       "content": "Coming soon!",
       "html": "<p>Coming soon!</p>\n",
       "id": 29
     },
     {
-      "path": "06-Hobbies/Travel/05-Bursa,_Turkey_(CLS_2011).md",
-      "url": "06-Hobbies/Travel/05-Bursa,_Turkey_(CLS_2011).html",
+      "path": "05-Hobbies/Travel/05-Bursa,_Turkey_(CLS_2011).md",
+      "url": "05-Hobbies/Travel/05-Bursa,_Turkey_(CLS_2011).html",
       "content": "Coming soon!",
       "html": "<p>Coming soon!</p>\n",
       "id": 30
     },
     {
-      "path": "06-Hobbies/Travel/06-Ankara,_Turkey_(NSLI_2010).md",
-      "url": "06-Hobbies/Travel/06-Ankara,_Turkey_(NSLI_2010).html",
+      "path": "05-Hobbies/Travel/06-Ankara,_Turkey_(NSLI_2010).md",
+      "url": "05-Hobbies/Travel/06-Ankara,_Turkey_(NSLI_2010).html",
       "content": "Coming soon!",
       "html": "<p>Coming soon!</p>\n",
       "id": 31
     },
     {
-      "path": "06-Hobbies/Travel/07-Europe_(2008).md",
-      "url": "06-Hobbies/Travel/07-Europe_(2008).html",
+      "path": "05-Hobbies/Travel/07-Europe_(2008).md",
+      "url": "05-Hobbies/Travel/07-Europe_(2008).html",
       "content": "Coming soon!",
       "html": "<p>Coming soon!</p>\n",
       "id": 32
