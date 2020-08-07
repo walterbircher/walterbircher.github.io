@@ -168,11 +168,12 @@ hr {
 .pubaward {
   color: #bd5319;
   font-weight: bold;
-  font-size: 75%;
-  bottom:0;
+  font-size: 100%;
   right:0;
+  top:10px;
   position: relative;
   white-space: nowrap;
+  float: right;
 }
 
 .pubteaser {
@@ -182,8 +183,11 @@ hr {
 }
 
 .pubteaser a {
-  float: left;
+  bottom:0;
+  left:0;
+  position: relative;
   margin-right: 2em;  
+  float:left;
 }
 
 .pubteaser img {

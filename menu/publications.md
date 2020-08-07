@@ -10,9 +10,10 @@ Peer-reviewed conference and journal papers
 {% for pub in publications %}
 <div class="pubitem">
 <div class="pubteaser">
+  <i class="pubaward">{{ pub.award }}</i>
   <a href="/download/{{ pub.slug}}.pdf"> <!--<a href="{{pub.url}}">-->
-    <img src="/assets/img/{{ pub.slug }}_small.png" alt="{{pub.slug}} publication teaser"/>&nbsp; <i class="fa fa-file-pdf-o"></i> PDF &nbsp; <i class="pubaward">{{ pub.award }}</i>
-  </a>
+    <img src="/assets/img/{{ pub.slug }}_small.png" alt="{{pub.slug}} publication teaser"/>&nbsp; <i class="fa fa-file-pdf-o"></i> PDF &nbsp; </a> 
+
 </div>
   <div class="pubtitle">
     {{ pub.title }}
