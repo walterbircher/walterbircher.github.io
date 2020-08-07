@@ -169,11 +169,10 @@ hr {
   color: #bd5319;
   font-weight: bold;
   font-size: 100%;
-  right:0;
-  top:10px;
-  position: relative;
+
   white-space: nowrap;
   float: right;
+  display:inline-block;
 }
 
 .pubteaser {
