@@ -11,7 +11,7 @@ Peer-reviewed conference and journal papers
 <div class="pubitem">
 <div class="pubteaser">
   <a href="/download/{{ pub.slug}}.pdf"> <!--<a href="{{pub.url}}">-->
-    <img src="/assets/img/{{ pub.slug }}_small.png" alt="{{pub.slug}} publication teaser"/>
+    <img src="/assets/img/{{ pub.slug }}_small.png" alt="{{pub.slug}} publication teaser"/> &nbsp;&nbsp; <i class="fa fa-file-pdf-o"></i> PDF &nbsp;&nbsp; <i class="pubaward">{{ pub.award }}</i>
   </a>
 </div>
   <div class="pubtitle">
@@ -23,10 +23,10 @@ Peer-reviewed conference and journal papers
   <div class="pubinfo">
     {{ pub.publication }}, {{ pub.year}}
   </div>
- <div class="publinks">
-  <a href="/download/{{ pub.slug}}.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a>&nbsp;&nbsp;
+<!-- <div class="publinks">-->
+  <!--<a href="/download/{{ pub.slug}}.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a>&nbsp;&nbsp;-->
   <!--<a href="{{pub.url}}"><i class="fa fa-link"></i> Project Page</a>-->
-   <div class="pubaward">{{ pub.award }}</div>
-</div>
+  <!-- <div class="pubaward">{{ pub.award }}</div>-->
+<!--</div>-->
 </div>
 {% endfor %}
