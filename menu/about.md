@@ -1,18 +1,20 @@
 ---
 layout: page
-title: Welcome to Lagrange!
+title: "About the Author"
+author: "Walter Bircher"
+categories: journal
+tags: [documentation,sample]
 ---
-
-Lagrange is a minimalist Jekyll theme. The purpose of this theme is to provide a simple, clean, content-focused blogging platform for your personal site or blog. Below you can find everything you need to get started.
-
-### Getting Started
-
-[Getting Started]({{ site.github.url }}{% post_url 2015-10-10-getting-started %}): getting started with installing Lagrange, whether you are completely new to using Jekyll, or simply just migrating to a new Jekyll theme.
-
-### Example Content
-
-[Text and Formatting]({{ site.github.url }}{% post_url 2014-01-01-text-formatting-examples %})
-
-### Questions?
-
-This theme is completely free and open source software. You may use it however you want, as it is distributed under the [MIT License](http://choosealicense.com/licenses/mit/). If you are having any problems, any questions or suggestions, feel free to [tweet at me](https://twitter.com/intent/tweet?text=My%question%about%Lagrange%is:%&amp;via=paululele), or [file a GitHub issue](https://github.com/lenpaul/lagrange/issues/new).
+<table style="border:none;"><tr>
+<td width="300px" style="border:none;">
+<!--<img src="/assets/img/me_big.jpg" style="float:left; width: 200px;">-->
+<center>
+<img src="/assets/img/me_big.jpg" style="width: 300px;">
+</center>
+</td>
+</tr><tr>
+<td style="text-align:justify; border:none;">
+I am a graduate student at the <a href="https://www.eng.yale.edu/grablab/index.html">GRABLab</a> at <a href="https://www.yale.edu/">Yale University</a>. I work on robotic manipulation, specifically how hand design can be leveraged to increase dexterity. I have a Bachelor's degree in Mechanical Engineering from the <a href="https://www.unl.edu/">University of Nebraska-Lincoln</a> (B.S. 2014) and two Master's degrees from Yale (M.S. & M.Phil 2018). In the past, I have worked at <a href="https://tethon3d.com/">Tethon3D</a> (2015), the <a href="https://www.jpl.nasa.gov/">NASA Jet Propulsion Lab</a> (2014), and <a href="https://honeybeerobotics.com/">Honeybee Robotics</a> (2013).
+</td>
+</tr>
+</table>

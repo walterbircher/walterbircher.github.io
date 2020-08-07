@@ -10,6 +10,17 @@
 #   sort_field: 'date'
 #   sort_reverse: true
 
+title: Walter Bircher
+email: walter.bicher@yale.edu
+description: >- # this means to ignore newlines until "baseurl:"
+  
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+#twitter_username: jekyllrb
+github_username:  walter.bircher
+github: [metadata]
+search_full_content: true
+
 # jekyll-paginate configuration
 paginate:            5
 
@@ -20,9 +31,16 @@ permalink:           none
 plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
-title:		           'Lagrange'
-description:	       'a minimalist Jekyll theme'
-author:              'Paul Le'
+
+author:              'Walter Bircher'
+
+collections:
+  publications:
+    output: true
+    permalink: /:collection/:name
+  projects:
+    output: true
+    permalink: /:collection/:name
 
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
 #feed:

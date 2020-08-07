@@ -1,5 +1,5 @@
 <head>
-
+  <!--<script src='https://kit.fontawesome.com/a076d05399.js'></script>-->
   <title>
     {% if page.title == "Home" %}
       {{ site.title }} | {{ site.description }}
@@ -31,6 +31,23 @@
           inlineMath: [['$', '$'], ['\\(', '\\)']]
         }
       });
+  </script>
+
+  <script type="text/javascript">
+    function filterUsingCategory(selectedCategory) {
+      var id = 0;
+      {% assign projects = site.projects | sort: "year" | reverse %}
+      {% for proj in projects %}
+        var cats = {{ proj.categories | jsonify }}
+        var projDiv = document.getElementById(++id);     
+        projDiv.style.display =
+          (selectedCategory == 'All' || cats.includes(selectedCategory)) 
+            ? 'block' 
+            : 'none';
+        projDiv.style.margin = "2em 0";
+        projDiv.style.lineHeight = "1em";         
+      {% endfor %}
+    }
   </script>
 
   <!-- Google Analytics -->

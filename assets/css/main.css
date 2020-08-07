@@ -17,11 +17,14 @@
   Base
 */
 
+@import url("../../fonts/Serif/cmun-serif.css");
+
 body {
-  font-family: "PT Serif", Georgia, "Times New Roman", serif;
+  font-family: "CMS", "PT Serif", Georgia, "Times New Roman", serif;
   font-size: 18px;
   color: #515151;
   line-height: 1.75rem;
+  text-align: justify;
 }
 
 @media (max-width: 30em) {
@@ -30,7 +33,7 @@ body {
     line-height: 1.5rem;
   }
   body h1 {
-    font-size: 1.5rem;
+    font-size: 1.5rem;    
   }
 }
 
@@ -43,13 +46,14 @@ h1 a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Quattrocento Sans", sans-serif;
+  font-family: "CMS", "Quattrocento Sans", sans-serif;
   color: #333;
+  text-align: left;  
 }
 
 a {
-  text-decoration: underline;
-  color: #333;
+  text-decoration: none;
+  color: #00356b;
 }
 
 a:hover {
@@ -101,7 +105,7 @@ hr {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   margin-bottom: 4rem;
-  font-family: "Quattrocento Sans", sans-serif;
+  font-family: "CMS", "Quattrocento Sans", sans-serif;
 }
 
 .masthead a:hover {
@@ -129,9 +133,180 @@ hr {
   margin-bottom: 25px;
 }
 
+
 .thumbnail-container img{
   margin-top: -11.5%;
   margin-bottom: -11.5%;
+}
+
+/*
+  Publications
+*/
+
+.pubitem {
+  margin: 2em 0;
+  line-height: 1em;
+}
+
+.pubtitle {
+  margin-bottom: .5em;
+  line-height: 1.2em;
+  font-weight: bold;
+  font-size: 85%;
+  text-align: left;
+}
+
+.pubauthors, .pubinfo {
+  font-size: 75%;
+  margin-bottom: .75em;
+}
+
+.pubaward {
+  color: #bd5319;
+  font-weight: bold;
+  font-size: 100%;
+  float: right;
+}
+
+.pubteaser {
+  clear: both;
+}
+
+.pubteaser a {
+  float: left;
+  margin-right: 2em;
+}
+
+.pubteaser img {
+  width: 120px;
+  /*border: 1px solid black;*/
+}
+
+.publinks {
+  font-size: 75%;
+}
+
+.publinks a {
+  color: #00356b;
+  text-decoration: none;
+}
+
+/*
+  Project
+*/
+
+.filters {
+    margin:0px;
+    padding:5px;
+}
+
+.filters li{
+    display: inline;
+    list-style: none;
+}
+
+.button {
+  transition-duration: 0.4s;
+  background-color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 5px 10px 5px 10px;
+  color: #00356b;
+  outline: none;
+}
+
+.button:link {
+  border: none;
+  outline: none;
+}
+
+.button:hover {
+  background-color: #dddddd;
+  /*box-shadow: 0 3px 4px 0 rgba(0,0,0,0.12), 0 4px 12px 0 rgba(0,0,0,0.09);*/
+  color: #286dc0;
+}
+
+.button:focus {
+  background-color: white;
+  box-shadow: none;  
+  color: #dddddd;
+}
+
+.projitem {
+  margin: 2em 0;
+  line-height: 1em;
+}
+
+.projtitle {
+  margin-bottom: .5em;
+  line-height: 1.2em;
+  font-weight: bold;
+  font-size: 85%;
+  text-align: left;
+}
+
+.projauthors, .projinfo {
+  font-size: 75%;
+  margin-bottom: .75em;
+}
+
+.projaward {
+  color: #bd5319;
+  font-weight: bold;
+  font-size: 100%;
+  float: right;
+}
+
+.projteaser {
+  clear: both;
+}
+
+.projteaser a {
+  float: left;
+  margin-right: 2em;
+}
+
+.projteaser img {
+  width: 120px;
+  /*border: 1px solid black;*/
+}
+
+.projlinks {
+  font-size: 75%;
+}
+
+.projlinks a {
+  color: #00356b;
+  text-decoration: none;
+}
+
+/*
+  Papers
+*/
+
+.papers {
+  font-size: 0.9rem;
+  text-align: left;
+  margin-left: -20%;
+}
+
+.papers a {
+  color: #00356b;
+  font-weight: 900;
+}
+
+.papers b {
+  font-weight: 900;
+  color: #000000;
+}
+
+.papers table, tr, td {
+  vertical-align: middle;
+  border:0px solid white;
+}
+
+.papers td {
+  border: 0px solid white;
 }
 
 /*
@@ -153,7 +328,7 @@ hr {
   margin-top:3px;
   margin-bottom: 1rem;
   color: #9a9a9a;
-  font-family: 'Quattrocento Sans', sans-serif;
+  font-family: 'CMS', 'Quattrocento Sans', sans-serif;
   font-size:0.8rem;
 }
 
@@ -182,7 +357,7 @@ hr {
 
 .pagination {
   overflow: hidden;
-  font-family: 'Quattrocento Sans', sans-serif;
+  font-family: 'CMS', 'Quattrocento Sans', sans-serif;
   text-align: center;
 }
 
