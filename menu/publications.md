@@ -11,7 +11,7 @@ Peer-reviewed conference and journal papers
 <div class="pubitem">
 <div class="pubteaser">
   <a href="/download/{{ pub.slug}}.pdf"> <!--<a href="{{pub.url}}">-->
-    <img src="/assets/img/{{ pub.slug }}_small.png" alt="{{pub.slug}} publication teaser"/> &nbsp;&nbsp; <i class="fa fa-file-pdf-o"></i> PDF &nbsp;&nbsp; <i class="pubaward">{{ pub.award }}</i>
+    <img src="/assets/img/{{ pub.slug }}_small.png" alt="{{pub.slug}} publication teaser"/>&nbsp;&nbsp; <i class="fa fa-file-pdf-o"></i> PDF&nbsp;&nbsp; <i class="pubaward">{{ pub.award }}</i>
   </a>
 </div>
   <div class="pubtitle">
