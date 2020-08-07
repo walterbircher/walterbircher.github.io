@@ -1,0 +1,817 @@
+<!doctype html>
+<html>
+
+<head>
+  <!--<script src='https://kit.fontawesome.com/a076d05399.js'></script>-->
+  <title>
+    
+      Projects | Walter Bircher
+    
+  </title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/syntax.css">
+  <!-- Use Atom -->
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Walter Bircher" />
+  <!-- Use RSS-2.0 -->
+  <!--<link href="/rss-feed.xml" type="application/rss+xml" rel="alternate" title="Walter Bircher | "/>
+  //-->
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento+Sans">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+    MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      });
+  </script>
+
+  <script type="text/javascript">
+    function filterUsingCategory(selectedCategory) {
+      var id = 0;
+      
+      
+        var cats = ["Mechanical Design","CNC"]
+        var projDiv = document.getElementById(++id);     
+        projDiv.style.display =
+          (selectedCategory == 'All' || cats.includes(selectedCategory)) 
+            ? 'block' 
+            : 'none';
+        projDiv.style.margin = "2em 0";
+        projDiv.style.lineHeight = "1em";         
+      
+        var cats = ["Digital Art","CNC"]
+        var projDiv = document.getElementById(++id);     
+        projDiv.style.display =
+          (selectedCategory == 'All' || cats.includes(selectedCategory)) 
+            ? 'block' 
+            : 'none';
+        projDiv.style.margin = "2em 0";
+        projDiv.style.lineHeight = "1em";         
+      
+        var cats = ["Mechanical Design","Coursework","3D Printing"]
+        var projDiv = document.getElementById(++id);     
+        projDiv.style.display =
+          (selectedCategory == 'All' || cats.includes(selectedCategory)) 
+            ? 'block' 
+            : 'none';
+        projDiv.style.margin = "2em 0";
+        projDiv.style.lineHeight = "1em";         
+      
+        var cats = ["Mechanical Design","Mentored"]
+        var projDiv = document.getElementById(++id);     
+        projDiv.style.display =
+          (selectedCategory == 'All' || cats.includes(selectedCategory)) 
+            ? 'block' 
+            : 'none';
+        projDiv.style.margin = "2em 0";
+        projDiv.style.lineHeight = "1em";         
+      
+        var cats = ["Casting","Digital Art","Metal"]
+        var projDiv = document.getElementById(++id);     
+        projDiv.style.display =
+          (selectedCategory == 'All' || cats.includes(selectedCategory)) 
+            ? 'block' 
+            : 'none';
+        projDiv.style.margin = "2em 0";
+        projDiv.style.lineHeight = "1em";         
+      
+        var cats = ["Mechanical Design","Arduino"]
+        var projDiv = document.getElementById(++id);     
+        projDiv.style.display =
+          (selectedCategory == 'All' || cats.includes(selectedCategory)) 
+            ? 'block' 
+            : 'none';
+        projDiv.style.margin = "2em 0";
+        projDiv.style.lineHeight = "1em";         
+      
+        var cats = ["Mechanical Design","Unpublished Research","Metal","Hand Machined"]
+        var projDiv = document.getElementById(++id);     
+        projDiv.style.display =
+          (selectedCategory == 'All' || cats.includes(selectedCategory)) 
+            ? 'block' 
+            : 'none';
+        projDiv.style.margin = "2em 0";
+        projDiv.style.lineHeight = "1em";         
+      
+        var cats = ["Digital Art","Casting"]
+        var projDiv = document.getElementById(++id);     
+        projDiv.style.display =
+          (selectedCategory == 'All' || cats.includes(selectedCategory)) 
+            ? 'block' 
+            : 'none';
+        projDiv.style.margin = "2em 0";
+        projDiv.style.lineHeight = "1em";         
+      
+        var cats = ["Python","Coursework","Arduino"]
+        var projDiv = document.getElementById(++id);     
+        projDiv.style.display =
+          (selectedCategory == 'All' || cats.includes(selectedCategory)) 
+            ? 'block' 
+            : 'none';
+        projDiv.style.margin = "2em 0";
+        projDiv.style.lineHeight = "1em";         
+      
+        var cats = ["Mechanical Design","Coursework","Arduino","3D Printing"]
+        var projDiv = document.getElementById(++id);     
+        projDiv.style.display =
+          (selectedCategory == 'All' || cats.includes(selectedCategory)) 
+            ? 'block' 
+            : 'none';
+        projDiv.style.margin = "2em 0";
+        projDiv.style.lineHeight = "1em";         
+      
+        var cats = ["Mechanical Design","PCB Design","Coursework"]
+        var projDiv = document.getElementById(++id);     
+        projDiv.style.display =
+          (selectedCategory == 'All' || cats.includes(selectedCategory)) 
+            ? 'block' 
+            : 'none';
+        projDiv.style.margin = "2em 0";
+        projDiv.style.lineHeight = "1em";         
+      
+        var cats = ["3D Printing","Mechanical Design"]
+        var projDiv = document.getElementById(++id);     
+        projDiv.style.display =
+          (selectedCategory == 'All' || cats.includes(selectedCategory)) 
+            ? 'block' 
+            : 'none';
+        projDiv.style.margin = "2em 0";
+        projDiv.style.lineHeight = "1em";         
+      
+        var cats = ["Mechanical Design","Unpublished Research","Metal"]
+        var projDiv = document.getElementById(++id);     
+        projDiv.style.display =
+          (selectedCategory == 'All' || cats.includes(selectedCategory)) 
+            ? 'block' 
+            : 'none';
+        projDiv.style.margin = "2em 0";
+        projDiv.style.lineHeight = "1em";         
+      
+        var cats = ["Industry"]
+        var projDiv = document.getElementById(++id);     
+        projDiv.style.display =
+          (selectedCategory == 'All' || cats.includes(selectedCategory)) 
+            ? 'block' 
+            : 'none';
+        projDiv.style.margin = "2em 0";
+        projDiv.style.lineHeight = "1em";         
+      
+        var cats = ["Mechanical Design","Unpublished Research","Metal"]
+        var projDiv = document.getElementById(++id);     
+        projDiv.style.display =
+          (selectedCategory == 'All' || cats.includes(selectedCategory)) 
+            ? 'block' 
+            : 'none';
+        projDiv.style.margin = "2em 0";
+        projDiv.style.lineHeight = "1em";         
+      
+        var cats = ["Mechanical Design","3D Printing","Industry"]
+        var projDiv = document.getElementById(++id);     
+        projDiv.style.display =
+          (selectedCategory == 'All' || cats.includes(selectedCategory)) 
+            ? 'block' 
+            : 'none';
+        projDiv.style.margin = "2em 0";
+        projDiv.style.lineHeight = "1em";         
+      
+        var cats = ["Mechanical Design","Digital Art"]
+        var projDiv = document.getElementById(++id);     
+        projDiv.style.display =
+          (selectedCategory == 'All' || cats.includes(selectedCategory)) 
+            ? 'block' 
+            : 'none';
+        projDiv.style.margin = "2em 0";
+        projDiv.style.lineHeight = "1em";         
+      
+    }
+  </script>
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-112060364-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+  <!-- Use Jekyll SEO plugin -->
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Projects | Walter Bircher</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Projects" />
+<meta name="author" content="Walter Bircher" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/menu/projects.html" />
+<meta property="og:url" content="http://localhost:4000/menu/projects.html" />
+<meta property="og:site_name" content="Walter Bircher" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"Walter Bircher"},"@type":"WebPage","url":"http://localhost:4000/menu/projects.html","headline":"Projects","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+</head>
+
+
+<body>
+
+  <div class="container">
+    <header class="masthead">
+  <h3 class="masthead-title">
+    <a href="/">Walter Bircher</a>
+    <small class="masthead-subtitle"></small>
+    <div class="menu">
+  <nav class="menu-content">
+    
+      <a href="/menu/about.html">About</a>
+    
+      <a href="/menu/publications.html">Publications</a>
+    
+      <a href="/menu/projects.html">Projects</a>
+    
+  </nav>
+  <nav class="social-icons">
+    
+  
+  
+    <a href="https://www.github.com/walterbircher" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="https://scholar.google.com/citations?user=dzRmhtAAAAAJ&hl=en&oi=ao" target="_blank"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="https://www.linkedin.com/in/walter-bircher-17645042/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="mailto: walter.bircher@yale.edu" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+  
+
+  </nav>
+</div>
+
+  </h3>
+</header>
+
+
+    <div class="post-container">
+      <p>Just-for-fun, industry work, and unpublished research projects</p>
+
+<!--
+<div style="border:1px solid #dddddd;border-radius:8px;padding:0px;">
+<table style="border:none;padding:5px;margin:5px">
+<tr style="border:none;padding:0px;">
+  <td style="border:none; white-space:nowrap;padding:0px 10px 0px 10px;font-size:16px;color:#4a4a4a">
+    <i>filter</i>
+  </td>
+<td style="border:none; white-space:nowrap;padding:0px;text-align:center;">
+<button class="button" id="All" onclick="filterUsingCategory('All')">
+  Show All Posts
+</button>
+</td>
+-->
+
+<div style="border:1px solid #dddddd;border-radius:8px;padding:0px;padding:0px;margin:0px;">
+  <center>
+<ul class="filters">
+  <li>
+    <i style="font-size:16px;">filters</i>
+  </li>
+<li>
+<button class="button" id="All" onclick="filterUsingCategory('All')">
+  Show All Posts
+</button>
+</li>
+ 
+
+
+<li>
+<button class="button" id="Python" onclick="filterUsingCategory(this.id)">
+Python
+</button>
+</li>
+
+<li>
+<button class="button" id="Coursework" onclick="filterUsingCategory(this.id)">
+Coursework
+</button>
+</li>
+
+<li>
+<button class="button" id="Arduino" onclick="filterUsingCategory(this.id)">
+Arduino
+</button>
+</li>
+
+<li>
+<button class="button" id="Casting" onclick="filterUsingCategory(this.id)">
+Casting
+</button>
+</li>
+
+<li>
+<button class="button" id="Digital Art" onclick="filterUsingCategory(this.id)">
+Digital Art
+</button>
+</li>
+
+<li>
+<button class="button" id="Metal" onclick="filterUsingCategory(this.id)">
+Metal
+</button>
+</li>
+
+<li>
+<button class="button" id="3D Printing" onclick="filterUsingCategory(this.id)">
+3D Printing
+</button>
+</li>
+
+<li>
+<button class="button" id="Mechanical Design" onclick="filterUsingCategory(this.id)">
+Mechanical Design
+</button>
+</li>
+
+<li>
+<button class="button" id="CNC" onclick="filterUsingCategory(this.id)">
+CNC
+</button>
+</li>
+
+<li>
+<button class="button" id="Industry" onclick="filterUsingCategory(this.id)">
+Industry
+</button>
+</li>
+
+<li>
+<button class="button" id="PCB Design" onclick="filterUsingCategory(this.id)">
+PCB Design
+</button>
+</li>
+
+<li>
+<button class="button" id="Unpublished Research" onclick="filterUsingCategory(this.id)">
+Unpublished Research
+</button>
+</li>
+
+<li>
+<button class="button" id="Hand Machined" onclick="filterUsingCategory(this.id)">
+Hand Machined
+</button>
+</li>
+
+<li>
+<button class="button" id="Mentored" onclick="filterUsingCategory(this.id)">
+Mentored
+</button>
+</li>
+
+</ul>
+</center>
+</div>
+
+<h1 class="mt-4">Projects</h1>
+
+<div class="projitem" id="1">
+<div class="projteaser">
+<!--  <a href="/download/enclosure.pdf">--> <!--<a href="">-->
+    <img src="/assets/img/enclosure_small.png" alt="enclosure project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
+<!--  </a>-->
+</div>
+  <div class="projtitle">
+    CNC Enclosure
+  </div>
+  <div class="projauthors">
+    WG Bircher
+  </div>
+  <div class="projinfo">
+    An enclosure for the <a href="https://www.amazon.com/Genmitsu-3018-PRO-Control-Engraving-300x180x45mm/dp/B07P6K9BL3/ref=pd_lpo_469_t_0/130-8885377-1830907?_encoding=UTF8&amp;pd_rd_i=B07P6K9BL3&amp;pd_rd_r=d9913c13-21ce-4f83-8326-5f422ce6e0b0&amp;pd_rd_w=yu7CP&amp;pd_rd_wg=LQ4uB&amp;pf_rd_p=7b36d496-f366-4631-94d3-61b87b52511b&amp;pf_rd_r=JX0ADDEZX25HS1TH14BV&amp;psc=1&amp;refRID=JX0ADDEZX25HS1TH14BV">Genmitsu-3018 CNC</a> with a wifi camera to monitor jobs in progress, while reducing noise over 20dB and containing dust, 2020
+  </div>
+  <!--
+ <div class="projlinks">
+  <a href="/download/enclosure.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a>&nbsp;&nbsp;
+  <a href=""><i class="fa fa-link"></i> Project Page</a>
+   <div class="projaward"></div>
+</div>-->
+</div>
+
+<div class="projitem" id="2">
+<div class="projteaser">
+<!--  <a href="/download/pico.pdf">--> <!--<a href="">-->
+    <img src="/assets/img/pico_small.png" alt="pico project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
+<!--  </a>-->
+</div>
+  <div class="projtitle">
+    CNC'd Wooden Keychains
+  </div>
+  <div class="projauthors">
+    WG Bircher
+  </div>
+  <div class="projinfo">
+    My first project using the <a href="https://www.amazon.com/Genmitsu-3018-PRO-Control-Engraving-300x180x45mm/dp/B07P6K9BL3/ref=pd_lpo_469_t_0/130-8885377-1830907?_encoding=UTF8&amp;pd_rd_i=B07P6K9BL3&amp;pd_rd_r=d9913c13-21ce-4f83-8326-5f422ce6e0b0&amp;pd_rd_w=yu7CP&amp;pd_rd_wg=LQ4uB&amp;pf_rd_p=7b36d496-f366-4631-94d3-61b87b52511b&amp;pf_rd_r=JX0ADDEZX25HS1TH14BV&amp;psc=1&amp;refRID=JX0ADDEZX25HS1TH14BV">Genmitsu-3018 CNC</a>, transforming a digital photograph of a family dog into engraved &amp; painted wooden keychains, 2019
+  </div>
+  <!--
+ <div class="projlinks">
+  <a href="/download/pico.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a>&nbsp;&nbsp;
+  <a href=""><i class="fa fa-link"></i> Project Page</a>
+   <div class="projaward"></div>
+</div>-->
+</div>
+
+<div class="projitem" id="3">
+<div class="projteaser">
+<!--  <a href="/download/mars_finger.pdf">--> <!--<a href="">-->
+    <img src="/assets/img/mars_finger_small.png" alt="mars_finger project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
+<!--  </a>-->
+</div>
+  <div class="projtitle">
+    MARS Finger
+  </div>
+  <div class="projauthors">
+    WG Bircher
+  </div>
+  <div class="projinfo">
+    A 3D printed underactuated finger modeled after <a href="https://scholar.google.ca/citations?hl=en&amp;user=O9VSIMoAAAAJ">Gosselin</a> and <a href="https://scholar.google.ca/citations?user=2JlRnesAAAAJ&amp;hl=en">Laliberte's</a> MARS Hand for the course Advanced Robotic Mechanisms at <a href="https://www.yale.edu/">Yale</a>, 2018
+  </div>
+  <!--
+ <div class="projlinks">
+  <a href="/download/mars_finger.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a>&nbsp;&nbsp;
+  <a href=""><i class="fa fa-link"></i> Project Page</a>
+   <div class="projaward"></div>
+</div>-->
+</div>
+
+<div class="projitem" id="4">
+<div class="projteaser">
+<!--  <a href="/download/worm.pdf">--> <!--<a href="">-->
+    <img src="/assets/img/worm_small.png" alt="worm project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
+<!--  </a>-->
+</div>
+  <div class="projtitle">
+    Automatic Worm Catching Device
+  </div>
+  <div class="projauthors">
+    Saif Alnuaimi, <a href="https://www.linkedin.com/in/kevin-qian-liang">Kevin Liang</a>, <a href="https://www.linkedin.com/in/raymond-omahony/">Raymond O'Mahoney</a>, <a href="https://www.linkedin.com/in/julia-zou-12b818111/">Julia Zou</a>, WG Bircher
+  </div>
+  <div class="projinfo">
+    An automatic worm catching device made by a team of MENG488 seniors that I mentored as part of my duties as Teaching Fellow at <a href="https://www.yale.edu/">Yale</a>, 2018
+  </div>
+  <!--
+ <div class="projlinks">
+  <a href="/download/worm.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a>&nbsp;&nbsp;
+  <a href=""><i class="fa fa-link"></i> Project Page</a>
+   <div class="projaward"></div>
+</div>-->
+</div>
+
+<div class="projitem" id="5">
+<div class="projteaser">
+<!--  <a href="/download/axolotl.pdf">--> <!--<a href="">-->
+    <img src="/assets/img/axolotl_small.png" alt="axolotl project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
+<!--  </a>-->
+</div>
+  <div class="projtitle">
+    Cast Pewter Axolotl Pin
+  </div>
+  <div class="projauthors">
+    WG Bircher
+  </div>
+  <div class="projinfo">
+    A decorative pin, designed in Photoshop, modeled and 3D printed, imprinted into Delft Clay to form a mold, cast in solid Pewter, and hand painted, 2017
+  </div>
+  <!--
+ <div class="projlinks">
+  <a href="/download/axolotl.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a>&nbsp;&nbsp;
+  <a href=""><i class="fa fa-link"></i> Project Page</a>
+   <div class="projaward"></div>
+</div>-->
+</div>
+
+<div class="projitem" id="6">
+<div class="projteaser">
+<!--  <a href="/download/mallet_tester.pdf">--> <!--<a href="">-->
+    <img src="/assets/img/mallet_tester_small.png" alt="mallet_tester project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
+<!--  </a>-->
+</div>
+  <div class="projtitle">
+    Mallet Tester
+  </div>
+  <div class="projauthors">
+    WG Bircher, AM Dollar, N Rojas
+  </div>
+  <div class="projinfo">
+    A device to measure the 'bounce' of percussion mallets, using an absolute encoder and an Arduino, in collaboration with <a href="https://www.kramermilan.com/">Kramer Milan</a>, 2017
+  </div>
+  <!--
+ <div class="projlinks">
+  <a href="/download/mallet_tester.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a>&nbsp;&nbsp;
+  <a href=""><i class="fa fa-link"></i> Project Page</a>
+   <div class="projaward"></div>
+</div>-->
+</div>
+
+<div class="projitem" id="7">
+<div class="projteaser">
+<!--  <a href="/download/variable_stiffness.pdf">--> <!--<a href="">-->
+    <img src="/assets/img/variable_stiffness_small.png" alt="variable_stiffness project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
+<!--  </a>-->
+</div>
+  <div class="projtitle">
+    Variable Stiffness Revolute Joint
+  </div>
+  <div class="projauthors">
+    WG Bircher, <a href="https://aliyawar.github.io/">Ali Yawar</a>
+  </div>
+  <div class="projinfo">
+    A hand-machined metatarsal inspired variable stiffness revolute joint, 2017
+  </div>
+  <!--
+ <div class="projlinks">
+  <a href="/download/variable_stiffness.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a>&nbsp;&nbsp;
+  <a href=""><i class="fa fa-link"></i> Project Page</a>
+   <div class="projaward"></div>
+</div>-->
+</div>
+
+<div class="projitem" id="8">
+<div class="projteaser">
+<!--  <a href="/download/macaque_coasters.pdf">--> <!--<a href="">-->
+    <img src="/assets/img/macaque_coasters_small.png" alt="macaque_coasters project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
+<!--  </a>-->
+</div>
+  <div class="projtitle">
+    Macaque Brain Coasters
+  </div>
+  <div class="projauthors">
+    WG Bircher
+  </div>
+  <div class="projinfo">
+    From digital images to 3D printed slices of macaque brain, cast in clear urethane as coasters, 2017
+  </div>
+  <!--
+ <div class="projlinks">
+  <a href="/download/macaque_coasters.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a>&nbsp;&nbsp;
+  <a href=""><i class="fa fa-link"></i> Project Page</a>
+   <div class="projaward"></div>
+</div>-->
+</div>
+
+<div class="projitem" id="9">
+<div class="projteaser">
+<!--  <a href="/download/3d_scanner.pdf">--> <!--<a href="">-->
+    <img src="/assets/img/3d_scanner_small.png" alt="3d_scanner project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
+<!--  </a>-->
+</div>
+  <div class="projtitle">
+    Low Cost 3D Scanner
+  </div>
+  <div class="projauthors">
+    WG Bircher
+  </div>
+  <div class="projinfo">
+    A low-cost Arduino controlled 3D scanner using <a href="http://ccwu.me/vsfm/">VSFM</a> made for the course Computational Issues in 3D Design &amp; Fabrication at <a href="https://www.yale.edu/">Yale</a>, 2016
+  </div>
+  <!--
+ <div class="projlinks">
+  <a href="/download/3d_scanner.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a>&nbsp;&nbsp;
+  <a href=""><i class="fa fa-link"></i> Project Page</a>
+   <div class="projaward"></div>
+</div>-->
+</div>
+
+<div class="projitem" id="10">
+<div class="projteaser">
+<!--  <a href="/download/suction_irrigation.pdf">--> <!--<a href="">-->
+    <img src="/assets/img/suction_irrigation_small.png" alt="suction_irrigation project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
+<!--  </a>-->
+</div>
+  <div class="projtitle">
+    Suction-Irrigation Gripper for Miniature Surgical Robot
+  </div>
+  <div class="projauthors">
+    WG Bircher, <a href="https://www.linkedin.com/in/mark-reichenbach-578883126/">Mark Reichenbach</a>
+  </div>
+  <div class="projinfo">
+    A multifunctional gripper for a surgical robot, capable of grasping, suction, and irrigation, built for the seminar course Robotics Today at <a href="http://www.unl.edu">UNL</a>, 2015
+  </div>
+  <!--
+ <div class="projlinks">
+  <a href="/download/suction_irrigation.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a>&nbsp;&nbsp;
+  <a href=""><i class="fa fa-link"></i> Project Page</a>
+   <div class="projaward"></div>
+</div>-->
+</div>
+
+<div class="projitem" id="11">
+<div class="projteaser">
+<!--  <a href="/download/potbot.pdf">--> <!--<a href="">-->
+    <img src="/assets/img/potbot_small.png" alt="potbot project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
+<!--  </a>-->
+</div>
+  <div class="projtitle">
+    PotBot
+  </div>
+  <div class="projauthors">
+    WG Bircher
+  </div>
+  <div class="projinfo">
+    A pot stirring robot made for the course Advanced Mechatronics at <a href="https://www.unl.edu/">UNL</a> featuring a custom designed printed circuit board, 2015
+  </div>
+  <!--
+ <div class="projlinks">
+  <a href="/download/potbot.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a>&nbsp;&nbsp;
+  <a href=""><i class="fa fa-link"></i> Project Page</a>
+   <div class="projaward"></div>
+</div>-->
+</div>
+
+<div class="projitem" id="12">
+<div class="projteaser">
+<!--  <a href="/download/caulk_nozzle.pdf">--> <!--<a href="">-->
+    <img src="/assets/img/caulk_nozzle_small.png" alt="caulk_nozzle project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
+<!--  </a>-->
+</div>
+  <div class="projtitle">
+    Caulk Nozzle
+  </div>
+  <div class="projauthors">
+    WG Bircher
+  </div>
+  <div class="projinfo">
+    A screw-on reusable tip for tubes of caulk, to keep the material within from drying out, 2015
+  </div>
+  <!--
+ <div class="projlinks">
+  <a href="/download/caulk_nozzle.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a>&nbsp;&nbsp;
+  <a href=""><i class="fa fa-link"></i> Project Page</a>
+   <div class="projaward"></div>
+</div>-->
+</div>
+
+<div class="projitem" id="13">
+<div class="projteaser">
+<!--  <a href="/download/tooltip.pdf">--> <!--<a href="">-->
+    <img src="/assets/img/tooltip_small.png" alt="tooltip project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
+<!--  </a>-->
+</div>
+  <div class="projtitle">
+    Multiuse Tooltip for Surgical Robot
+  </div>
+  <div class="projauthors">
+    WG Bircher
+  </div>
+  <div class="projinfo">
+    A combination cautery / grasper for miniature surgical robots, designed and assembled at the <a href="https://www.unmc.edu/cast">Center for Advanced Surgical Technologies</a> at <a href="https://www.unl.edu/">UNL</a>, 2015
+  </div>
+  <!--
+ <div class="projlinks">
+  <a href="/download/tooltip.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a>&nbsp;&nbsp;
+  <a href=""><i class="fa fa-link"></i> Project Page</a>
+   <div class="projaward"></div>
+</div>-->
+</div>
+
+<div class="projitem" id="14">
+<div class="projteaser">
+<!--  <a href="/download/surrogate_polaris.pdf">--> <!--<a href="">-->
+    <img src="/assets/img/surrogate_polaris_small.png" alt="surrogate_polaris project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
+<!--  </a>-->
+</div>
+  <div class="projtitle">
+    Fitting Surrogate in the Polaris at JPL
+  </div>
+  <div class="projauthors">
+    WG Bircher
+  </div>
+  <div class="projinfo">
+    I used SolidWorks to find a configuration of <a href="https://www.jpl.nasa.gov/spaceimages/details.php?id=PIA18792">JPL's 21 Degree of Freedom Surrogate robot</a> fit for driving a Polaris Ranger, as part of the <a href="https://www.darpa.mil/program/darpa-robotics-challenge">DARPA Robotics Challenge</a>, 2014
+  </div>
+  <!--
+ <div class="projlinks">
+  <a href="/download/surrogate_polaris.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a>&nbsp;&nbsp;
+  <a href=""><i class="fa fa-link"></i> Project Page</a>
+   <div class="projaward"></div>
+</div>-->
+</div>
+
+<div class="projitem" id="15">
+<div class="projteaser">
+<!--  <a href="/download/track_sensor.pdf">--> <!--<a href="">-->
+    <img src="/assets/img/track_sensor_small.png" alt="track_sensor project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
+<!--  </a>-->
+</div>
+  <div class="projtitle">
+    Track Deflection Measurement System
+  </div>
+  <div class="projauthors">
+    WG Bircher, <a href="https://www.linkedin.com/in/mark-reichenbach-578883126/">Mark Reichenbach</a>
+  </div>
+  <div class="projinfo">
+    A sensor suite to measure track deflection and flag weak sections for maintenance, from a moving train, supervised by <a href="https://scholar.google.com/citations?user=T6hB7Z8AAAAJ&amp;hl=en">Shane Farritor</a> at <a href="http://www.unl.edu">UNL</a> in collaboration with <a href="https://www.harscorail.com/news/130-mrail.html">MRail</a>, 2013
+  </div>
+  <!--
+ <div class="projlinks">
+  <a href="/download/track_sensor.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a>&nbsp;&nbsp;
+  <a href=""><i class="fa fa-link"></i> Project Page</a>
+   <div class="projaward"></div>
+</div>-->
+</div>
+
+<div class="projitem" id="16">
+<div class="projteaser">
+<!--  <a href="/download/grip.pdf">--> <!--<a href="">-->
+    <img src="/assets/img/grip_small.png" alt="grip project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
+<!--  </a>-->
+</div>
+  <div class="projtitle">
+    Wise Grip - Trombone Hand Rest
+  </div>
+  <div class="projauthors">
+    WG Bircher, Jay Wise
+  </div>
+  <div class="projinfo">
+    An ergonomic hand rest for the trombone, designed on behalf of Jay Wise, Trombone player in the Omaha Symphony. For sale at <a href="https://shop.schmittmusic.com/wise-grip-trombone-hand-grip/">Schmitt Music</a>, <a href="https://thompsonmusic.com/product/wise-grip/">Thompson Music</a>, <a href="https://www.hickeys.com/music/brass/trombone/accessories/leather_guards_and_grips/products/sku128044-wise-griptrombone-hand-comfort-griplarge-bore-tenorbass.php">Hickey's Music Center</a>, and <a href="http://www.wisegrip.com">www.wisegrip.com</a>., 2012
+  </div>
+  <!--
+ <div class="projlinks">
+  <a href="/download/grip.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a>&nbsp;&nbsp;
+  <a href=""><i class="fa fa-link"></i> Project Page</a>
+   <div class="projaward"></div>
+</div>-->
+</div>
+
+<div class="projitem" id="17">
+<div class="projteaser">
+<!--  <a href="/download/watches.pdf">--> <!--<a href="">-->
+    <img src="/assets/img/watches_small.png" alt="watches project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
+<!--  </a>-->
+</div>
+  <div class="projtitle">
+    Watch Renderings
+  </div>
+  <div class="projauthors">
+    WG Bircher
+  </div>
+  <div class="projinfo">
+    Rendering <a href="https://www.ourbagonline.com/O-clock-watches-s/1817.htm">O clock watches</a> to build my Autodesk Inventor skills, 2011
+  </div>
+  <!--
+ <div class="projlinks">
+  <a href="/download/watches.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a>&nbsp;&nbsp;
+  <a href=""><i class="fa fa-link"></i> Project Page</a>
+   <div class="projaward"></div>
+</div>-->
+</div>
+
+
+    </div>
+
+    <footer class="footer">
+  
+  
+  
+    <a href="https://www.github.com/walterbircher" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="https://scholar.google.com/citations?user=dzRmhtAAAAAJ&hl=en&oi=ao" target="_blank"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="https://www.linkedin.com/in/walter-bircher-17645042/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="mailto: walter.bircher@yale.edu" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+  
+
+  <div class="post-date"><a href="/menu/about.html">Walter Bircher | <a href="https://github.com/LeNPaul/Lagrange" style="padding:0px;">Lagrange</a> by Paul Le</a></div>
+</footer>
+
+  </div>
+
+</body>
+</html>
