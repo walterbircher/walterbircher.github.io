@@ -2,7 +2,7 @@
 layout: default
 categories: ['Mechanical Design','Arduino']
 title: Mallet Tester
-authors: WG Bircher, AM Dollar, N Rojas
+authors: WG Bircher, <a href="https://www.kramermilan.com/">Kramer Milan</a>
 thing: A device to measure the 'bounce' of percussion mallets, using an absolute encoder and an Arduino, in collaboration with <a href="https://www.kramermilan.com/">Kramer Milan</a>
 year: 2017
 award: 
