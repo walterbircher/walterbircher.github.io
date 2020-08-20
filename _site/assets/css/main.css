@@ -144,6 +144,15 @@ hr {
 }
 
 /*
+  Memes
+*/
+
+.memeitem img {
+  width: 420px;
+  margin-bottom: 69px;
+}
+
+/*
   Publications
 */
 
