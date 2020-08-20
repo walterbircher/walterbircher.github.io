@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Bud Light Selzter Meme Portfolio
+title: Bud Light Seltzer Meme Portfolio
 ---
 
 New memes added daily through September 18th, 2020
