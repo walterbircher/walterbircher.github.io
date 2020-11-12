@@ -75,7 +75,7 @@
         projDiv.style.margin = "2em 0";
         projDiv.style.lineHeight = "1em";         
       
-        var cats = ["Casting","Digital Art","Metal"]
+        var cats = ["Mechanical Design","Arduino"]
         var projDiv = document.getElementById(++id);     
         projDiv.style.display =
           (selectedCategory == 'All' || cats.includes(selectedCategory)) 
@@ -84,7 +84,7 @@
         projDiv.style.margin = "2em 0";
         projDiv.style.lineHeight = "1em";         
       
-        var cats = ["Mechanical Design","Arduino"]
+        var cats = ["Casting","Digital Art","Metal"]
         var projDiv = document.getElementById(++id);     
         projDiv.style.display =
           (selectedCategory == 'All' || cats.includes(selectedCategory)) 
@@ -174,7 +174,43 @@
         projDiv.style.margin = "2em 0";
         projDiv.style.lineHeight = "1em";         
       
+        var cats = ["Industry"]
+        var projDiv = document.getElementById(++id);     
+        projDiv.style.display =
+          (selectedCategory == 'All' || cats.includes(selectedCategory)) 
+            ? 'block' 
+            : 'none';
+        projDiv.style.margin = "2em 0";
+        projDiv.style.lineHeight = "1em";         
+      
+        var cats = ["Mechanical Design","Arduino","Coursework"]
+        var projDiv = document.getElementById(++id);     
+        projDiv.style.display =
+          (selectedCategory == 'All' || cats.includes(selectedCategory)) 
+            ? 'block' 
+            : 'none';
+        projDiv.style.margin = "2em 0";
+        projDiv.style.lineHeight = "1em";         
+      
         var cats = ["Mechanical Design","3D Printing","Industry"]
+        var projDiv = document.getElementById(++id);     
+        projDiv.style.display =
+          (selectedCategory == 'All' || cats.includes(selectedCategory)) 
+            ? 'block' 
+            : 'none';
+        projDiv.style.margin = "2em 0";
+        projDiv.style.lineHeight = "1em";         
+      
+        var cats = ["Mechanical Design","Digital Art"]
+        var projDiv = document.getElementById(++id);     
+        projDiv.style.display =
+          (selectedCategory == 'All' || cats.includes(selectedCategory)) 
+            ? 'block' 
+            : 'none';
+        projDiv.style.margin = "2em 0";
+        projDiv.style.lineHeight = "1em";         
+      
+        var cats = ["Mechanical Design","Digital Art"]
         var projDiv = document.getElementById(++id);     
         projDiv.style.display =
           (selectedCategory == 'All' || cats.includes(selectedCategory)) 
@@ -345,6 +381,12 @@ Metal
 </li>
 
 <li>
+<button class="button" id="Industry" onclick="filterUsingCategory(this.id)">
+Industry
+</button>
+</li>
+
+<li>
 <button class="button" id="3D Printing" onclick="filterUsingCategory(this.id)">
 3D Printing
 </button>
@@ -359,12 +401,6 @@ Mechanical Design
 <li>
 <button class="button" id="CNC" onclick="filterUsingCategory(this.id)">
 CNC
-</button>
-</li>
-
-<li>
-<button class="button" id="Industry" onclick="filterUsingCategory(this.id)">
-Industry
 </button>
 </li>
 
@@ -454,7 +490,7 @@ Mentored
     MARS Finger
   </div>
   <div class="projauthors">
-    WG Bircher
+    WG Bircher, taught by <a href="https://scholar.google.com/citations?hl=en&amp;user=jFekO3IAAAAJ">Aaron Dollar</a>
   </div>
   <div class="projinfo">
     A 3D printed underactuated finger modeled after <a href="https://scholar.google.ca/citations?hl=en&amp;user=O9VSIMoAAAAJ">Gosselin</a> and <a href="https://scholar.google.ca/citations?user=2JlRnesAAAAJ&amp;hl=en">Laliberte's</a> MARS Hand for the course Advanced Robotic Mechanisms at <a href="https://www.yale.edu/">Yale</a>, 2018
@@ -492,6 +528,29 @@ Mentored
 
 <div class="projitem" id="5">
 <div class="projteaser">
+<!--  <a href="/download/mallet_tester.pdf">--> <!--<a href="">-->
+    <img src="/assets/img/mallet_tester_small.png" alt="mallet_tester project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
+<!--  </a>-->
+</div>
+  <div class="projtitle">
+    Mallet Tester
+  </div>
+  <div class="projauthors">
+    WG Bircher, <a href="https://www.kramermilan.com/">Kramer Milan</a>
+  </div>
+  <div class="projinfo">
+    A device to measure the 'bounce' of percussion mallets, using an absolute encoder and an Arduino UNO, in collaboration with <a href="https://www.kramermilan.com/">Kramer Milan</a>, 2017
+  </div>
+  <!--
+ <div class="projlinks">
+  <a href="/download/mallet_tester.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a>&nbsp;&nbsp;
+  <a href=""><i class="fa fa-link"></i> Project Page</a>
+   <div class="projaward"></div>
+</div>-->
+</div>
+
+<div class="projitem" id="6">
+<div class="projteaser">
 <!--  <a href="/download/axolotl.pdf">--> <!--<a href="">-->
     <img src="/assets/img/axolotl_small.png" alt="axolotl project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
 <!--  </a>-->
@@ -508,29 +567,6 @@ Mentored
   <!--
  <div class="projlinks">
   <a href="/download/axolotl.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a>&nbsp;&nbsp;
-  <a href=""><i class="fa fa-link"></i> Project Page</a>
-   <div class="projaward"></div>
-</div>-->
-</div>
-
-<div class="projitem" id="6">
-<div class="projteaser">
-<!--  <a href="/download/mallet_tester.pdf">--> <!--<a href="">-->
-    <img src="/assets/img/mallet_tester_small.png" alt="mallet_tester project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
-<!--  </a>-->
-</div>
-  <div class="projtitle">
-    Mallet Tester
-  </div>
-  <div class="projauthors">
-    WG Bircher, <a href="https://www.kramermilan.com/">Kramer Milan</a>
-  </div>
-  <div class="projinfo">
-    A device to measure the 'bounce' of percussion mallets, using an absolute encoder and an Arduino, in collaboration with <a href="https://www.kramermilan.com/">Kramer Milan</a>, 2017
-  </div>
-  <!--
- <div class="projlinks">
-  <a href="/download/mallet_tester.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a>&nbsp;&nbsp;
   <a href=""><i class="fa fa-link"></i> Project Page</a>
    <div class="projaward"></div>
 </div>-->
@@ -592,7 +628,7 @@ Mentored
     Low Cost 3D Scanner
   </div>
   <div class="projauthors">
-    WG Bircher
+    WG Bircher, taught by <a href="https://scholar.google.com/citations?hl=en&amp;user=saY3qN5NWbcC">Holly Rushmeier</a>
   </div>
   <div class="projinfo">
     A low-cost Arduino controlled 3D scanner using <a href="http://ccwu.me/vsfm/">VSFM</a> made for the course Computational Issues in 3D Design &amp; Fabrication at <a href="https://www.yale.edu/">Yale</a>, 2016
@@ -615,7 +651,7 @@ Mentored
     Suction-Irrigation Gripper for Miniature Surgical Robot
   </div>
   <div class="projauthors">
-    WG Bircher, <a href="https://www.linkedin.com/in/mark-reichenbach-578883126/">Mark Reichenbach</a>
+    WG Bircher, <a href="https://www.linkedin.com/in/mark-reichenbach-578883126/">Mark Reichenbach</a>, taught by <a href="https://scholar.google.com/citations?hl=en&amp;user=E4kvshMAAAAJ">Carrick Detweiler</a>
   </div>
   <div class="projinfo">
     A multifunctional gripper for a surgical robot, capable of grasping, suction, and irrigation, built for the seminar course Robotics Today at <a href="http://www.unl.edu">UNL</a>, 2015
@@ -638,7 +674,7 @@ Mentored
     PotBot
   </div>
   <div class="projauthors">
-    WG Bircher
+    WG Bircher, taught by <a href="https://scholar.google.com/citations?hl=en&amp;user=T6hB7Z8AAAAJ">Shane Farritor</a>
   </div>
   <div class="projinfo">
     A pot stirring robot made for the course Advanced Mechatronics at <a href="https://www.unl.edu/">UNL</a> featuring a custom designed printed circuit board, 2015
@@ -664,7 +700,7 @@ Mentored
     WG Bircher
   </div>
   <div class="projinfo">
-    A screw-on reusable tip for tubes of caulk, to keep the material within from drying out, 2015
+    A 3D printed screw-on reusable tip for tubes of caulk, to keep the material within from drying out, 2015
   </div>
   <!--
  <div class="projlinks">
@@ -707,7 +743,7 @@ Mentored
     Fitting Surrogate in the Polaris at JPL
   </div>
   <div class="projauthors">
-    WG Bircher
+    WG Bircher, supervised by <a href="https://www-robotics.jpl.nasa.gov/people/Brett_Kennedy/">Brett Kennedy</a>
   </div>
   <div class="projinfo">
     I used SolidWorks to find a configuration of <a href="https://www.jpl.nasa.gov/spaceimages/details.php?id=PIA18792">JPL's 21 Degree of Freedom Surrogate robot</a> fit for driving a Polaris Ranger, as part of the <a href="https://www.darpa.mil/program/darpa-robotics-challenge">DARPA Robotics Challenge</a>, 2014
@@ -745,6 +781,52 @@ Mentored
 
 <div class="projitem" id="16">
 <div class="projteaser">
+<!--  <a href="/download/brace.pdf">--> <!--<a href="">-->
+    <img src="/assets/img/brace_small.png" alt="brace project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
+<!--  </a>-->
+</div>
+  <div class="projtitle">
+    Powered Lower Limb Orthotic Device
+  </div>
+  <div class="projauthors">
+    WG Bircher, supervised by <a href="https://www.linkedin.com/in/jason-herman-28437112/">Jason Herman</a>
+  </div>
+  <div class="projinfo">
+    I designed and built a first prototype of a powered lower limb orthotic device to assist in stair climbing during my summer internship at <a href="https://honeybeerobotics.com/">Honeybee Robotics</a> in New York City, 2013
+  </div>
+  <!--
+ <div class="projlinks">
+  <a href="/download/brace.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a>&nbsp;&nbsp;
+  <a href=""><i class="fa fa-link"></i> Project Page</a>
+   <div class="projaward"></div>
+</div>-->
+</div>
+
+<div class="projitem" id="17">
+<div class="projteaser">
+<!--  <a href="/download/haptics.pdf">--> <!--<a href="">-->
+    <img src="/assets/img/haptics_small.png" alt="haptics project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
+<!--  </a>-->
+</div>
+  <div class="projtitle">
+    Stanford Intro to Haptics Class
+  </div>
+  <div class="projauthors">
+    Taught by <a href="https://scholar.google.com/citations?user=lD4Yjn4AAAAJ&amp;hl=en&amp;oi=ao">Allison Okamura</a>
+  </div>
+  <div class="projinfo">
+    I participated in the first ever session of Allison Okamura's <a href="https://www.edx.org/course/introduction-to-haptics">Stanford OpenEdX Online Introduction to Haptics</a> course, where I assembled and programmed a 1-DOF haptic controller supplied by the <a href="http://charm.stanford.edu/">CHARM Lab</a>, 2013
+  </div>
+  <!--
+ <div class="projlinks">
+  <a href="/download/haptics.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a>&nbsp;&nbsp;
+  <a href=""><i class="fa fa-link"></i> Project Page</a>
+   <div class="projaward"></div>
+</div>-->
+</div>
+
+<div class="projitem" id="18">
+<div class="projteaser">
 <!--  <a href="/download/grip.pdf">--> <!--<a href="">-->
     <img src="/assets/img/grip_small.png" alt="grip project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
 <!--  </a>-->
@@ -766,7 +848,7 @@ Mentored
 </div>-->
 </div>
 
-<div class="projitem" id="17">
+<div class="projitem" id="19">
 <div class="projteaser">
 <!--  <a href="/download/watches.pdf">--> <!--<a href="">-->
     <img src="/assets/img/watches_small.png" alt="watches project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
@@ -779,11 +861,57 @@ Mentored
     WG Bircher
   </div>
   <div class="projinfo">
-    Rendering <a href="https://www.ourbagonline.com/O-clock-watches-s/1817.htm">O clock watches</a> to build my Autodesk Inventor skills, 2011
+    Rendering <a href="https://www.ourbagonline.com/O-clock-watches-s/1817.htm">O clock watches</a> to build my SolidWorks skills, 2011
   </div>
   <!--
  <div class="projlinks">
   <a href="/download/watches.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a>&nbsp;&nbsp;
+  <a href=""><i class="fa fa-link"></i> Project Page</a>
+   <div class="projaward"></div>
+</div>-->
+</div>
+
+<div class="projitem" id="20">
+<div class="projteaser">
+<!--  <a href="/download/guitar.pdf">--> <!--<a href="">-->
+    <img src="/assets/img/guitar_small.png" alt="guitar project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
+<!--  </a>-->
+</div>
+  <div class="projtitle">
+    Gibson Les Paul Renderings
+  </div>
+  <div class="projauthors">
+    WG Bircher
+  </div>
+  <div class="projinfo">
+    Modeled and rendered a <a href="https://www.gibson.com/Guitars/Les-Paul">Gibson Les Paul</a> from scratch to improve my Autodesk Inventor skills in my <a href="https://www.pltw.org/">Project Lead the Way</a> course at <a href="https://north.ops.org/">Omaha North High School</a>, 2006
+  </div>
+  <!--
+ <div class="projlinks">
+  <a href="/download/guitar.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a>&nbsp;&nbsp;
+  <a href=""><i class="fa fa-link"></i> Project Page</a>
+   <div class="projaward"></div>
+</div>-->
+</div>
+
+<div class="projitem" id="21">
+<div class="projteaser">
+<!--  <a href="/download/robot.pdf">--> <!--<a href="">-->
+    <img src="/assets/img/robot_small.png" alt="robot project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
+<!--  </a>-->
+</div>
+  <div class="projtitle">
+    Toy Robot Renderings
+  </div>
+  <div class="projauthors">
+    WG Bircher
+  </div>
+  <div class="projinfo">
+    Modeled and rendered a toy robot from scratch to improve my Autodesk Inventor skills in my <a href="https://www.pltw.org/">Project Lead the Way</a> course at <a href="https://north.ops.org/">Omaha North High School</a>, 2006
+  </div>
+  <!--
+ <div class="projlinks">
+  <a href="/download/robot.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a>&nbsp;&nbsp;
   <a href=""><i class="fa fa-link"></i> Project Page</a>
    <div class="projaward"></div>
 </div>-->
