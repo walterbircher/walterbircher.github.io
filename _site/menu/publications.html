@@ -39,6 +39,15 @@
       var id = 0;
       
       
+        var cats = ["Arduino","3D Printing"]
+        var projDiv = document.getElementById(++id);     
+        projDiv.style.display =
+          (selectedCategory == 'All' || cats.includes(selectedCategory)) 
+            ? 'block' 
+            : 'none';
+        projDiv.style.margin = "2em 0";
+        projDiv.style.lineHeight = "1em";         
+      
         var cats = ["Mechanical Design","CNC"]
         var projDiv = document.getElementById(++id);     
         projDiv.style.display =
@@ -320,9 +329,29 @@
 
 <div class="pubitem">
 <div class="pubteaser">
-  <i class="pubaward"></i>
-  <a href="/download/icra19_3.pdf"> <!--<a href="/publications/icra19-3">-->
-    <img src="/assets/img/icra19_3_small.png" alt="icra19_3 publication teaser" />&nbsp; <i class="fa fa-file-pdf-o"></i> PDF &nbsp; </a> 
+  <table>
+    <!-- <tr>
+      <td><i class="pubaward"></i></td>
+      <td rowspan='2' width='150'><a href="/download/icra19_3.pdf"><img src="/assets/img/icra19_3_small.png" alt="icra19_3 publication teaser"/></a></td>
+      <td rowspan='1' colspan='2'><i class="pubaward"></i></td>
+    </tr>
+    <tr>
+      <td rowspan='1'><iframe width="230" height="135" src="https://www.youtube.com/embed/jQSCvi0G0ts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+      <td rowspan='1' width='150'><a href="/download/icra19_3.pdf"><i class="fa fa-file-pdf-o"></i>&nbsp;PDF</a></td>
+      <!--old stuff video button similar to pdf button <a href="<iframe width="230" height="135" src="https://www.youtube.com/embed/jQSCvi0G0ts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>"><i class="fa fa-youtube-play" aria-hidden="true"></i>&nbsp;Video</a>
+    </tr>-->
+    <tr>
+      <!--<td><i class="pubaward"></i></td>-->
+      <td rowspan="1" width="200"><a href="/download/icra19_3.pdf"><img src="/assets/img/icra19_3_small.png" alt="icra19_3 publication teaser" /></a></td>
+      <td rowspan="1"><iframe width="230" height="135" src="https://www.youtube.com/embed/jQSCvi0G0ts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></td>
+      <td rowspan="1" width="150"><a href="/download/icra19_3.pdf"><i class="fa fa-file-pdf-o"></i>&nbsp;PDF</a></td>
+    </tr>
+    <tr>
+      <td rowspan="1" colspan="3"><br /><i class="pubaward"></i></td>
+    </tr>
+      <!--old stuff video button similar to pdf button <a href="<iframe width="230" height="135" src="https://www.youtube.com/embed/jQSCvi0G0ts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>"><i class="fa fa-youtube-play" aria-hidden="true"></i>&nbsp;Video</a>-->
+  </table>
+
 
 </div>
   <div class="pubtitle">
@@ -340,12 +369,33 @@
   <!-- <div class="pubaward"></div>-->
 <!--</div>-->
 </div>
+<p><br /><br /></p>
 
 <div class="pubitem">
 <div class="pubteaser">
-  <i class="pubaward"></i>
-  <a href="/download/icra19_2.pdf"> <!--<a href="/publications/icra19-2">-->
-    <img src="/assets/img/icra19_2_small.png" alt="icra19_2 publication teaser" />&nbsp; <i class="fa fa-file-pdf-o"></i> PDF &nbsp; </a> 
+  <table>
+    <!-- <tr>
+      <td><i class="pubaward"></i></td>
+      <td rowspan='2' width='150'><a href="/download/icra19_2.pdf"><img src="/assets/img/icra19_2_small.png" alt="icra19_2 publication teaser"/></a></td>
+      <td rowspan='1' colspan='2'><i class="pubaward"></i></td>
+    </tr>
+    <tr>
+      <td rowspan='1'><iframe width="230" height="135" src="https://www.youtube.com/embed/0I0xdyOZrWg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+      <td rowspan='1' width='150'><a href="/download/icra19_2.pdf"><i class="fa fa-file-pdf-o"></i>&nbsp;PDF</a></td>
+      <!--old stuff video button similar to pdf button <a href="<iframe width="230" height="135" src="https://www.youtube.com/embed/0I0xdyOZrWg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>"><i class="fa fa-youtube-play" aria-hidden="true"></i>&nbsp;Video</a>
+    </tr>-->
+    <tr>
+      <!--<td><i class="pubaward"></i></td>-->
+      <td rowspan="1" width="200"><a href="/download/icra19_2.pdf"><img src="/assets/img/icra19_2_small.png" alt="icra19_2 publication teaser" /></a></td>
+      <td rowspan="1"><iframe width="230" height="135" src="https://www.youtube.com/embed/0I0xdyOZrWg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></td>
+      <td rowspan="1" width="150"><a href="/download/icra19_2.pdf"><i class="fa fa-file-pdf-o"></i>&nbsp;PDF</a></td>
+    </tr>
+    <tr>
+      <td rowspan="1" colspan="3"><br /><i class="pubaward"></i></td>
+    </tr>
+      <!--old stuff video button similar to pdf button <a href="<iframe width="230" height="135" src="https://www.youtube.com/embed/0I0xdyOZrWg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>"><i class="fa fa-youtube-play" aria-hidden="true"></i>&nbsp;Video</a>-->
+  </table>
+
 
 </div>
   <div class="pubtitle">
@@ -363,12 +413,33 @@
   <!-- <div class="pubaward"></div>-->
 <!--</div>-->
 </div>
+<p><br /><br /></p>
 
 <div class="pubitem">
 <div class="pubteaser">
-  <i class="pubaward"></i>
-  <a href="/download/icra19_1.pdf"> <!--<a href="/publications/icra19-1">-->
-    <img src="/assets/img/icra19_1_small.png" alt="icra19_1 publication teaser" />&nbsp; <i class="fa fa-file-pdf-o"></i> PDF &nbsp; </a> 
+  <table>
+    <!-- <tr>
+      <td><i class="pubaward"></i></td>
+      <td rowspan='2' width='150'><a href="/download/icra19_1.pdf"><img src="/assets/img/icra19_1_small.png" alt="icra19_1 publication teaser"/></a></td>
+      <td rowspan='1' colspan='2'><i class="pubaward"></i></td>
+    </tr>
+    <tr>
+      <td rowspan='1'><iframe width="230" height="135" src="https://www.youtube.com/embed/jHOWq8lD0MY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+      <td rowspan='1' width='150'><a href="/download/icra19_1.pdf"><i class="fa fa-file-pdf-o"></i>&nbsp;PDF</a></td>
+      <!--old stuff video button similar to pdf button <a href="<iframe width="230" height="135" src="https://www.youtube.com/embed/jHOWq8lD0MY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>"><i class="fa fa-youtube-play" aria-hidden="true"></i>&nbsp;Video</a>
+    </tr>-->
+    <tr>
+      <!--<td><i class="pubaward"></i></td>-->
+      <td rowspan="1" width="200"><a href="/download/icra19_1.pdf"><img src="/assets/img/icra19_1_small.png" alt="icra19_1 publication teaser" /></a></td>
+      <td rowspan="1"><iframe width="230" height="135" src="https://www.youtube.com/embed/jHOWq8lD0MY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></td>
+      <td rowspan="1" width="150"><a href="/download/icra19_1.pdf"><i class="fa fa-file-pdf-o"></i>&nbsp;PDF</a></td>
+    </tr>
+    <tr>
+      <td rowspan="1" colspan="3"><br /><i class="pubaward"></i></td>
+    </tr>
+      <!--old stuff video button similar to pdf button <a href="<iframe width="230" height="135" src="https://www.youtube.com/embed/jHOWq8lD0MY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>"><i class="fa fa-youtube-play" aria-hidden="true"></i>&nbsp;Video</a>-->
+  </table>
+
 
 </div>
   <div class="pubtitle">
@@ -386,12 +457,33 @@
   <!-- <div class="pubaward"></div>-->
 <!--</div>-->
 </div>
+<p><br /><br /></p>
 
 <div class="pubitem">
 <div class="pubteaser">
-  <i class="pubaward"></i>
-  <a href="/download/tro19.pdf"> <!--<a href="/publications/tro19">-->
-    <img src="/assets/img/tro19_small.png" alt="tro19 publication teaser" />&nbsp; <i class="fa fa-file-pdf-o"></i> PDF &nbsp; </a> 
+  <table>
+    <!-- <tr>
+      <td><i class="pubaward"></i></td>
+      <td rowspan='2' width='150'><a href="/download/tro19.pdf"><img src="/assets/img/tro19_small.png" alt="tro19 publication teaser"/></a></td>
+      <td rowspan='1' colspan='2'><i class="pubaward"></i></td>
+    </tr>
+    <tr>
+      <td rowspan='1'></td>
+      <td rowspan='1' width='150'><a href="/download/tro19.pdf"><i class="fa fa-file-pdf-o"></i>&nbsp;PDF</a></td>
+      <!--old stuff video button similar to pdf button <a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i>&nbsp;Video</a>
+    </tr>-->
+    <tr>
+      <!--<td><i class="pubaward"></i></td>-->
+      <td rowspan="1" width="200"><a href="/download/tro19.pdf"><img src="/assets/img/tro19_small.png" alt="tro19 publication teaser" /></a></td>
+      <td rowspan="1"></td>
+      <td rowspan="1" width="150"><a href="/download/tro19.pdf"><i class="fa fa-file-pdf-o"></i>&nbsp;PDF</a></td>
+    </tr>
+    <tr>
+      <td rowspan="1" colspan="3"><br /><i class="pubaward"></i></td>
+    </tr>
+      <!--old stuff video button similar to pdf button <a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i>&nbsp;Video</a>-->
+  </table>
+
 
 </div>
   <div class="pubtitle">
@@ -409,12 +501,33 @@
   <!-- <div class="pubaward"></div>-->
 <!--</div>-->
 </div>
+<p><br /><br /></p>
 
 <div class="pubitem">
 <div class="pubteaser">
-  <i class="pubaward"></i>
-  <a href="/download/ral19.pdf"> <!--<a href="/publications/ral19">-->
-    <img src="/assets/img/ral19_small.png" alt="ral19 publication teaser" />&nbsp; <i class="fa fa-file-pdf-o"></i> PDF &nbsp; </a> 
+  <table>
+    <!-- <tr>
+      <td><i class="pubaward"></i></td>
+      <td rowspan='2' width='150'><a href="/download/ral19.pdf"><img src="/assets/img/ral19_small.png" alt="ral19 publication teaser"/></a></td>
+      <td rowspan='1' colspan='2'><i class="pubaward"></i></td>
+    </tr>
+    <tr>
+      <td rowspan='1'><iframe width="230" height="135" src="https://www.youtube.com/embed/7K3qU2MLoP8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+      <td rowspan='1' width='150'><a href="/download/ral19.pdf"><i class="fa fa-file-pdf-o"></i>&nbsp;PDF</a></td>
+      <!--old stuff video button similar to pdf button <a href="<iframe width="230" height="135" src="https://www.youtube.com/embed/7K3qU2MLoP8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>"><i class="fa fa-youtube-play" aria-hidden="true"></i>&nbsp;Video</a>
+    </tr>-->
+    <tr>
+      <!--<td><i class="pubaward"></i></td>-->
+      <td rowspan="1" width="200"><a href="/download/ral19.pdf"><img src="/assets/img/ral19_small.png" alt="ral19 publication teaser" /></a></td>
+      <td rowspan="1"><iframe width="230" height="135" src="https://www.youtube.com/embed/7K3qU2MLoP8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></td>
+      <td rowspan="1" width="150"><a href="/download/ral19.pdf"><i class="fa fa-file-pdf-o"></i>&nbsp;PDF</a></td>
+    </tr>
+    <tr>
+      <td rowspan="1" colspan="3"><br /><i class="pubaward"></i></td>
+    </tr>
+      <!--old stuff video button similar to pdf button <a href="<iframe width="230" height="135" src="https://www.youtube.com/embed/7K3qU2MLoP8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>"><i class="fa fa-youtube-play" aria-hidden="true"></i>&nbsp;Video</a>-->
+  </table>
+
 
 </div>
   <div class="pubtitle">
@@ -432,12 +545,33 @@
   <!-- <div class="pubaward"></div>-->
 <!--</div>-->
 </div>
+<p><br /><br /></p>
 
 <div class="pubitem">
 <div class="pubteaser">
-  <i class="pubaward"></i>
-  <a href="/download/iros19.pdf"> <!--<a href="/publications/iros19">-->
-    <img src="/assets/img/iros19_small.png" alt="iros19 publication teaser" />&nbsp; <i class="fa fa-file-pdf-o"></i> PDF &nbsp; </a> 
+  <table>
+    <!-- <tr>
+      <td><i class="pubaward"></i></td>
+      <td rowspan='2' width='150'><a href="/download/iros19.pdf"><img src="/assets/img/iros19_small.png" alt="iros19 publication teaser"/></a></td>
+      <td rowspan='1' colspan='2'><i class="pubaward"></i></td>
+    </tr>
+    <tr>
+      <td rowspan='1'><iframe width="230" height="135" src="https://www.youtube.com/embed/jtInvaa07yU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+      <td rowspan='1' width='150'><a href="/download/iros19.pdf"><i class="fa fa-file-pdf-o"></i>&nbsp;PDF</a></td>
+      <!--old stuff video button similar to pdf button <a href="<iframe width="230" height="135" src="https://www.youtube.com/embed/jtInvaa07yU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>"><i class="fa fa-youtube-play" aria-hidden="true"></i>&nbsp;Video</a>
+    </tr>-->
+    <tr>
+      <!--<td><i class="pubaward"></i></td>-->
+      <td rowspan="1" width="200"><a href="/download/iros19.pdf"><img src="/assets/img/iros19_small.png" alt="iros19 publication teaser" /></a></td>
+      <td rowspan="1"><iframe width="230" height="135" src="https://www.youtube.com/embed/jtInvaa07yU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></td>
+      <td rowspan="1" width="150"><a href="/download/iros19.pdf"><i class="fa fa-file-pdf-o"></i>&nbsp;PDF</a></td>
+    </tr>
+    <tr>
+      <td rowspan="1" colspan="3"><br /><i class="pubaward"></i></td>
+    </tr>
+      <!--old stuff video button similar to pdf button <a href="<iframe width="230" height="135" src="https://www.youtube.com/embed/jtInvaa07yU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>"><i class="fa fa-youtube-play" aria-hidden="true"></i>&nbsp;Video</a>-->
+  </table>
+
 
 </div>
   <div class="pubtitle">
@@ -455,12 +589,33 @@
   <!-- <div class="pubaward"></div>-->
 <!--</div>-->
 </div>
+<p><br /><br /></p>
 
 <div class="pubitem">
 <div class="pubteaser">
-  <i class="pubaward">*Equal Contributions</i>
-  <a href="/download/ijrr19.pdf"> <!--<a href="/publications/ijrr19">-->
-    <img src="/assets/img/ijrr19_small.png" alt="ijrr19 publication teaser" />&nbsp; <i class="fa fa-file-pdf-o"></i> PDF &nbsp; </a> 
+  <table>
+    <!-- <tr>
+      <td><i class="pubaward">*Equal Contributions</i></td>
+      <td rowspan='2' width='150'><a href="/download/ijrr19.pdf"><img src="/assets/img/ijrr19_small.png" alt="ijrr19 publication teaser"/></a></td>
+      <td rowspan='1' colspan='2'><i class="pubaward">*Equal Contributions</i></td>
+    </tr>
+    <tr>
+      <td rowspan='1'><iframe width="230" height="135" src="https://www.youtube.com/embed/AKYqNiCvGFM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+      <td rowspan='1' width='150'><a href="/download/ijrr19.pdf"><i class="fa fa-file-pdf-o"></i>&nbsp;PDF</a></td>
+      <!--old stuff video button similar to pdf button <a href="<iframe width="230" height="135" src="https://www.youtube.com/embed/AKYqNiCvGFM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>"><i class="fa fa-youtube-play" aria-hidden="true"></i>&nbsp;Video</a>
+    </tr>-->
+    <tr>
+      <!--<td><i class="pubaward">*Equal Contributions</i></td>-->
+      <td rowspan="1" width="200"><a href="/download/ijrr19.pdf"><img src="/assets/img/ijrr19_small.png" alt="ijrr19 publication teaser" /></a></td>
+      <td rowspan="1"><iframe width="230" height="135" src="https://www.youtube.com/embed/AKYqNiCvGFM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></td>
+      <td rowspan="1" width="150"><a href="/download/ijrr19.pdf"><i class="fa fa-file-pdf-o"></i>&nbsp;PDF</a></td>
+    </tr>
+    <tr>
+      <td rowspan="1" colspan="3"><br /><i class="pubaward">*Equal Contributions</i></td>
+    </tr>
+      <!--old stuff video button similar to pdf button <a href="<iframe width="230" height="135" src="https://www.youtube.com/embed/AKYqNiCvGFM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>"><i class="fa fa-youtube-play" aria-hidden="true"></i>&nbsp;Video</a>-->
+  </table>
+
 
 </div>
   <div class="pubtitle">
@@ -478,12 +633,33 @@
   <!-- <div class="pubaward">*Equal Contributions</div>-->
 <!--</div>-->
 </div>
+<p><br /><br /></p>
 
 <div class="pubitem">
 <div class="pubteaser">
-  <i class="pubaward"></i>
-  <a href="/download/icra17_2.pdf"> <!--<a href="/publications/icra17-2">-->
-    <img src="/assets/img/icra17_2_small.png" alt="icra17_2 publication teaser" />&nbsp; <i class="fa fa-file-pdf-o"></i> PDF &nbsp; </a> 
+  <table>
+    <!-- <tr>
+      <td><i class="pubaward"></i></td>
+      <td rowspan='2' width='150'><a href="/download/icra17_2.pdf"><img src="/assets/img/icra17_2_small.png" alt="icra17_2 publication teaser"/></a></td>
+      <td rowspan='1' colspan='2'><i class="pubaward"></i></td>
+    </tr>
+    <tr>
+      <td rowspan='1'><iframe width="230" height="135" src="https://www.youtube.com/embed/2AX-Cfl0Alk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+      <td rowspan='1' width='150'><a href="/download/icra17_2.pdf"><i class="fa fa-file-pdf-o"></i>&nbsp;PDF</a></td>
+      <!--old stuff video button similar to pdf button <a href="<iframe width="230" height="135" src="https://www.youtube.com/embed/2AX-Cfl0Alk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>"><i class="fa fa-youtube-play" aria-hidden="true"></i>&nbsp;Video</a>
+    </tr>-->
+    <tr>
+      <!--<td><i class="pubaward"></i></td>-->
+      <td rowspan="1" width="200"><a href="/download/icra17_2.pdf"><img src="/assets/img/icra17_2_small.png" alt="icra17_2 publication teaser" /></a></td>
+      <td rowspan="1"><iframe width="230" height="135" src="https://www.youtube.com/embed/2AX-Cfl0Alk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></td>
+      <td rowspan="1" width="150"><a href="/download/icra17_2.pdf"><i class="fa fa-file-pdf-o"></i>&nbsp;PDF</a></td>
+    </tr>
+    <tr>
+      <td rowspan="1" colspan="3"><br /><i class="pubaward"></i></td>
+    </tr>
+      <!--old stuff video button similar to pdf button <a href="<iframe width="230" height="135" src="https://www.youtube.com/embed/2AX-Cfl0Alk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>"><i class="fa fa-youtube-play" aria-hidden="true"></i>&nbsp;Video</a>-->
+  </table>
+
 
 </div>
   <div class="pubtitle">
@@ -501,12 +677,33 @@
   <!-- <div class="pubaward"></div>-->
 <!--</div>-->
 </div>
+<p><br /><br /></p>
 
 <div class="pubitem">
 <div class="pubteaser">
-  <i class="pubaward"></i>
-  <a href="/download/milmed17.pdf"> <!--<a href="/publications/milmed17">-->
-    <img src="/assets/img/milmed17_small.png" alt="milmed17 publication teaser" />&nbsp; <i class="fa fa-file-pdf-o"></i> PDF &nbsp; </a> 
+  <table>
+    <!-- <tr>
+      <td><i class="pubaward"></i></td>
+      <td rowspan='2' width='150'><a href="/download/milmed17.pdf"><img src="/assets/img/milmed17_small.png" alt="milmed17 publication teaser"/></a></td>
+      <td rowspan='1' colspan='2'><i class="pubaward"></i></td>
+    </tr>
+    <tr>
+      <td rowspan='1'></td>
+      <td rowspan='1' width='150'><a href="/download/milmed17.pdf"><i class="fa fa-file-pdf-o"></i>&nbsp;PDF</a></td>
+      <!--old stuff video button similar to pdf button <a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i>&nbsp;Video</a>
+    </tr>-->
+    <tr>
+      <!--<td><i class="pubaward"></i></td>-->
+      <td rowspan="1" width="200"><a href="/download/milmed17.pdf"><img src="/assets/img/milmed17_small.png" alt="milmed17 publication teaser" /></a></td>
+      <td rowspan="1"></td>
+      <td rowspan="1" width="150"><a href="/download/milmed17.pdf"><i class="fa fa-file-pdf-o"></i>&nbsp;PDF</a></td>
+    </tr>
+    <tr>
+      <td rowspan="1" colspan="3"><br /><i class="pubaward"></i></td>
+    </tr>
+      <!--old stuff video button similar to pdf button <a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i>&nbsp;Video</a>-->
+  </table>
+
 
 </div>
   <div class="pubtitle">
@@ -524,12 +721,33 @@
   <!-- <div class="pubaward"></div>-->
 <!--</div>-->
 </div>
+<p><br /><br /></p>
 
 <div class="pubitem">
 <div class="pubteaser">
-  <i class="pubaward">Best Paper in Manipulation Finalist</i>
-  <a href="/download/icra17_1.pdf"> <!--<a href="/publications/icra17-1">-->
-    <img src="/assets/img/icra17_1_small.png" alt="icra17_1 publication teaser" />&nbsp; <i class="fa fa-file-pdf-o"></i> PDF &nbsp; </a> 
+  <table>
+    <!-- <tr>
+      <td><i class="pubaward">Best Paper in Manipulation Finalist</i></td>
+      <td rowspan='2' width='150'><a href="/download/icra17_1.pdf"><img src="/assets/img/icra17_1_small.png" alt="icra17_1 publication teaser"/></a></td>
+      <td rowspan='1' colspan='2'><i class="pubaward">Best Paper in Manipulation Finalist</i></td>
+    </tr>
+    <tr>
+      <td rowspan='1'><iframe width="230" height="135" src="https://www.youtube.com/embed/7XF7tIYtjAg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+      <td rowspan='1' width='150'><a href="/download/icra17_1.pdf"><i class="fa fa-file-pdf-o"></i>&nbsp;PDF</a></td>
+      <!--old stuff video button similar to pdf button <a href="<iframe width="230" height="135" src="https://www.youtube.com/embed/7XF7tIYtjAg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>"><i class="fa fa-youtube-play" aria-hidden="true"></i>&nbsp;Video</a>
+    </tr>-->
+    <tr>
+      <!--<td><i class="pubaward">Best Paper in Manipulation Finalist</i></td>-->
+      <td rowspan="1" width="200"><a href="/download/icra17_1.pdf"><img src="/assets/img/icra17_1_small.png" alt="icra17_1 publication teaser" /></a></td>
+      <td rowspan="1"><iframe width="230" height="135" src="https://www.youtube.com/embed/7XF7tIYtjAg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></td>
+      <td rowspan="1" width="150"><a href="/download/icra17_1.pdf"><i class="fa fa-file-pdf-o"></i>&nbsp;PDF</a></td>
+    </tr>
+    <tr>
+      <td rowspan="1" colspan="3"><br /><i class="pubaward">Best Paper in Manipulation Finalist</i></td>
+    </tr>
+      <!--old stuff video button similar to pdf button <a href="<iframe width="230" height="135" src="https://www.youtube.com/embed/7XF7tIYtjAg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>"><i class="fa fa-youtube-play" aria-hidden="true"></i>&nbsp;Video</a>-->
+  </table>
+
 
 </div>
   <div class="pubtitle">
@@ -547,12 +765,33 @@
   <!-- <div class="pubaward">Best Paper in Manipulation Finalist</div>-->
 <!--</div>-->
 </div>
+<p><br /><br /></p>
 
 <div class="pubitem">
 <div class="pubteaser">
-  <i class="pubaward"></i>
-  <a href="/download/hrp15.pdf"> <!--<a href="/publications/hrp15">-->
-    <img src="/assets/img/hrp15_small.png" alt="hrp15 publication teaser" />&nbsp; <i class="fa fa-file-pdf-o"></i> PDF &nbsp; </a> 
+  <table>
+    <!-- <tr>
+      <td><i class="pubaward"></i></td>
+      <td rowspan='2' width='150'><a href="/download/hrp15.pdf"><img src="/assets/img/hrp15_small.png" alt="hrp15 publication teaser"/></a></td>
+      <td rowspan='1' colspan='2'><i class="pubaward"></i></td>
+    </tr>
+    <tr>
+      <td rowspan='1'></td>
+      <td rowspan='1' width='150'><a href="/download/hrp15.pdf"><i class="fa fa-file-pdf-o"></i>&nbsp;PDF</a></td>
+      <!--old stuff video button similar to pdf button <a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i>&nbsp;Video</a>
+    </tr>-->
+    <tr>
+      <!--<td><i class="pubaward"></i></td>-->
+      <td rowspan="1" width="200"><a href="/download/hrp15.pdf"><img src="/assets/img/hrp15_small.png" alt="hrp15 publication teaser" /></a></td>
+      <td rowspan="1"></td>
+      <td rowspan="1" width="150"><a href="/download/hrp15.pdf"><i class="fa fa-file-pdf-o"></i>&nbsp;PDF</a></td>
+    </tr>
+    <tr>
+      <td rowspan="1" colspan="3"><br /><i class="pubaward"></i></td>
+    </tr>
+      <!--old stuff video button similar to pdf button <a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i>&nbsp;Video</a>-->
+  </table>
+
 
 </div>
   <div class="pubtitle">
@@ -570,6 +809,7 @@
   <!-- <div class="pubaward"></div>-->
 <!--</div>-->
 </div>
+<p><br /><br /></p>
 
     </div>
 

@@ -39,6 +39,15 @@
       var id = 0;
       
       
+        var cats = ["Arduino","3D Printing"]
+        var projDiv = document.getElementById(++id);     
+        projDiv.style.display =
+          (selectedCategory == 'All' || cats.includes(selectedCategory)) 
+            ? 'block' 
+            : 'none';
+        projDiv.style.margin = "2em 0";
+        projDiv.style.lineHeight = "1em";         
+      
         var cats = ["Mechanical Design","CNC"]
         var projDiv = document.getElementById(++id);     
         projDiv.style.display =
@@ -436,6 +445,29 @@ Mentored
 
 <div class="projitem" id="1">
 <div class="projteaser">
+<!--  <a href="/download/sample-matic.pdf">--> <!--<a href="">-->
+    <img src="/assets/img/sample-matic_small.png" alt="sample-matic project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
+<!--  </a>-->
+</div>
+  <div class="projtitle">
+    Sample-Matic
+  </div>
+  <div class="projauthors">
+    WG Bircher, <a href="https://sjkimlab.github.io/members/">Ethan Muchnik</a>
+  </div>
+  <div class="projinfo">
+    An automatic 25 vial liquid sample collector for <a href="https://en.wikipedia.org/wiki/Beta-galactosidase#Applications">Miller</a> or <a href="https://en.wikipedia.org/wiki/Fluorescence_in_situ_hybridization">FISH assays</a>, built for a friend in the <a href="https://sjkimlab.github.io/">Kim Biophysics lab</a> at the <a href="https://illinois.edu">University of Illinois</a>, 2021
+  </div>
+  <!--
+ <div class="projlinks">
+  <a href="/download/sample-matic.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a>&nbsp;&nbsp;
+  <a href=""><i class="fa fa-link"></i> Project Page</a>
+   <div class="projaward"></div>
+</div>-->
+</div>
+
+<div class="projitem" id="2">
+<div class="projteaser">
 <!--  <a href="/download/enclosure.pdf">--> <!--<a href="">-->
     <img src="/assets/img/enclosure_small.png" alt="enclosure project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
 <!--  </a>-->
@@ -457,7 +489,7 @@ Mentored
 </div>-->
 </div>
 
-<div class="projitem" id="2">
+<div class="projitem" id="3">
 <div class="projteaser">
 <!--  <a href="/download/pico.pdf">--> <!--<a href="">-->
     <img src="/assets/img/pico_small.png" alt="pico project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
@@ -480,7 +512,7 @@ Mentored
 </div>-->
 </div>
 
-<div class="projitem" id="3">
+<div class="projitem" id="4">
 <div class="projteaser">
 <!--  <a href="/download/mars_finger.pdf">--> <!--<a href="">-->
     <img src="/assets/img/mars_finger_small.png" alt="mars_finger project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
@@ -503,7 +535,7 @@ Mentored
 </div>-->
 </div>
 
-<div class="projitem" id="4">
+<div class="projitem" id="5">
 <div class="projteaser">
 <!--  <a href="/download/worm.pdf">--> <!--<a href="">-->
     <img src="/assets/img/worm_small.png" alt="worm project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
@@ -526,7 +558,7 @@ Mentored
 </div>-->
 </div>
 
-<div class="projitem" id="5">
+<div class="projitem" id="6">
 <div class="projteaser">
 <!--  <a href="/download/mallet_tester.pdf">--> <!--<a href="">-->
     <img src="/assets/img/mallet_tester_small.png" alt="mallet_tester project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
@@ -549,7 +581,7 @@ Mentored
 </div>-->
 </div>
 
-<div class="projitem" id="6">
+<div class="projitem" id="7">
 <div class="projteaser">
 <!--  <a href="/download/axolotl.pdf">--> <!--<a href="">-->
     <img src="/assets/img/axolotl_small.png" alt="axolotl project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
@@ -572,7 +604,7 @@ Mentored
 </div>-->
 </div>
 
-<div class="projitem" id="7">
+<div class="projitem" id="8">
 <div class="projteaser">
 <!--  <a href="/download/variable_stiffness.pdf">--> <!--<a href="">-->
     <img src="/assets/img/variable_stiffness_small.png" alt="variable_stiffness project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
@@ -595,7 +627,7 @@ Mentored
 </div>-->
 </div>
 
-<div class="projitem" id="8">
+<div class="projitem" id="9">
 <div class="projteaser">
 <!--  <a href="/download/macaque_coasters.pdf">--> <!--<a href="">-->
     <img src="/assets/img/macaque_coasters_small.png" alt="macaque_coasters project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
@@ -618,7 +650,7 @@ Mentored
 </div>-->
 </div>
 
-<div class="projitem" id="9">
+<div class="projitem" id="10">
 <div class="projteaser">
 <!--  <a href="/download/3d_scanner.pdf">--> <!--<a href="">-->
     <img src="/assets/img/3d_scanner_small.png" alt="3d_scanner project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
@@ -641,7 +673,7 @@ Mentored
 </div>-->
 </div>
 
-<div class="projitem" id="10">
+<div class="projitem" id="11">
 <div class="projteaser">
 <!--  <a href="/download/suction_irrigation.pdf">--> <!--<a href="">-->
     <img src="/assets/img/suction_irrigation_small.png" alt="suction_irrigation project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
@@ -664,7 +696,7 @@ Mentored
 </div>-->
 </div>
 
-<div class="projitem" id="11">
+<div class="projitem" id="12">
 <div class="projteaser">
 <!--  <a href="/download/potbot.pdf">--> <!--<a href="">-->
     <img src="/assets/img/potbot_small.png" alt="potbot project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
@@ -687,7 +719,7 @@ Mentored
 </div>-->
 </div>
 
-<div class="projitem" id="12">
+<div class="projitem" id="13">
 <div class="projteaser">
 <!--  <a href="/download/caulk_nozzle.pdf">--> <!--<a href="">-->
     <img src="/assets/img/caulk_nozzle_small.png" alt="caulk_nozzle project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
@@ -710,7 +742,7 @@ Mentored
 </div>-->
 </div>
 
-<div class="projitem" id="13">
+<div class="projitem" id="14">
 <div class="projteaser">
 <!--  <a href="/download/tooltip.pdf">--> <!--<a href="">-->
     <img src="/assets/img/tooltip_small.png" alt="tooltip project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
@@ -733,7 +765,7 @@ Mentored
 </div>-->
 </div>
 
-<div class="projitem" id="14">
+<div class="projitem" id="15">
 <div class="projteaser">
 <!--  <a href="/download/surrogate_polaris.pdf">--> <!--<a href="">-->
     <img src="/assets/img/surrogate_polaris_small.png" alt="surrogate_polaris project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
@@ -756,7 +788,7 @@ Mentored
 </div>-->
 </div>
 
-<div class="projitem" id="15">
+<div class="projitem" id="16">
 <div class="projteaser">
 <!--  <a href="/download/track_sensor.pdf">--> <!--<a href="">-->
     <img src="/assets/img/track_sensor_small.png" alt="track_sensor project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
@@ -779,7 +811,7 @@ Mentored
 </div>-->
 </div>
 
-<div class="projitem" id="16">
+<div class="projitem" id="17">
 <div class="projteaser">
 <!--  <a href="/download/brace.pdf">--> <!--<a href="">-->
     <img src="/assets/img/brace_small.png" alt="brace project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
@@ -802,7 +834,7 @@ Mentored
 </div>-->
 </div>
 
-<div class="projitem" id="17">
+<div class="projitem" id="18">
 <div class="projteaser">
 <!--  <a href="/download/haptics.pdf">--> <!--<a href="">-->
     <img src="/assets/img/haptics_small.png" alt="haptics project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
@@ -825,7 +857,7 @@ Mentored
 </div>-->
 </div>
 
-<div class="projitem" id="18">
+<div class="projitem" id="19">
 <div class="projteaser">
 <!--  <a href="/download/grip.pdf">--> <!--<a href="">-->
     <img src="/assets/img/grip_small.png" alt="grip project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
@@ -848,7 +880,7 @@ Mentored
 </div>-->
 </div>
 
-<div class="projitem" id="19">
+<div class="projitem" id="20">
 <div class="projteaser">
 <!--  <a href="/download/watches.pdf">--> <!--<a href="">-->
     <img src="/assets/img/watches_small.png" alt="watches project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
@@ -871,7 +903,7 @@ Mentored
 </div>-->
 </div>
 
-<div class="projitem" id="20">
+<div class="projitem" id="21">
 <div class="projteaser">
 <!--  <a href="/download/guitar.pdf">--> <!--<a href="">-->
     <img src="/assets/img/guitar_small.png" alt="guitar project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />
@@ -894,7 +926,7 @@ Mentored
 </div>-->
 </div>
 
-<div class="projitem" id="21">
+<div class="projitem" id="22">
 <div class="projteaser">
 <!--  <a href="/download/robot.pdf">--> <!--<a href="">-->
     <img src="/assets/img/robot_small.png" alt="robot project teaser" style="float: left; margin-right: 2em; margin-bottom: 0.25em;" />

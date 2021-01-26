@@ -179,16 +179,46 @@ hr {
   font-weight: bold;
   font-size: 100%;
 
-  white-space: nowrap;
-  float: right;
-  display:inline-block;
+  /*white-space: nowrap;*/
+
+  /*display:inline-block;*/
 }
 
 .pubteaser {
   clear: both;
   min-height: 140px;
-  font-size: 75%;
+  font-size: 85%;
+  vertical-align: bottom;
 }
+
+.pubteaser table, tr, td {
+  padding: 0px;
+  border: 0px solid black;
+  vertical-align: bottom;
+}
+
+.pubteaser td {
+  padding: 0px;
+  border: 0px solid black;
+  vertical-align: bottom;
+  /*text-align: right;*/
+}
+
+/*
+.pubteaser li {
+  float: left;
+}
+
+.pubteaser li a {
+  bottom:0;
+  left:0;
+  position: relative;
+  margin-right: 2em;  
+  float:left;
+  vertical-align: bottom;
+  display: block;
+}
+*/
 
 .pubteaser a {
   bottom:0;
@@ -196,11 +226,13 @@ hr {
   position: relative;
   margin-right: 2em;  
   float:left;
+  vertical-align: bottom;
+  display: block;
 }
 
 .pubteaser img {
-  width: 120px;
-  vertical-align: bottom;
+  width: 150px;
+  vertical-align: center;
   /*border: 1px solid black;*/
 }
 
@@ -544,7 +576,7 @@ table {
 }
 
 table, th, td {
-  border: 1px solid black;
+  border: 0px solid black;
 }
 
 th, td {

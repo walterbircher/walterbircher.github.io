@@ -39,6 +39,15 @@
       var id = 0;
       
       
+        var cats = ["Arduino","3D Printing"]
+        var projDiv = document.getElementById(++id);     
+        projDiv.style.display =
+          (selectedCategory == 'All' || cats.includes(selectedCategory)) 
+            ? 'block' 
+            : 'none';
+        projDiv.style.margin = "2em 0";
+        projDiv.style.lineHeight = "1em";         
+      
         var cats = ["Mechanical Design","CNC"]
         var projDiv = document.getElementById(++id);     
         projDiv.style.display =
