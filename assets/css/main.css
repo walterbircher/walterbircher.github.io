@@ -198,10 +198,11 @@ hr {
 }
 
 .pubteaser td {
-  padding: 0px;
+  padding: 10px 10px 10px 0px;
   border: 0px solid black;
   vertical-align: bottom;
-  /*text-align: right;*/
+  text-align: left;
+  width: 33%;
 }
 
 /*
@@ -220,6 +221,7 @@ hr {
 }
 */
 
+/*
 .pubteaser a {
   bottom:0;
   left:0;
@@ -229,6 +231,7 @@ hr {
   vertical-align: bottom;
   display: block;
 }
+*/
 
 .pubteaser img {
   width: 150px;
