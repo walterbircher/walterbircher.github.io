@@ -162,7 +162,7 @@ hr {
 }
 
 .pubtitle {
-  margin-bottom: .5em;
+  margin: .5em 0em .5em 0em;
   line-height: 1.2em;
   font-weight: bold;
   font-size: 85%;
@@ -198,7 +198,7 @@ hr {
 }
 
 .pubteaser td {
-  padding: 10px 10px 10px 0px;
+  padding: 10px 10px 10px 10px;
   border: 0px solid black;
   vertical-align: bottom;
   text-align: left;
@@ -236,6 +236,7 @@ hr {
 .pubteaser img {
   width: 150px;
   vertical-align: center;
+  margin-right: 0.5em;
   /*border: 1px solid black;*/
 }
 

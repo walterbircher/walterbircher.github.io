@@ -5,6 +5,6 @@ authors: WG Bircher, AM Dollar, N Rojas
 publication: IEEE International Conference on Robotics and Automation (ICRA)
 year: 2017
 award: Best Paper in Manipulation Finalist
-video: <iframe width="100%" src="https://www.youtube.com/embed/7XF7tIYtjAg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+video: https://www.youtube.com/embed/7XF7tIYtjAg
 doi: http://dx.doi.org/XX.XXX/
 ---
