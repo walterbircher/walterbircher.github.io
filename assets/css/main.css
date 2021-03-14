@@ -253,6 +253,13 @@ hr {
   Project
 */
 
+.filter_wrapper{
+  border:1px solid #dddddd;
+  border-radius:8px;
+  padding:0px;
+  margin:0px;
+}
+
 .filters {
     margin:0px;
     padding:5px;
@@ -297,15 +304,20 @@ hr {
 
 .projtitle {
   margin-bottom: .5em;
+  margin-left: 150px;  
   line-height: 1.2em;
   font-weight: bold;
   font-size: 85%;
   text-align: left;
+  width: auto;  
 }
 
 .projauthors, .projinfo {
   font-size: 75%;
   margin-bottom: .75em;
+  margin-left: 150px;
+  display: block;
+  width: auto;
 }
 
 .projaward {
@@ -326,6 +338,9 @@ hr {
 
 .projteaser img {
   width: 120px;
+  display: block;
+  margin-bottom: 0.25em;
+  float: left;
   /*border: 1px solid black;*/
 }
 
