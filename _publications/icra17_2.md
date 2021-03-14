@@ -5,6 +5,6 @@ authors: RR Ma, WG Bircher, AM Dollar
 publication: IEEE International Conference on Robotics and Automation (ICRA)
 year: 2017
 award: 
-video: https://www.youtube.com/embed/2AX-Cfl0Alk
+video: https://www.youtube.com/watch?v=2AX-Cfl0Alk
 doi: http://dx.doi.org/XX.XXX/
 ---

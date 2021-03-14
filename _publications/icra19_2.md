@@ -5,6 +5,6 @@ authors: AS Morgan, WG Bircher, B Calli, AM Dollar
 publication: IEEE International Conference on Robotics and Automation (ICRA)
 year: 2019
 award:
-video: https://www.youtube.com/embed/0I0xdyOZrWg
+video: https://www.youtube.com/watch?v=0I0xdyOZrWg
 doi: http://dx.doi.org/XX.XXX/
 ---

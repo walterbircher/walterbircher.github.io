@@ -5,6 +5,6 @@ authors: AS Morgan, K Hang, WG Bircher, et. al.
 publication: IEEE Robotics and Automation Letters (RAL)
 year: 2019
 award:
-video: https://www.youtube.com/embed/7K3qU2MLoP8
+video: https://www.youtube.com/watch?v=7K3qU2MLoP8
 doi: http://dx.doi.org/XX.XXX/
 ---
