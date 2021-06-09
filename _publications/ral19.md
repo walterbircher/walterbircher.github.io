@@ -6,5 +6,5 @@ publication: IEEE Robotics and Automation Letters (RAL)
 year: 2019
 award:
 video: https://www.youtube.com/watch?v=7K3qU2MLoP8
-doi: http://dx.doi.org/XX.XXX/
+alt_link:
 ---

@@ -6,5 +6,5 @@ publication: IEEE International Conference on Intelligent Robots and Systems (IR
 year: 2019
 award:
 video: https://www.youtube.com/watch?v=jtInvaa07yU
-doi: http://dx.doi.org/XX.XXX/
+alt_link:
 ---

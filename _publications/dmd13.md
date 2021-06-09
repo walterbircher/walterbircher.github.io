@@ -6,5 +6,5 @@ publication: Journal of Medical Devices
 year: 2013
 award:
 video: 
-doi: http://dx.doi.org/XX.XXX/
+alt_link:
 ---

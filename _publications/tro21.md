@@ -6,5 +6,5 @@ publication: Transactions on Robotics (TRO)
 year: 2021
 award:
 video: https://www.youtube.com/watch?v=gvxeSACr9Rw&ab
-doi: http://dx.doi.org/XX.XXX/
+alt_link:
 ---

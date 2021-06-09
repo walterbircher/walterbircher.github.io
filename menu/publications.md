@@ -10,7 +10,11 @@ Peer-reviewed conference and journal papers
 {% for pub in publications %}
 <div class="pubitem">
 <div class="pubteaser">
-  <a href="/download/{{ pub.slug}}.pdf">
+  {% if pub.alt_link == ""  or pub.alt_link == nil or pub.alt_link == blank %}
+    <a href="/download/{{ pub.slug}}.pdf">
+  {% else %}
+    <a href="{{ pub.alt_link }}">
+  {% endif %}
     <img src="/assets/img/{{ pub.slug }}_small.png" alt="{{pub.slug}} publication teaser"/>&nbsp; <i class="fa fa-file-pdf-o"></i> PDF &nbsp;</a>
   {% if pub.video == "" or pub.video == nil or pub.video == blank %}
   {% else %}
@@ -32,3 +36,4 @@ Peer-reviewed conference and journal papers
 
 </div>
 {% endfor %}
+
