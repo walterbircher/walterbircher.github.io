@@ -6,7 +6,7 @@ title: Publications
 Peer-reviewed conference and journal papers
 
 <h1 class="mt-4">Publications</h1>
-{% assign publications = site.publications | sort: "year" | reverse %}
+{% assign publications = site.publications | sort: "date" | reverse %}
 {% for pub in publications %}
 <div class="pubitem">
 <div class="pubteaser">
@@ -31,7 +31,7 @@ Peer-reviewed conference and journal papers
     {{ pub.authors }}
   </div>
   <div class="pubinfo">
-    {{ pub.publication }}, {{ pub.year}}
+    {{ pub.publication }}, {{ pub.date | date: "%Y"}}
   </div>
 
 </div>

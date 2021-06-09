@@ -6,8 +6,8 @@ title: News
 <h1 class="mt-4">News</h1>
 
 **2021**
+- *May 19* - [Hang](https://hangkaiyu.github.io/), [Andy](https://asmorgan24.github.io/) and I published a new [paper](https://robotics.sciencemag.org/content/6/54/eabe1321) on self identification of intrinsic motion models in Science Robotics!
 - *May 12* - My [paper](https://robotics.sciencemag.org/content/6/54/eabd2666) was published on the cover of the May 2021 Grasping and Manipulation [Special Issue](https://robotics.sciencemag.org/content/6/54) of Science Robotics! 
-- *May 12* - [Hang](https://hangkaiyu.github.io/), [Andy](https://asmorgan24.github.io/) and I published a new [paper](https://robotics.sciencemag.org/content/6/54/eabe1321) on self identification of intrinsic motion models in Science Robotics!
 - *May 1* - [ReCore](https://recoremedical.com/) won the [Rothberg Catalyzer Prize](https://city.yale.edu/rothberg-catalyzer-prize-yale) for $15,000 at Startup Yale!
 - *January 21* - [ReCore](https://recoremedical.com/) won the [CT Innovations BioPipeline](http://biopipelinect.org/) grant for $30,000!
 
