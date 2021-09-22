@@ -21,6 +21,7 @@ title: News
 - *December 18* - I became a cyborg with my newly minted [Medtronic](https://www.medtronic.com/us-en/index.html) ICD! [Medtronic](https://www.medtronic.com/us-en/index.html), if you're reading this, please sponsor me with free upgrades for life!!
 
 <h1 class="mt-4">Press</h1>
+- [Yale University's ultra-flexible manipulator imitates the mechanism of human "palm and fingers", everything can be grasped and can "plate walnuts"](https://36kr.com/p/1260794313179777) <br>*Published by RoboSpeak at 36kr, 6/10/21*
 - [Startup Stories: ReCore Medical Creates a Cheaper Biopsy](https://som.yale.edu/blog/startup-stories-recore-medical-creates-cheaper-biopsy) <br>*Published by Yale School of Management, 6/8/21*
 - [A highly dexterous robot hand with a caging mechanism](https://techxplore.com/news/2021-05-highly-dexterous-robot-caging-mechanism.html) <br>*Published by Tech Xplore, 5/13/21*
 - [A Simpler, but Dexterous Robot Hand](https://seas.yale.edu/news-events/news/simpler-dexterous-robot-hand) <br>*Published by Yale School of Engineering and Applied Science, 5/12/21*
