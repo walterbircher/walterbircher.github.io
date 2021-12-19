@@ -6,6 +6,10 @@ title: News
 <h1 class="mt-4">News</h1>
 
 **2021**
+
+
+- *December 17* - I successfully defended my Ph.D. thesis titled "Whole-Hand Robotic Manipulation with Rolling, Sliding, and Caging" to my committee of [Aaron Dollar](https://scholar.google.com/citations?user=jFekO3IAAAAJ&hl=en&oi=ao), [Rebecca Kramer-Bottiglio](https://scholar.google.com/citations?hl=en&user=2ARbFNoAAAAJ), and [Madhu Venkadesan](https://scholar.google.com/citations?hl=en&user=lWAPsxMAAAAJ)!
+- *December 17* - Our [paper](https://robotics.sciencemag.org/content/6/54/eabe1321) on self identification was selected as one of five 2021 Editors' Top Picks from Science Robotics!
 - *May 19* - [Hang](https://hangkaiyu.github.io/), [Andy](https://asmorgan24.github.io/) and I published a new [paper](https://robotics.sciencemag.org/content/6/54/eabe1321) on self identification of intrinsic motion models in Science Robotics!
 - *May 12* - My [paper](https://robotics.sciencemag.org/content/6/54/eabd2666) was published on the cover of the May 2021 Grasping and Manipulation [Special Issue](https://robotics.sciencemag.org/content/6/54) of Science Robotics! 
 - *May 1* - [ReCore](https://recoremedical.com/) won the [Rothberg Catalyzer Prize](https://city.yale.edu/rothberg-catalyzer-prize-yale) for $15,000 at Startup Yale!
@@ -18,7 +22,7 @@ title: News
 - *May 4* - [ReCore](https://recoremedical.com/) is officially founded by me, [Marley Windham-Herman](https://www.linkedin.com/in/marley-windham-herman/), and [David Dupee](https://www.linkedin.com/in/david-dupee/)!
 
 **2018**
-- *December 18* - I became a cyborg with my newly minted [Medtronic](https://www.medtronic.com/us-en/index.html) ICD! [Medtronic](https://www.medtronic.com/us-en/index.html), if you're reading this, please sponsor me with free upgrades for life!!
+- *December 17* - I became a cyborg with my newly minted [Medtronic](https://www.medtronic.com/us-en/index.html) ICD! [Medtronic](https://www.medtronic.com/us-en/index.html), if you're reading this, please sponsor me with free upgrades for life!!
 
 <h1 class="mt-4">Press</h1>
 - [Yale University's ultra-flexible manipulator imitates the mechanism of human "palm and fingers", everything can be grasped and can "plate walnuts"](https://36kr.com/p/1260794313179777) <br>*Published by RoboSpeak at 36kr, 6/10/21*
