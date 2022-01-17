@@ -5,8 +5,11 @@ title: News
 
 <h1 class="mt-4">News</h1>
 
-**2021**
+**2022**
 
+- *January 14* - I accepted a new job as a Hardware Dev Engineer at [Amazon Robotics AI](https://www.amazon.jobs/en/teams/rai) in Seattle! Stoked for the seafood, the scenery, the cherries, and the good friends.
+
+**2021**
 
 - *December 17* - I successfully defended my Ph.D. thesis titled "Whole-Hand Robotic Manipulation with Rolling, Sliding, and Caging" to my committee of [Aaron Dollar](https://scholar.google.com/citations?user=jFekO3IAAAAJ&hl=en&oi=ao), [Rebecca Kramer-Bottiglio](https://scholar.google.com/citations?hl=en&user=2ARbFNoAAAAJ), and [Madhu Venkadesan](https://scholar.google.com/citations?hl=en&user=lWAPsxMAAAAJ)!
 - *December 17* - Our [paper](https://robotics.sciencemag.org/content/6/54/eabe1321) on self identification was selected as one of five 2021 Editors' Top Picks from Science Robotics!
@@ -22,7 +25,7 @@ title: News
 - *May 4* - [ReCore](https://recoremedical.com/) is officially founded by me, [Marley Windham-Herman](https://www.linkedin.com/in/marley-windham-herman/), and [David Dupee](https://www.linkedin.com/in/david-dupee/)!
 
 **2018**
-- *December 17* - I became a cyborg with my newly minted [Medtronic](https://www.medtronic.com/us-en/index.html) ICD! [Medtronic](https://www.medtronic.com/us-en/index.html), if you're reading this, please sponsor me with free upgrades for life!!
+- *December 17* - I became a cyborg with my newly minted [Medtronic](https://www.medtronic.com/us-en/index.html) ICD! ([Medtronic](https://www.medtronic.com/us-en/index.html), if you're reading this, please sponsor me with free upgrades for life)
 
 <h1 class="mt-4">Press</h1>
 - [Yale University's ultra-flexible manipulator imitates the mechanism of human "palm and fingers", everything can be grasped and can "plate walnuts"](https://36kr.com/p/1260794313179777) <br>*Published by RoboSpeak at 36kr, 6/10/21*
@@ -43,3 +46,9 @@ title: News
 - [UNL student track-spike invention leads to potential business](https://newsroom.unl.edu/announce/todayatunl/1597/8952) <br>*Published in UNL Announce, 9/14/12*
 - [UNL loses hub for late-night grub](https://journalstar.com/news/local/education/unl-loses-hub-for-late-night-grub/article_01c9fa78-2b26-5c6d-9827-e43365322a2b.html) <br>*Published in the Journal Star, 12/14/11*
 - [Engineering student to study in Turkey on Critical Language Scholarship](https://engineering.unl.edu/engineering-student-study-turkey-critical-language-scholarship/) <br>*Published by the UNL School of Engineering, 4/13/11*
+
+<center>
+<p class="modtext">
+Last modified on January 17th, 2022
+</p>
+</center>

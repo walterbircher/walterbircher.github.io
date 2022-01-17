@@ -3,13 +3,15 @@
 
 {% include head.html %}
 
-<body>
+<body onload="setModifiedDate();">
 
   <div class="container">
     {% include header.html %}
 
     <div class="post-container">
+      
       {{ content }}
+		
     </div>
 
     {% include footer.html %}

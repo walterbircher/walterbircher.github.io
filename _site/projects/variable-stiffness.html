@@ -35,9 +35,19 @@
   </script>
 
   <script type="text/javascript">
+
     function filterUsingCategory(selectedCategory) {
       var id = 0;
       
+      
+        var cats = ["Digital Art","Food"]
+        var projDiv = document.getElementById(++id);     
+        projDiv.style.display =
+          (selectedCategory == 'All' || cats.includes(selectedCategory)) 
+            ? 'block' 
+            : 'none';
+        projDiv.style.margin = "2em 0";
+        projDiv.style.lineHeight = "1em";         
       
         var cats = ["Arduino","3D Printing"]
         var projDiv = document.getElementById(++id);     
@@ -102,15 +112,6 @@
         projDiv.style.margin = "2em 0";
         projDiv.style.lineHeight = "1em";         
       
-        var cats = ["Mechanical Design","3D Printing"]
-        var projDiv = document.getElementById(++id);     
-        projDiv.style.display =
-          (selectedCategory == 'All' || cats.includes(selectedCategory)) 
-            ? 'block' 
-            : 'none';
-        projDiv.style.margin = "2em 0";
-        projDiv.style.lineHeight = "1em";         
-      
         var cats = ["Mechanical Design","Mentored"]
         var projDiv = document.getElementById(++id);     
         projDiv.style.display =
@@ -120,7 +121,7 @@
         projDiv.style.margin = "2em 0";
         projDiv.style.lineHeight = "1em";         
       
-        var cats = ["Mechanical Design","Coursework","3D Printing"]
+        var cats = ["Mechanical Design","3D Printing"]
         var projDiv = document.getElementById(++id);     
         projDiv.style.display =
           (selectedCategory == 'All' || cats.includes(selectedCategory)) 
@@ -129,7 +130,7 @@
         projDiv.style.margin = "2em 0";
         projDiv.style.lineHeight = "1em";         
       
-        var cats = ["Mechanical Design","Arduino"]
+        var cats = ["Mechanical Design","Coursework","3D Printing"]
         var projDiv = document.getElementById(++id);     
         projDiv.style.display =
           (selectedCategory == 'All' || cats.includes(selectedCategory)) 
@@ -156,15 +157,6 @@
         projDiv.style.margin = "2em 0";
         projDiv.style.lineHeight = "1em";         
       
-        var cats = ["Casting","Digital Art","Metal"]
-        var projDiv = document.getElementById(++id);     
-        projDiv.style.display =
-          (selectedCategory == 'All' || cats.includes(selectedCategory)) 
-            ? 'block' 
-            : 'none';
-        projDiv.style.margin = "2em 0";
-        projDiv.style.lineHeight = "1em";         
-      
         var cats = ["Digital Art"]
         var projDiv = document.getElementById(++id);     
         projDiv.style.display =
@@ -174,7 +166,16 @@
         projDiv.style.margin = "2em 0";
         projDiv.style.lineHeight = "1em";         
       
-        var cats = ["Mechanical Design","Arduino","Coursework","3D Printing"]
+        var cats = ["Mechanical Design","Arduino"]
+        var projDiv = document.getElementById(++id);     
+        projDiv.style.display =
+          (selectedCategory == 'All' || cats.includes(selectedCategory)) 
+            ? 'block' 
+            : 'none';
+        projDiv.style.margin = "2em 0";
+        projDiv.style.lineHeight = "1em";         
+      
+        var cats = ["Casting","Digital Art","Metal"]
         var projDiv = document.getElementById(++id);     
         projDiv.style.display =
           (selectedCategory == 'All' || cats.includes(selectedCategory)) 
@@ -192,16 +193,7 @@
         projDiv.style.margin = "2em 0";
         projDiv.style.lineHeight = "1em";         
       
-        var cats = ["Mechanical Design","Unpublished Research","Metal"]
-        var projDiv = document.getElementById(++id);     
-        projDiv.style.display =
-          (selectedCategory == 'All' || cats.includes(selectedCategory)) 
-            ? 'block' 
-            : 'none';
-        projDiv.style.margin = "2em 0";
-        projDiv.style.lineHeight = "1em";         
-      
-        var cats = ["Mechanical Design","3D Printing","Industry"]
+        var cats = ["Mechanical Design","Arduino","Coursework","3D Printing"]
         var projDiv = document.getElementById(++id);     
         projDiv.style.display =
           (selectedCategory == 'All' || cats.includes(selectedCategory)) 
@@ -228,6 +220,15 @@
         projDiv.style.margin = "2em 0";
         projDiv.style.lineHeight = "1em";         
       
+        var cats = ["Mechanical Design","3D Printing","Industry"]
+        var projDiv = document.getElementById(++id);     
+        projDiv.style.display =
+          (selectedCategory == 'All' || cats.includes(selectedCategory)) 
+            ? 'block' 
+            : 'none';
+        projDiv.style.margin = "2em 0";
+        projDiv.style.lineHeight = "1em";         
+      
         var cats = ["Mechanical Design","PCB Design","Coursework"]
         var projDiv = document.getElementById(++id);     
         projDiv.style.display =
@@ -237,7 +238,7 @@
         projDiv.style.margin = "2em 0";
         projDiv.style.lineHeight = "1em";         
       
-        var cats = ["Mechanical Design","Industry","Metal"]
+        var cats = ["Mechanical Design","Unpublished Research","Metal"]
         var projDiv = document.getElementById(++id);     
         projDiv.style.display =
           (selectedCategory == 'All' || cats.includes(selectedCategory)) 
@@ -247,6 +248,15 @@
         projDiv.style.lineHeight = "1em";         
       
         var cats = ["Industry"]
+        var projDiv = document.getElementById(++id);     
+        projDiv.style.display =
+          (selectedCategory == 'All' || cats.includes(selectedCategory)) 
+            ? 'block' 
+            : 'none';
+        projDiv.style.margin = "2em 0";
+        projDiv.style.lineHeight = "1em";         
+      
+        var cats = ["Mechanical Design","Industry","Metal"]
         var projDiv = document.getElementById(++id);     
         projDiv.style.display =
           (selectedCategory == 'All' || cats.includes(selectedCategory)) 
@@ -282,6 +292,15 @@
         projDiv.style.margin = "2em 0";
         projDiv.style.lineHeight = "1em";         
       
+        var cats = ["Mechanical Design","Unpublished Research","Metal"]
+        var projDiv = document.getElementById(++id);     
+        projDiv.style.display =
+          (selectedCategory == 'All' || cats.includes(selectedCategory)) 
+            ? 'block' 
+            : 'none';
+        projDiv.style.margin = "2em 0";
+        projDiv.style.lineHeight = "1em";         
+      
         var cats = ["Mechanical Design","Arduino","Coursework"]
         var projDiv = document.getElementById(++id);     
         projDiv.style.display =
@@ -300,15 +319,6 @@
         projDiv.style.margin = "2em 0";
         projDiv.style.lineHeight = "1em";         
       
-        var cats = ["Mechanical Design","Unpublished Research","Metal"]
-        var projDiv = document.getElementById(++id);     
-        projDiv.style.display =
-          (selectedCategory == 'All' || cats.includes(selectedCategory)) 
-            ? 'block' 
-            : 'none';
-        projDiv.style.margin = "2em 0";
-        projDiv.style.lineHeight = "1em";         
-      
         var cats = ["Mechanical Design","3D Printing","Industry"]
         var projDiv = document.getElementById(++id);     
         projDiv.style.display =
@@ -318,7 +328,7 @@
         projDiv.style.margin = "2em 0";
         projDiv.style.lineHeight = "1em";         
       
-        var cats = ["Mechanical Design","Digital Art"]
+        var cats = ["Mechanical Design","Metal","Hand Machined","Unpublished Research"]
         var projDiv = document.getElementById(++id);     
         projDiv.style.display =
           (selectedCategory == 'All' || cats.includes(selectedCategory)) 
@@ -327,7 +337,7 @@
         projDiv.style.margin = "2em 0";
         projDiv.style.lineHeight = "1em";         
       
-        var cats = ["Mechanical Design","Metal","Hand Machined","Unpublished Research"]
+        var cats = ["Mechanical Design","Digital Art"]
         var projDiv = document.getElementById(++id);     
         projDiv.style.display =
           (selectedCategory == 'All' || cats.includes(selectedCategory)) 
@@ -398,7 +408,7 @@
 <meta property="og:url" content="http://localhost:4000/projects/variable-stiffness" />
 <meta property="og:site_name" content="Walter Bircher" />
 <script type="application/ld+json">
-{"headline":"Variable Stiffness Revolute Joint","author":{"@type":"Person","name":"Walter Bircher"},"url":"http://localhost:4000/projects/variable-stiffness","@type":"WebPage","@context":"https://schema.org"}</script>
+{"dateModified":"2020-08-07T13:24:58-04:00","headline":"Variable Stiffness Revolute Joint","author":{"@type":"Person","name":"Walter Bircher"},"url":"http://localhost:4000/projects/variable-stiffness","@type":"WebPage","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -407,7 +417,7 @@
 </head>
 
 
-<body>
+<body onload="setModifiedDate();">
 
   <div class="container">
     <header class="masthead">
@@ -459,7 +469,9 @@
 
     <div class="post-container">
       
+      
 
+		
     </div>
 
     <footer class="footer">

@@ -9,9 +9,6 @@ Just for fun, industry work, and unpublished research projects
 <div class="filter_wrapper">
   <center>
 <ul class="filters">
-  <li>
-    <i style="font-size:16px;">filters</i>
-  </li>
 <li>
 <button class="button" id="All" onclick="filterUsingCategory('All')">
   Show All Posts
@@ -53,3 +50,9 @@ Just for fun, industry work, and unpublished research projects
 
 </div>
 {% endfor %}
+
+<center>
+<p class="modtext">
+Last modified on January 17th, 2022
+</p>
+</center>
