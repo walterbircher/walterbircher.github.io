@@ -1,9 +1,10 @@
-to update:
+--- update production ---
 
 git add .github/workflows/pages.yml .gitignore
 git commit -m "Deploy site via GitHub Actions to Pages"
 git push
 
+--- run it locally ---
 
 sudo bundle exec jekyll serve
 

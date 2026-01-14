@@ -7,18 +7,17 @@ disqus:
 google-ID: 'G-J6VSV8XZF4'
 
 menu:
-- {name: 'About', path: '.', url: 'index.html'}
+#- {name: 'About', path: '.', url: 'index.html'}
 - {name: 'Publications', path: 'menu', url: 'publications.html'}
 - {name: 'Projects', path: 'menu', url: 'projects.html'}
 - {name: 'Press', path: 'menu', url: 'press.html'}
-- {name: 'Links', path: 'menu', url: 'links.html'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
 - {icon: 'github', link: 'https://www.github.com/walterbircher'}
 - {icon: 'graduation-cap', link: 'https://scholar.google.com/citations?user=dzRmhtAAAAAJ&hl=en&oi=ao'}
 - {icon: 'linkedin', link: 'https://www.linkedin.com/in/walter-bircher-17645042/'}
-- {icon: 'envelope', link: 'mailto: walter.bircher@yale.edu'}
+# - {icon: 'envelope', link: 'mailto: walter.bircher@yale.edu'}
 #- {icon: 'rss-square', link: '/feed.xml'}
 
 # - {icon: 'rss-square', link: '/rss-feed.xml'}

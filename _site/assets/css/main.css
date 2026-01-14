@@ -17,42 +17,49 @@
   Base
 */
 
-@import url("../../fonts/Serif/cmun-serif.css");
+/* @import url("../../fonts/Serif/cmun-serif.css"); */
 
 html {
   overflow-y: scroll;
+  text-rendering: optimizeLegibility;
 }
 
 body {
-  font-family: "CMS", "PT Serif", Georgia, "Times New Roman", serif;
-  font-size: 18px;
-  color: #515151;
-  line-height: 1.75rem;
+  font-family: "Latin Modern Roman";
+  font-size: 17px;                 /* arXiv-ish readability on web */
+  line-height: 1.62;               /* closer to LaTeX feel than 1.75rem */
+  color: #2f2f2f;
   text-align: justify;
+
+  /* subtle “PDF-like” tightening */
+  letter-spacing: -0.003em;
+  font-kerning: normal;
+  font-feature-settings: "kern" 1, "liga" 1;
 }
 
 @media (max-width: 30em) {
   body {
-    font-size: 14px;
-    line-height: 1.5rem;
+    font-size: 15px;
+    line-height: 1.58;
   }
   body h1 {
-    font-size: 1.5rem;    
+    font-size: 1.5rem;
   }
 }
 
-h1{
-  font-size: 2rem;
-}
+h1 { font-size: 2rem; }
 
-h1 a {
-  text-decoration: none;
-}
+h1 a { text-decoration: none; }
 
+/* Headings: LaTeX vibe but web-readable */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "CMS", "Quattrocento Sans", sans-serif;
-  color: #333;
-  text-align: left;  
+  font-family: "Latin Modern Mono";
+  color: #222;
+  text-align: left;
+  line-height: 1.18;
+  letter-spacing: -0.01em;
+  margin-top: 1.2em;
+  margin-bottom: 0.5em;
 }
 
 a {
@@ -75,7 +82,7 @@ blockquote {
   margin: 10px 20px 10px;
   padding: 0px 15px;
   border-left: 0.25em solid #ccc;
-  color: #999;
+  color: #777;
   line-height: 1.5;
 }
 
@@ -90,35 +97,34 @@ hr {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 615px;
+
+  /* arXiv-ish measure: ~70–80 chars */
+  max-width: 740px;
+  width: calc(100% - 32px);
 }
 
-/*48em*/
-
+/* keep your existing mobile behavior */
 @media (max-width: 768px) {
   .container {
     width: 90vw;
+    max-width: 740px;
   }
 }
 
-.modtext{
-font-size:75%;
-}
+/* .modtext { font-size: 75%; } */
 
-/*
-  Masthead
-*/
+/* =========================
+   Masthead (keep your structure)
+   ========================= */
 
 .masthead {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  margin-bottom: 4rem;
-  font-family: "CMS", "Quattrocento Sans", sans-serif;
+  margin-bottom: 3rem;
+  font-family: "Latin Modern Sans";
 }
 
-.masthead a:hover {
-  color:black;
-}
+.masthead a:hover { color: black; }
 
 .masthead-title a {
   font-size: 2rem;
@@ -126,9 +132,8 @@ font-size:75%;
   color: #505050;
 }
 
-.masthead-subtitle {
-  color: #999;
-}
+.masthead-subtitle { color: #777; }
+
 
 /*
   Thumbnail
@@ -166,6 +171,7 @@ font-size:75%;
 }
 
 .pubtitle {
+  font-family: "Latin Modern Mono";
   margin: .5em 0em .5em 0em;
   line-height: 1.2em;
   font-weight: bold;
@@ -179,6 +185,7 @@ font-size:75%;
 }
 
 .pubaward {
+  font-family: "Latin Modern Mono";
   color: #bd5319;
   font-weight: bold;
   font-size: 100%;
@@ -189,6 +196,7 @@ font-size:75%;
 }
 
 .pubteaser {
+  font-family: "Latin Modern Mono";
   clear: both;
   min-height: 140px;
   font-size: 85%;
@@ -254,6 +262,125 @@ font-size:75%;
 }
 
 /*
+  Press
+*/
+
+/*
+  presslications
+*/
+
+.pressitem {
+  margin: 2em 0;
+  line-height: 1em;
+}
+
+.presstitle {
+  display: inline-block;
+  margin: .5em 0em .5em 0em;
+  font-family: "Latin Modern Mono", serif;
+  font-size: 1.05em;
+  font-weight: 600;
+  color: #00356b;
+}
+
+.presstitle:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+/*.presstitle {
+  font-family: "Latin Modern Mono";
+  margin: .5em 0em .5em 0em;
+  line-height: 1.2em;
+  font-weight: bold;
+  font-size: 85%;
+  text-align: left;
+}*/
+
+.pressauthors {
+  display: block;
+  font-size: 0.9em;
+  color: #777;
+  margin-bottom: 1.2em;
+}
+
+
+.pressaward {
+  color: #bd5319;
+  font-weight: bold;
+  font-size: 100%;
+
+  /*white-space: nowrap;*/
+
+  /*display:inline-block;*/
+}
+
+.pressteaser {
+  clear: both;
+  min-height: 140px;
+  font-size: 85%;
+  vertical-align: bottom;
+}
+
+.pressteaser table, tr, td {
+  padding: 0px;
+  border: 0px solid black;
+  vertical-align: bottom;
+}
+
+.pressteaser td {
+  padding: 10px 10px 10px 10px;
+  border: 0px solid black;
+  vertical-align: bottom;
+  text-align: left;
+  width: 33%;
+}
+
+/*
+.pressteaser li {
+  float: left;
+}
+
+.pressteaser li a {
+  bottom:0;
+  left:0;
+  position: relative;
+  margin-right: 2em;  
+  float:left;
+  vertical-align: bottom;
+  display: block;
+}
+*/
+
+/*
+.pressteaser a {
+  bottom:0;
+  left:0;
+  position: relative;
+  margin-right: 2em;  
+  float:left;
+  vertical-align: bottom;
+  display: block;
+}
+*/
+
+.pressteaser img {
+  width: 150px;
+  vertical-align: center;
+  margin-right: 0.5em;
+  /*border: 1px solid black;*/
+}
+
+.presslinks {
+  font-size: 75%;
+}
+
+.presslinks a {
+  color: #00356b;
+  text-decoration: none;
+}
+
+/*
   Project
 */
 
@@ -307,6 +434,7 @@ font-size:75%;
 }
 
 .projtitle {
+  font-family: "Latin Modern Mono";
   margin-bottom: .5em;
   margin-left: 150px;  
   line-height: 1.2em;
@@ -405,7 +533,7 @@ font-size:75%;
   margin-top:3px;
   margin-bottom: 1rem;
   color: #9a9a9a;
-  font-family: 'CMS', 'Quattrocento Sans', sans-serif;
+  font-family: "Latin Modern Roman";
   font-size:0.8rem;
 }
 
@@ -434,7 +562,7 @@ font-size:75%;
 
 .pagination {
   overflow: hidden;
-  font-family: 'CMS', 'Quattrocento Sans', sans-serif;
+  font-family: "Latin Modern Roman";
   text-align: center;
 }
 
@@ -488,9 +616,7 @@ font-size:75%;
   display: block;
 }
 
-.menu-content {
-  float: left;
-}
+.menu-content { float: left; }
 
 .menu-content a {
   color: #999;
@@ -498,9 +624,18 @@ font-size:75%;
   padding-right: 10px;
 }
 
-.social-icons {
-  float: right;
+.menu-content a.active {
+  color: #00356b;
+  font-weight: 700;
+  border-bottom: none;
+  padding-bottom: 2px;
 }
+
+.menu-content a:hover {
+  color: #00356b;
+}
+
+.social-icons { float: right; }
 
 .social-icons a {
   color: #999;
@@ -512,38 +647,108 @@ font-size:75%;
     float: left;
     padding-top: 0px;
   }
-  .menu-content {
-    margin-bottom: 5px;
-  }
+  .menu-content { margin-bottom: 5px; }
 }
+
+/* =========================
+   Fonts: Latin Modern (self-hosted)
+   ========================= */
+
+@font-face {
+  font-family: "Latin Modern Roman";
+  src:
+    url("../fonts/latin-modern/lmroman-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: "Latin Modern Roman";
+  src:
+    url("../fonts/latin-modern/lmroman-italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: block;
+}
+@font-face {
+  font-family: "Latin Modern Roman";
+  src:
+    url("../fonts/latin-modern/lmroman-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: "Latin Modern Roman";
+  src:
+    url("../fonts/latin-modern/lmroman-bolditalic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Latin Modern Sans";
+  src:
+    url("../fonts/latin-modern/lmsans-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: "Latin Modern Sans";
+  src:
+    url("../fonts/latin-modern/lmsans-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Latin Modern Mono";
+  src:
+    url("../fonts/latin-modern/lmmono-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: "Latin Modern Mono";
+  src:
+    url("../fonts/latin-modern/lmmono-italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: block;
+}
+
 
 /*
   Code
 */
 
-code,
-pre {
-  font-family: "Source Code Pro", monospace;
+code, pre {
+  font-family: "Latin Modern Mono";
 }
+
 code {
-  padding: .25em .5em;
-  font-size: .8rem;
+  padding: .20em .45em;
+  font-size: .90em;
   background-color: #f5f5f5;
   border-radius: 3px;
 }
+
 pre {
   display: block;
   margin-top: 0;
   margin-bottom: 1rem;
   padding: 1rem;
-  font-size: .8rem;
-  line-height: 1.4;
+  font-size: .90em;
+  line-height: 1.45;
   white-space: pre;
-  white-space: pre-wrap;
-  word-break: break-all;
-  word-wrap: break-word;
+  overflow-x: auto;
   background-color: #f5f5f5;
 }
+
 pre code {
   padding: 0;
   font-size: 100%;
@@ -568,7 +773,7 @@ pre.highlight {
 
 /* Gist via GitHub Pages */
 .gist .gist-file {
-  font-family: "Source Code Pro", monospace !important;
+  font-family: "Latin Modern Mono";
 }
 .gist .markdown-body {
   padding: 15px;

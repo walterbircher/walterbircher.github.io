@@ -6,7 +6,7 @@ title: Projects
 Just for fun, industry work, and unpublished research projects
 
 
-<div class="filter_wrapper">
+<!-- <div class="filter_wrapper">
   <center>
 <ul class="filters">
 <li>
@@ -25,9 +25,9 @@ Just for fun, industry work, and unpublished research projects
 {% endfor %}
 </ul>
 </center>
-</div>
+</div> -->
 
-<h1 class="mt-4">Projects</h1>
+<!-- <h1 class="mt-4">Projects</h1> -->
 {% assign id = 0 %}
 {% assign projects = site.projects | sort: "year" | reverse %}
 {% for proj in projects %}
@@ -38,7 +38,7 @@ Just for fun, industry work, and unpublished research projects
   <img src="/assets/img/{{ proj.slug }}_small.png" alt="{{proj.slug}} project teaser"/>
 
 </div>
-  <div class="projtitle">
+<div class="projtitle">
     {{ proj.title }}
   </div>
   <div class="projauthors">
@@ -50,9 +50,3 @@ Just for fun, industry work, and unpublished research projects
 
 </div>
 {% endfor %}
-
-<center>
-<p class="modtext">
-Last modified on January 17th, 2022
-</p>
-</center>

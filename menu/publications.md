@@ -5,7 +5,7 @@ title: Publications
 
 Peer-reviewed conference and journal papers
 
-<h1 class="mt-4">Publications</h1>
+<!-- <h1 class="mt-4">Publications</h1> -->
 {% assign publications = site.publications | sort: "date" | reverse %}
 {% for pub in publications %}
 <div class="pubitem">
@@ -36,9 +36,3 @@ Peer-reviewed conference and journal papers
 
 </div>
 {% endfor %}
-
-<center>
-<p class="modtext">
-Last modified on December 19th, 2021
-</p>
-</center>

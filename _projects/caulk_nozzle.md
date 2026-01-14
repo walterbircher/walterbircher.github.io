@@ -2,7 +2,7 @@
 layout: default
 categories: ['3D Printing', 'Mechanical Design']
 title: Caulk Nozzle
-authors: WG Bircher
+authors:
 thing: A 3D printed screw-on reusable tip for tubes of caulk, to keep the material within from drying out
 year: 2015
 award: 
