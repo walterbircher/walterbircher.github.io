@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cureEDMD.org | What Is EDMD</title>
+    <meta name="description" content="Plain-language EDMD overview: symptoms, genetics, diagnosis, and management." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script>
+      (function () {
+        var storageKey = "cureedmd-preview-theme";
+        var themes = { harbor: true, meadow: true, ember: true, nocturne: true, linen: true };
+        var params = new URLSearchParams(window.location.search);
+        var theme = params.has("theme") ? String(params.get("theme") || "").trim().toLowerCase() : "";
+
+        if (!params.has("theme")) {
+          try {
+            theme = String(window.localStorage.getItem(storageKey) || "").trim().toLowerCase();
+          } catch (error) {
+            theme = "";
+          }
+        }
+
+        if (["default", "classic", "none", "base"].includes(theme)) theme = "";
+
+        if (theme && themes[theme]) {
+          document.documentElement.setAttribute("data-theme", theme);
+          document.documentElement.style.colorScheme = theme === "nocturne" ? "dark" : "light";
+        } else {
+          document.documentElement.style.colorScheme = "light";
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles-themes.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a href="index.html" class="brand" aria-label="cureEDMD home">
+        <span class="brand-mark" aria-hidden="true">CE</span>
+        <span><strong>cureEDMD</strong><small>Action for every family</small></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">Menu</button>
+      <nav id="mainNav" class="main-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="who-we-are.html">Who We Are</a>
+        <a class="active" href="what-is-edmd.html">What Is EDMD</a>
+        <a href="research.html">Research</a>
+        <a href="resources.html">Resources</a>
+        <a href="news-updates.html">News</a>
+        <a href="help-change-lives.html">Help Change Lives</a>
+      </nav>
+      <div class="header-tools">
+        <label class="visually-hidden" for="languageSelect">Language</label>
+        <select id="languageSelect" class="language-select" aria-label="Select language"></select>
+        <a class="btn btn-solid" href="help-change-lives.html">Donate</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section>
+        <div class="section-head">
+          <h1>What Is EDMD</h1>
+          <p>
+            Emery-Dreifuss muscular dystrophy (EDMD) is a rare, progressive muscle disease. It was first described in
+            the 1960s. EDMD is known for three common feature groups: joint stiffness, muscle weakness, and heart
+            problems.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="photo-grid">
+          <figure class="photo-card">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 780'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%23f7f1df'/%3E%3Cstop offset='100%25' stop-color='%23d9f2f0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='1200' height='780' rx='36' fill='url(%23g)'/%3E%3Cellipse cx='400' cy='390' rx='150' ry='250' fill='none' stroke='%230f8b8d' stroke-width='18'/%3E%3Cellipse cx='800' cy='390' rx='150' ry='250' fill='none' stroke='%23ff7f51' stroke-width='18'/%3E%3Cpath d='M320 260 C420 180, 520 180, 600 280' fill='none' stroke='%23132025' stroke-width='16' stroke-linecap='round'/%3E%3Cpath d='M880 260 C780 180, 680 180, 600 280' fill='none' stroke='%23132025' stroke-width='16' stroke-linecap='round'/%3E%3Cpath d='M320 520 C420 600, 520 600, 600 500' fill='none' stroke='%23132025' stroke-width='16' stroke-linecap='round'/%3E%3Cpath d='M880 520 C780 600, 680 600, 600 500' fill='none' stroke='%23132025' stroke-width='16' stroke-linecap='round'/%3E%3Ccircle cx='600' cy='390' r='95' fill='%23ffffff' fill-opacity='.78' stroke='%23132025' stroke-width='10'/%3E%3Ctext x='600' y='382' text-anchor='middle' font-family='Space Grotesk, Arial, sans-serif' font-size='42' font-weight='700' fill='%23132025'%3EMovement%3C/text%3E%3Ctext x='600' y='430' text-anchor='middle' font-family='Space Grotesk, Arial, sans-serif' font-size='42' font-weight='700' fill='%23132025'%3EMuscle%3C/text%3E%3C/svg%3E" alt="Simple movement and muscle diagram" />
+            <figcaption>Movement and muscle diagram</figcaption>
+          </figure>
+          <figure class="photo-card">
+            <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=900&q=80" alt="Abstract heart image placeholder" />
+            <figcaption>Heart and monitoring graphic</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section>
+        <div class="impact-cards">
+          <article>
+            <h3>1. Joint stiffness</h3>
+            <p>Joint tightness often starts early, especially in elbows, heels, and neck/back.</p>
+          </article>
+          <article>
+            <h3>2. Muscle weakness</h3>
+            <p>Weakness often begins in upper arms and lower legs and can slowly progress.</p>
+          </article>
+          <article>
+            <h3>3. Heart involvement</h3>
+            <p>Heart rhythm and conduction problems can be serious and may need urgent treatment.</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <h2>Genetics</h2>
+          <p>
+            EDMD can be inherited in X-linked, autosomal dominant, or autosomal recessive patterns. The most common
+            genes discussed on current source sites are EMD and LMNA.
+          </p>
+        </div>
+
+        <div class="impact-cards">
+          <article>
+            <h3>X-linked</h3>
+            <p>Often linked to EMD variants. Usually affects males more directly, with female carriers at some risk.</p>
+          </article>
+          <article>
+            <h3>Autosomal dominant</h3>
+            <p>Often linked to LMNA variants. One altered copy can be enough to cause disease.</p>
+          </article>
+          <article>
+            <h3>Autosomal recessive</h3>
+            <p>Two altered copies are needed. Parents may be carriers without obvious symptoms.</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <h2>Diagnosis and care</h2>
+        </div>
+        <div class="impact-cards">
+          <article>
+            <h3>Diagnosis</h3>
+            <p>Diagnosis usually combines symptoms, exam findings, heart testing, and genetic testing.</p>
+          </article>
+          <article>
+            <h3>Heart follow-up</h3>
+            <p>Ask how often ECG, Holter, and echocardiogram are needed for your situation.</p>
+          </article>
+          <article>
+            <h3>Daily management</h3>
+            <p>Discuss physical therapy, mobility supports, and emergency planning with your specialists.</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <p class="kicker">Visual Guide</p>
+          <h2>EDMD pathway</h2>
+        </div>
+        <div class="timeline-graphic">
+          <div>Symptoms appear</div>
+          <div>Testing and diagnosis</div>
+          <div>Care planning</div>
+          <div>Long-term monitoring</div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-badges">
+        <a href="https://globalgenes.org/" target="_blank" rel="noreferrer" aria-label="Global Genes member">
+          <img src="global_genes.png" alt="Global Genes" />
+        </a>
+        <a href="https://rarediseases.org/" target="_blank" rel="noreferrer" aria-label="NORD member">
+          <img src="nord_member.png" alt="NORD Member" />
+        </a>
+        <a href="https://everylifefoundation.org/" target="_blank" rel="noreferrer" aria-label="EveryLife Foundation member">
+          <img src="community_congress_member.png" alt="EveryLife Foundation" />
+        </a>
+      </div>
+      <p><a href="financial-transparency.html">Financial Transparency</a> | <a href="privacy.html">Privacy</a></p>
+      <p>Draft for cureEDMD.org | Not medical advice. For emergencies, contact local emergency services.</p>
+      <p>Email: info@cureEDMD.org</p>
+    </footer>
+    <script src="translations.js"></script>
+    <script src="translations-extended.js"></script>
+    <script src="translations-supplemental.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

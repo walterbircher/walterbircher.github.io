@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cureEDMD.org | Home</title>
+    <meta
+      name="description"
+      content="cureEDMD is a patient and family-led, scientist-supported foundation focused on better care, better treatments, and a cure for EDMD."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function () {
+        var storageKey = "cureedmd-preview-theme";
+        var themes = { harbor: true, meadow: true, ember: true, nocturne: true, linen: true };
+        var params = new URLSearchParams(window.location.search);
+        var theme = params.has("theme") ? String(params.get("theme") || "").trim().toLowerCase() : "";
+
+        if (!params.has("theme")) {
+          try {
+            theme = String(window.localStorage.getItem(storageKey) || "").trim().toLowerCase();
+          } catch (error) {
+            theme = "";
+          }
+        }
+
+        if (["default", "classic", "none", "base"].includes(theme)) theme = "";
+
+        if (theme && themes[theme]) {
+          document.documentElement.setAttribute("data-theme", theme);
+          document.documentElement.style.colorScheme = theme === "nocturne" ? "dark" : "light";
+        } else {
+          document.documentElement.style.colorScheme = "light";
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles-themes.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="top-rail" aria-live="polite">
+      <p id="railMessage">Loading latest cureEDMD updates...</p>
+    </div>
+
+    <header class="site-header" id="siteHeader">
+      <a href="index.html" class="brand" aria-label="cureEDMD home">
+        <span class="brand-mark" aria-hidden="true">CE</span>
+        <span>
+          <strong>cureEDMD</strong>
+          <small>Action for every family</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">
+        Menu
+      </button>
+
+      <nav id="mainNav" class="main-nav" aria-label="Primary navigation">
+        <a class="active" href="index.html">Home</a>
+        <a href="who-we-are.html">Who We Are</a>
+        <a href="what-is-edmd.html">What Is EDMD</a>
+        <a href="research.html">Research</a>
+        <a href="resources.html">Resources</a>
+        <a href="news-updates.html">News</a>
+        <a href="help-change-lives.html">Help Change Lives</a>
+      </nav>
+
+      <div class="header-tools">
+        <label class="visually-hidden" for="languageSelect">Language</label>
+        <select id="languageSelect" class="language-select" aria-label="Select language"></select>
+        <a class="btn btn-solid" href="help-change-lives.html">Donate</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="home">
+        <div class="hero-backdrop"></div>
+        <div class="hero-content">
+          <p class="kicker">Working Together for cureEDMD</p>
+          <h1 id="heroTitle">Cure EDMD Together</h1>
+          <p id="heroText">
+            cureEDMD is patient and family-led, scientist-supported, and focused on practical help now and treatment
+            progress for the future.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-solid" href="what-is-edmd.html">Learn About EDMD</a>
+            <a class="btn btn-outline" href="who-we-are.html">Who We Are</a>
+          </div>
+          <div class="hero-dots" id="heroDots" aria-label="Hero slide navigation"></div>
+        </div>
+        <figure class="hero-photo-wrap">
+          <img
+            id="heroPhoto"
+            src="https://images.unsplash.com/photo-1530023367847-a683933f4172?auto=format&fit=crop&w=1100&q=80"
+            alt="Family walking together outdoors"
+          />
+          <figcaption>Current image is a placeholder. Replace with cureEDMD family photography.</figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <p class="kicker">Quick Links</p>
+          <h2>Find Resources</h2>
+        </div>
+        <div class="impact-cards">
+          <article>
+            <h3>Newly diagnosed?</h3>
+            <p>Start with simple, plain-language information about symptoms, genetics, and care planning.</p>
+            <p><a href="what-is-edmd.html">Go to What Is EDMD</a></p>
+          </article>
+          <article>
+            <h3>Need practical tools?</h3>
+            <p>Get links for patient registries, support communities, and download resources.</p>
+            <p><a href="resources.html">Go to Resources</a></p>
+          </article>
+          <article>
+            <h3>Want to help now?</h3>
+            <p>Donate, volunteer, and connect with the mission in ways that fit your capacity.</p>
+            <p><a href="help-change-lives.html">Go to Help Change Lives</a></p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <p class="kicker">News</p>
+          <h2>Latest</h2>
+        </div>
+        <div class="news-strip">
+          <article class="news-card">
+            <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=900&q=80" alt="Two people reviewing notes together" />
+            <h3>Registry outreach reminder</h3>
+            <p>Families can help research by joining registries when eligible.</p>
+          </article>
+          <article class="news-card">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80" alt="Research team in discussion" />
+            <h3>Research partners</h3>
+            <p>Featured lab updates will be posted here as work progresses.</p>
+          </article>
+          <article class="news-card">
+            <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=900&q=80" alt="Family walking outdoors" />
+            <h3>Family stories coming soon</h3>
+            <p>We are building a story bank to show the people behind the mission.</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <p class="kicker">Snapshot</p>
+          <h2>Impact</h2>
+        </div>
+        <div class="stat-grid">
+          <article class="stat-card">
+            <h3 data-count="2025" data-format="plain">2025</h3>
+            <p>Foundation established in 2025</p>
+          </article>
+          <article class="stat-card">
+            <h3 data-count="1000000" data-format="currency">$1,000,000</h3>
+            <p>Founders have raised and donated over $1M for EDMD research</p>
+          </article>
+          <article class="stat-card">
+            <h3 data-count="2">2</h3>
+            <p>Main research focus areas currently described by cureEDMD</p>
+          </article>
+          <article class="stat-card">
+            <h3 data-count="2">2</h3>
+            <p>Featured principal research partners on current site</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <h2>Photos</h2>
+        </div>
+        <div class="photo-grid">
+          <figure class="photo-card">
+            <img src="https://images.pexels.com/photos/9870779/pexels-photo-9870779.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Parent and child sitting together" />
+            <figcaption>Patient and family photography placeholder</figcaption>
+          </figure>
+          <figure class="photo-card">
+            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=900&q=80" alt="Clinician speaking with family" />
+            <figcaption>Clinic and care team placeholder</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="stories" id="stories">
+        <div class="section-head">
+          <h2>Stories</h2>
+        </div>
+
+        <div class="story-stage">
+          <button id="prevStory" class="ghost story-nav" aria-label="Previous story">&lt;</button>
+          <article id="storyCard"></article>
+          <button id="nextStory" class="ghost story-nav" aria-label="Next story">&gt;</button>
+        </div>
+      </section>
+
+      <section class="donate" id="donate">
+        <div class="section-head">
+          <p class="kicker">Take Action</p>
+          <h2>Every donation counts</h2>
+          <p>
+            Contributions help fund treatment-focused research and family support resources. If you cannot donate now,
+            sharing resources and joining studies also helps.
+          </p>
+        </div>
+
+        <label for="donationRange">Choose an amount (demo)</label>
+        <input id="donationRange" type="range" min="25" max="1000" step="25" value="250" />
+        <p id="donationResult">$250 can support one family-facing education and registry outreach cycle.</p>
+
+        <div class="hero-actions">
+          <a class="btn btn-solid" href="https://give.rarevillage.org/campaign/691055/donate" target="_blank" rel="noreferrer">Donate Now</a>
+          <a class="btn btn-outline" href="help-change-lives.html">Volunteer and Partner</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-badges">
+        <a href="https://globalgenes.org/" target="_blank" rel="noreferrer" aria-label="Global Genes member">
+          <img src="global_genes.png" alt="Global Genes" />
+        </a>
+        <a href="https://rarediseases.org/" target="_blank" rel="noreferrer" aria-label="NORD member">
+          <img src="nord_member.png" alt="NORD Member" />
+        </a>
+        <a href="https://everylifefoundation.org/" target="_blank" rel="noreferrer" aria-label="EveryLife Foundation member">
+          <img src="community_congress_member.png" alt="EveryLife Foundation" />
+        </a>
+      </div>
+      <p><a href="financial-transparency.html">Financial Transparency</a> | <a href="privacy.html">Privacy</a></p>
+      <p>Draft for cureEDMD.org | Not medical advice. For emergencies, contact local emergency services.</p>
+      <p>Email: info@cureEDMD.org</p>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="translations-extended.js"></script>
+    <script src="translations-supplemental.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

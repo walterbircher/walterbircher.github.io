@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cureEDMD.org | Privacy</title>
+    <meta
+      name="description"
+      content="Privacy policy and data collection practices for cureEDMD."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function () {
+        var storageKey = "cureedmd-preview-theme";
+        var themes = { harbor: true, meadow: true, ember: true, nocturne: true, linen: true };
+        var params = new URLSearchParams(window.location.search);
+        var theme = params.has("theme") ? String(params.get("theme") || "").trim().toLowerCase() : "";
+
+        if (!params.has("theme")) {
+          try {
+            theme = String(window.localStorage.getItem(storageKey) || "").trim().toLowerCase();
+          } catch (error) {
+            theme = "";
+          }
+        }
+
+        if (["default", "classic", "none", "base"].includes(theme)) theme = "";
+
+        if (theme && themes[theme]) {
+          document.documentElement.setAttribute("data-theme", theme);
+          document.documentElement.style.colorScheme = theme === "nocturne" ? "dark" : "light";
+        } else {
+          document.documentElement.style.colorScheme = "light";
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles-themes.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="top-rail" aria-live="polite">
+      <p id="railMessage">Loading latest cureEDMD updates...</p>
+    </div>
+
+    <header class="site-header" id="siteHeader">
+      <a href="index.html" class="brand" aria-label="cureEDMD home">
+        <span class="brand-mark" aria-hidden="true">CE</span>
+        <span>
+          <strong>cureEDMD</strong>
+          <small>Action for every family</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">Menu</button>
+
+      <nav id="mainNav" class="main-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="who-we-are.html">Who We Are</a>
+        <a href="what-is-edmd.html">What Is EDMD</a>
+        <a href="research.html">Research</a>
+        <a href="resources.html">Resources</a>
+        <a href="news-updates.html">News</a>
+        <a href="help-change-lives.html">Help Change Lives</a>
+      </nav>
+
+      <div class="header-tools">
+        <label class="visually-hidden" for="languageSelect">Language</label>
+        <select id="languageSelect" class="language-select" aria-label="Select language"></select>
+        <a class="btn btn-solid" href="help-change-lives.html">Donate</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="reveal" style="margin-top: 2rem;">
+        <div class="section-head">
+          <h1>Privacy Statement</h1>
+          <p>
+            cureEDMD respects your privacy and is committed to transparent data practices.
+          </p>
+        </div>
+
+        <div style="max-width: 720px; margin: 2rem auto;">
+          <h2>What information we collect</h2>
+          <p>
+            When you visit our website, we may collect limited information including your IP address and how you interact with our pages. If you donate, volunteer, or join our registry, we collect contact information and details relevant to your involvement.
+          </p>
+
+          <h2>How we use your information</h2>
+          <p>
+            We use information to:
+          </p>
+          <ul>
+            <li>Provide services and support you have requested</li>
+            <li>Improve our website and programs</li>
+            <li>Send updates and communications (with your consent)</li>
+            <li>Comply with legal obligations</li>
+          </ul>
+
+          <h2>Data security</h2>
+          <p>
+            We implement reasonable security measures to protect personal information from unauthorized access or disclosure. However, no method of transmission over the internet is completely secure.
+          </p>
+
+          <h2>Your rights</h2>
+          <p>
+            You have the right to access, correct, or delete your personal information. Contact us at info@cureEDMD.org to exercise these rights.
+          </p>
+
+          <h2>Third parties</h2>
+          <p>
+            We do not sell or rent personal information to third parties. We may share information with trusted partners who assist with our mission, all under confidentiality agreements.
+          </p>
+
+          <h2>Contact us</h2>
+          <p>
+            For questions about this privacy statement or our data practices, email info@cureEDMD.org.
+          </p>
+
+          <p style="margin-top: 2rem; opacity: 0.75; font-size: 0.9rem;">
+            Last updated: 2026
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-badges">
+        <a href="https://globalgenes.org/" target="_blank" rel="noreferrer" aria-label="Global Genes member">
+          <img src="global_genes.png" alt="Global Genes" />
+        </a>
+        <a href="https://rarediseases.org/" target="_blank" rel="noreferrer" aria-label="NORD member">
+          <img src="nord_member.png" alt="NORD Member" />
+        </a>
+        <a href="https://everylifefoundation.org/" target="_blank" rel="noreferrer" aria-label="EveryLife Foundation member">
+          <img src="community_congress_member.png" alt="EveryLife Foundation" />
+        </a>
+      </div>
+      <p><a href="financial-transparency.html">Financial Transparency</a> | <a href="privacy.html">Privacy</a></p>
+      <p>Draft for cureEDMD.org | Not medical advice. For emergencies, contact local emergency services.</p>
+      <p>Email: info@cureEDMD.org</p>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="translations-extended.js"></script>
+    <script src="translations-supplemental.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

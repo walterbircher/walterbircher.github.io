@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cureEDMD.org | Resources</title>
+    <meta name="description" content="Resources for EDMD patients, families, and caregivers: registries, support groups, and downloads." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script>
+      (function () {
+        var storageKey = "cureedmd-preview-theme";
+        var themes = { harbor: true, meadow: true, ember: true, nocturne: true, linen: true };
+        var params = new URLSearchParams(window.location.search);
+        var theme = params.has("theme") ? String(params.get("theme") || "").trim().toLowerCase() : "";
+
+        if (!params.has("theme")) {
+          try {
+            theme = String(window.localStorage.getItem(storageKey) || "").trim().toLowerCase();
+          } catch (error) {
+            theme = "";
+          }
+        }
+
+        if (["default", "classic", "none", "base"].includes(theme)) theme = "";
+
+        if (theme && themes[theme]) {
+          document.documentElement.setAttribute("data-theme", theme);
+          document.documentElement.style.colorScheme = theme === "nocturne" ? "dark" : "light";
+        } else {
+          document.documentElement.style.colorScheme = "light";
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles-themes.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a href="index.html" class="brand" aria-label="cureEDMD home">
+        <span class="brand-mark" aria-hidden="true">CE</span>
+        <span><strong>cureEDMD</strong><small>Action for every family</small></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">Menu</button>
+      <nav id="mainNav" class="main-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="who-we-are.html">Who We Are</a>
+        <a href="what-is-edmd.html">What Is EDMD</a>
+        <a href="research.html">Research</a>
+        <a class="active" href="resources.html">Resources</a>
+        <a href="news-updates.html">News</a>
+        <a href="help-change-lives.html">Help Change Lives</a>
+      </nav>
+      <div class="header-tools">
+        <label class="visually-hidden" for="languageSelect">Language</label>
+        <select id="languageSelect" class="language-select" aria-label="Select language"></select>
+        <a class="btn btn-solid" href="help-change-lives.html">Donate</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section>
+        <div class="section-head">
+          <h1>Resources</h1>
+          <p>
+            These links come directly from current cureEDMD and EDMD Foundation resource pages, rewritten in clear
+            language.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="photo-grid">
+          <figure class="photo-card">
+            <img src="https://images.unsplash.com/photo-1527613426441-4da17471b66d?auto=format&fit=crop&w=900&q=80" alt="Notebook and family notes placeholder" />
+            <figcaption>Appointment prep placeholder</figcaption>
+          </figure>
+          <figure class="photo-card">
+            <img src="https://images.unsplash.com/photo-1512678080530-7760d81faba6?auto=format&fit=crop&w=900&q=80" alt="Support group discussion placeholder" />
+            <figcaption>Community support placeholder</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section>
+        <div class="impact-cards">
+          <article>
+            <h3>Peer support community</h3>
+            <p>Join the Emery-Dreifuss Facebook group for shared experience and practical advice.</p>
+            <p><a href="https://www.facebook.com/groups/EmeryDreifuss/" target="_blank" rel="noreferrer">Open Facebook Group</a></p>
+          </article>
+          <article>
+            <h3>Registry: Columbia EDMD</h3>
+            <p>Recommended for all EDMD patients on current cureEDMD resources page.</p>
+            <p><a href="https://www.sac-cu.org/EDMD/info.aspx" target="_blank" rel="noreferrer">Open Columbia Registry</a></p>
+          </article>
+          <article>
+            <h3>Registry: LMNA (North America)</h3>
+            <p>Additional registry for eligible North American LMNA-related EDMD cases.</p>
+            <p><a href="https://sites.duke.edu/lmnaregistry/" target="_blank" rel="noreferrer">Open LMNA Registry</a></p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <p class="kicker">Downloads</p>
+          <h2>Helpful documents for appointments and emergencies</h2>
+        </div>
+        <div class="impact-cards">
+          <article>
+            <h3>Wallet Card</h3>
+            <p>Carry key emergency details for quick access during urgent care visits.</p>
+            <p><a href="https://img1.wsimg.com/blobby/go/169ae79b-a23f-4652-81d6-db7a25053282/downloads/Wallet%20Card.pdf?ver=1680987730152" target="_blank" rel="noreferrer">Download Wallet Card</a></p>
+          </article>
+          <article>
+            <h3>Family Tree Template</h3>
+            <p>Prepare your family history before genetics appointments.</p>
+            <p><a href="https://img1.wsimg.com/blobby/go/169ae79b-a23f-4652-81d6-db7a25053282/downloads/Family%20Tree%20Template.docx?ver=1680987730153" target="_blank" rel="noreferrer">Download Family Tree Template</a></p>
+          </article>
+          <article>
+            <h3>Newly diagnosed one-pager</h3>
+            <p>In this draft, this is a planned next deliverable for clinic-ready handouts.</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <h2>One-page guide</h2>
+          <p>Replace this block with your clinic-ready EDMD one-pager once it is finalized.</p>
+        </div>
+        <div class="graphic-panel">
+          <p>EDMD quick facts</p>
+          <p>Common symptoms: stiffness, weakness, heart involvement</p>
+          <p>Common next steps: genetics, cardiology, physical therapy, registry signup</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <p class="kicker">FAQ</p>
+          <h2>Why registries are important</h2>
+        </div>
+        <details>
+          <summary>What is a patient registry?</summary>
+          <p>A registry collects health information over time to help researchers understand disease patterns.</p>
+        </details>
+        <details>
+          <summary>Why should I register?</summary>
+          <p>In rare diseases, better data helps improve care guidance and trial readiness.</p>
+        </details>
+        <details>
+          <summary>Can caregivers register on behalf of a child?</summary>
+          <p>Yes, many registries allow parents or guardians to complete forms for pediatric patients.</p>
+        </details>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-badges">
+        <a href="https://globalgenes.org/" target="_blank" rel="noreferrer" aria-label="Global Genes member">
+          <img src="global_genes.png" alt="Global Genes" />
+        </a>
+        <a href="https://rarediseases.org/" target="_blank" rel="noreferrer" aria-label="NORD member">
+          <img src="nord_member.png" alt="NORD Member" />
+        </a>
+        <a href="https://everylifefoundation.org/" target="_blank" rel="noreferrer" aria-label="EveryLife Foundation member">
+          <img src="community_congress_member.png" alt="EveryLife Foundation" />
+        </a>
+      </div>
+      <p><a href="financial-transparency.html">Financial Transparency</a> | <a href="privacy.html">Privacy</a></p>
+      <p>Draft for cureEDMD.org | Not medical advice. For emergencies, contact local emergency services.</p>
+      <p>Email: info@cureEDMD.org</p>
+    </footer>
+    <script src="translations.js"></script>
+    <script src="translations-extended.js"></script>
+    <script src="translations-supplemental.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cureEDMD.org | Financial Transparency</title>
+    <meta
+      name="description"
+      content="Financial transparency and governance information for cureEDMD, including annual reports, financial filings, and policy documents."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function () {
+        var storageKey = "cureedmd-preview-theme";
+        var themes = { harbor: true, meadow: true, ember: true, nocturne: true, linen: true };
+        var params = new URLSearchParams(window.location.search);
+        var theme = params.has("theme") ? String(params.get("theme") || "").trim().toLowerCase() : "";
+
+        if (!params.has("theme")) {
+          try {
+            theme = String(window.localStorage.getItem(storageKey) || "").trim().toLowerCase();
+          } catch (error) {
+            theme = "";
+          }
+        }
+
+        if (["default", "classic", "none", "base"].includes(theme)) theme = "";
+
+        if (theme && themes[theme]) {
+          document.documentElement.setAttribute("data-theme", theme);
+          document.documentElement.style.colorScheme = theme === "nocturne" ? "dark" : "light";
+        } else {
+          document.documentElement.style.colorScheme = "light";
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles-themes.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="top-rail" aria-live="polite">
+      <p id="railMessage">Loading latest cureEDMD updates...</p>
+    </div>
+
+    <header class="site-header" id="siteHeader">
+      <a href="index.html" class="brand" aria-label="cureEDMD home">
+        <span class="brand-mark" aria-hidden="true">CE</span>
+        <span>
+          <strong>cureEDMD</strong>
+          <small>Action for every family</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">Menu</button>
+
+      <nav id="mainNav" class="main-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="who-we-are.html">Who We Are</a>
+        <a href="what-is-edmd.html">What Is EDMD</a>
+        <a href="research.html">Research</a>
+        <a href="resources.html">Resources</a>
+        <a href="news-updates.html">News</a>
+        <a href="help-change-lives.html">Help Change Lives</a>
+      </nav>
+
+      <div class="header-tools">
+        <label class="visually-hidden" for="languageSelect">Language</label>
+        <select id="languageSelect" class="language-select" aria-label="Select language"></select>
+        <a class="btn btn-solid" href="help-change-lives.html">Donate</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="transparency-intro reveal">
+        <div class="section-head">
+          <p class="kicker">Accountability</p>
+          <h1>Financial Transparency</h1>
+          <p>
+            cureEDMD is committed to clear public reporting. As filings are finalized, we will publish annual
+            reports, IRS forms, audited statements, and governance documents here.
+          </p>
+        </div>
+
+        <div class="hero-actions">
+          <a class="btn btn-solid" href="mailto:info@cureEDMD.org">Request documents</a>
+          <a class="btn btn-outline" href="help-change-lives.html">Support the mission</a>
+        </div>
+      </section>
+
+      <section class="reveal">
+        <div class="section-head">
+          <p class="kicker">Published materials</p>
+          <h2>What we plan to post</h2>
+        </div>
+
+        <div class="document-grid">
+          <article class="document-card">
+            <h3>Annual reports</h3>
+            <p>Year-end summaries will highlight program spending, fundraising, and progress against goals.</p>
+            <div class="document-list">
+              <div class="document-row"><span>2025 report</span><span class="status-pill">Pending</span></div>
+              <div class="document-row"><span>2024 report</span><span class="status-pill">Pending</span></div>
+              <div class="document-row"><span>2023 report</span><span class="status-pill">Archive</span></div>
+            </div>
+          </article>
+
+          <article class="document-card">
+            <h3>Financial reports</h3>
+            <p>We will publish current filings and budget summaries as they are approved for release.</p>
+            <div class="document-list">
+              <div class="document-row"><span>IRS Form 990</span><span class="status-pill">Coming soon</span></div>
+              <div class="document-row"><span>Audited statement</span><span class="status-pill">Coming soon</span></div>
+              <div class="document-row"><span>Budget overview</span><span class="status-pill">In review</span></div>
+            </div>
+          </article>
+
+          <article class="document-card">
+            <h3>Governance and legal</h3>
+            <p>Board, bylaws, and policy information will be maintained in a public accountability section.</p>
+            <div class="document-list">
+              <div class="document-row"><span>Board roster</span><span class="status-pill">Pending</span></div>
+              <div class="document-row"><span>Conflict policy</span><span class="status-pill">Pending</span></div>
+              <div class="document-row"><span>Tax and compliance details</span><span class="status-pill">On file</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="reveal transparency-note">
+        <div class="section-head">
+          <p class="kicker">How to help</p>
+          <h2>Need a document before it is posted?</h2>
+        </div>
+
+        <p data-i18n-rich="transparency-request">
+          Email <a href="mailto:info@cureEDMD.org">info@cureEDMD.org</a> and we will share the latest approved
+          version or tell you when it will be available.
+        </p>
+
+        <ul>
+          <li>Annual reports will summarize program activity and spending.</li>
+          <li>Filings will be posted after internal review and final approval.</li>
+          <li>Governance materials will be updated when board changes occur.</li>
+        </ul>
+      </section>
+
+      <section class="reveal transparency-contact">
+        <div class="section-head">
+          <p class="kicker">Contact</p>
+          <h2>Questions about transparency?</h2>
+        </div>
+        <p>Send requests for records or corrections to info@cureEDMD.org.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-badges">
+        <a href="https://globalgenes.org/" target="_blank" rel="noreferrer" aria-label="Global Genes member">
+          <img src="global_genes.png" alt="Global Genes" />
+        </a>
+        <a href="https://rarediseases.org/" target="_blank" rel="noreferrer" aria-label="NORD member">
+          <img src="nord_member.png" alt="NORD Member" />
+        </a>
+        <a href="https://everylifefoundation.org/" target="_blank" rel="noreferrer" aria-label="EveryLife Foundation member">
+          <img src="community_congress_member.png" alt="EveryLife Foundation" />
+        </a>
+      </div>
+      <p><a href="financial-transparency.html">Financial Transparency</a> | <a href="privacy.html">Privacy</a></p>
+      <p>Draft for cureEDMD.org | Not medical advice. For emergencies, contact local emergency services.</p>
+      <p>Email: info@cureEDMD.org</p>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="translations-extended.js"></script>
+    <script src="translations-supplemental.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
