@@ -1,0 +1,193 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cureEDMD.org | Who We Are</title>
+    <meta name="description" content="Mission, history, and accomplishments of cureEDMD in clear language." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script>
+      (function () {
+        var storageKey = "cureedmd-preview-theme";
+        var themes = { harbor: true, meadow: true, ember: true, "ember-beacon": true, "ember-stride": true, "ember-bloom": true, "ember-pulse": true, nocturne: true, linen: true };
+        var params = new URLSearchParams(window.location.search);
+        var theme = params.has("theme") ? String(params.get("theme") || "").trim().toLowerCase() : "";
+
+        if (!params.has("theme")) {
+          try {
+            theme = String(window.localStorage.getItem(storageKey) || "").trim().toLowerCase();
+          } catch (error) {
+            theme = "";
+          }
+        }
+
+        if (["default", "classic", "none", "base"].includes(theme)) theme = "";
+
+        if (theme && themes[theme]) {
+          document.documentElement.setAttribute("data-theme", theme);
+          document.documentElement.style.colorScheme = theme === "nocturne" ? "dark" : "light";
+        } else {
+          document.documentElement.style.colorScheme = "light";
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles-themes.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a href="index.html" class="brand" aria-label="cureEDMD home">
+        <img class="brand-mark" src="cureEDMDlogo.png" alt="" aria-hidden="true" />
+        
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">Menu</button>
+      <nav id="mainNav" class="main-nav" aria-label="Primary navigation">
+        
+        <a class="active" href="who-we-are.html">Who We Are</a>
+        <a href="what-is-edmd.html">What Is EDMD</a>
+        <a href="research.html">Research</a>
+        <a href="resources.html">Resources</a>
+        <a href="news-updates.html">News</a>
+        <a href="help-change-lives.html">Help Change Lives</a>
+      </nav>
+      <div class="header-tools">
+        <label class="visually-hidden" for="languageSelect">Language</label>
+        <select id="languageSelect" class="language-select" aria-label="Select language"></select>
+        <a class="btn btn-solid" href="help-change-lives.html">Donate</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section>
+        <div class="section-head">
+          <h1>Who We Are</h1>
+          <p>
+            cureEDMD was established in 2025. Before the foundation was formally launched, the founders had already
+            been raising and directing funding for EDMD research for many years.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="impact-cards">
+          <article>
+            <h3>Mission</h3>
+            <p>
+              We connect patients, families, clinicians, researchers, and drug developers so effective treatments can
+              move faster.
+            </p>
+          </article>
+          <article>
+            <h3>What we are solving</h3>
+            <p>
+              EDMD is a genetic condition that can cause serious muscle weakness, joint stiffness, and dangerous heart
+              complications.
+            </p>
+          </article>
+          <article>
+            <h3>Why this matters</h3>
+            <p>
+              Families need better options now, and long-term research support to reach safer and more effective
+              treatment pathways.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <p class="kicker">Accomplishments</p>
+          <h2>Progress already made</h2>
+        </div>
+        <div class="stat-grid">
+          <article class="stat-card">
+            <h3 data-count="1000000" data-format="currency">$1,000,000</h3>
+            <p>Over $1M raised and donated for EDMD-focused research</p>
+          </article>
+          <article class="stat-card">
+            <h3 data-count="2">2</h3>
+            <p>Main funded research tracks now on the cureEDMD site</p>
+          </article>
+          <article class="stat-card">
+            <h3 data-count="2">2</h3>
+            <p>Featured principal research labs currently highlighted</p>
+          </article>
+          <article class="stat-card">
+            <h3 data-count="2025" data-format="plain">2025</h3>
+            <p>Year cureEDMD was officially established</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <p class="kicker">Founders</p>
+          <h2>People behind the mission</h2>
+          <p>
+            Based on your team notes, founders Ray and Chris should be featured here with personal story content and
+            family photos. This section is set up to make that update easy.
+          </p>
+        </div>
+        <div class="impact-cards">
+          <article>
+            <h3>Ray</h3>
+            <p>Founder profile section reserved for Ray's story, advocacy background, and photo.</p>
+          </article>
+          <article>
+            <h3>Chris</h3>
+            <p>Founder profile section reserved for Chris's story, advocacy background, and photo.</p>
+          </article>
+          <article>
+            <h3>Why founder stories matter</h3>
+            <p>Personal context builds trust and helps families feel less alone.</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="photo-grid">
+          <figure class="photo-card">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80" alt="Portrait placeholder for founder Ray" />
+            <figcaption>Founder portrait placeholder: Ray</figcaption>
+          </figure>
+          <figure class="photo-card">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=900&q=80" alt="Portrait placeholder for founder Chris" />
+            <figcaption>Founder portrait placeholder: Chris</figcaption>
+          </figure>
+          <figure class="photo-card">
+            <img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=900&q=80" alt="Family photo placeholder" />
+            <figcaption>Family story photo placeholder</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-badges">
+        <a href="https://globalgenes.org/" target="_blank" rel="noreferrer" aria-label="Global Genes member">
+          <img src="global_genes.png" alt="Global Genes" />
+        </a>
+        <a href="https://rarediseases.org/" target="_blank" rel="noreferrer" aria-label="NORD member">
+          <img src="nord_member.png" alt="NORD Member" />
+        </a>
+        <a href="https://everylifefoundation.org/" target="_blank" rel="noreferrer" aria-label="EveryLife Foundation member">
+          <img src="community_congress_member.png" alt="EveryLife Foundation" />
+        </a>
+      </div>
+      <p><a href="financial-transparency.html">Financial Transparency</a> | <a href="privacy.html">Privacy</a></p>
+      <p>Draft for cureEDMD.org | Not medical advice. For emergencies, contact local emergency services.</p>
+      <p>Email: info@cureEDMD.org</p>
+    </footer>
+    <script src="translations.js"></script>
+    <script src="translations-extended.js"></script>
+    <script src="translations-supplemental.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
