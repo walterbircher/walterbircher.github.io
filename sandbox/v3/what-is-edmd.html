@@ -1,0 +1,245 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cureEDMD.org | What Is EDMD</title>
+    <meta name="description" content="Plain-language EDMD overview: symptoms, genetics, diagnosis, and management." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script>
+      (function () {
+        var storageKey = "cureedmd-preview-theme";
+        var themes = { harbor: true, meadow: true, ember: true, "ember-beacon": true, "ember-stride": true, "ember-bloom": true, "ember-pulse": true, nocturne: true, linen: true };
+        var params = new URLSearchParams(window.location.search);
+        var theme = params.has("theme") ? String(params.get("theme") || "").trim().toLowerCase() : "";
+
+        if (!params.has("theme")) {
+          try {
+            theme = String(window.localStorage.getItem(storageKey) || "").trim().toLowerCase();
+          } catch (error) {
+            theme = "";
+          }
+        }
+
+        if (["default", "classic", "none", "base"].includes(theme)) theme = "";
+
+        if (theme && themes[theme]) {
+          document.documentElement.setAttribute("data-theme", theme);
+          document.documentElement.style.colorScheme = theme === "nocturne" ? "dark" : "light";
+        } else {
+          document.documentElement.style.colorScheme = "light";
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles-themes.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a href="index.html" class="brand" aria-label="cureEDMD home">
+        <img class="brand-mark" src="cureEDMDlogo.png" alt="" aria-hidden="true" />
+        
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">Menu</button>
+      <nav id="mainNav" class="main-nav" aria-label="Primary navigation">
+        
+        <a href="who-we-are.html">Who We Are</a>
+        <a class="active" href="what-is-edmd.html">What Is EDMD</a>
+        <a href="research.html">Research</a>
+        <a href="resources.html">Resources</a>
+        <a href="news-updates.html">News</a>
+        <a href="help-change-lives.html">Help Change Lives</a>
+      </nav>
+      <div class="header-tools">
+        <label class="visually-hidden" for="languageSelect">Language</label>
+        <select id="languageSelect" class="language-select" aria-label="Select language"></select>
+        <a class="btn btn-solid" href="help-change-lives.html">Donate</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section>
+        <div class="section-head">
+          <h1>What Is EDMD</h1>
+        </div>
+      </section>
+
+
+      <section>
+        <div class="section-head">
+          <h2>Overview</h2>
+        </div>
+        <p data-i18n-rich="what-is-edmd-intro">
+          Emery-Dreifuss muscular dystrophy (EDMD) is a rare genetic condition that affects the muscles, joints, and heart. It is a type of muscular dystrophy, which means it causes muscles to become weaker over time. EDMD was first described by doctors <a href="https://en.wikipedia.org/wiki/Alan_Emery">Alan Emery</a> and <a href="https://en.wikipedia.org/wiki/Fritz_E._Dreifuss">Fritz Dreifuss</a> in the 1960s and is named after them. Several different gene changes can cause EDMD. The most common involve the <a href="https://en.wikipedia.org/wiki/Emerin">EMD</a> and <a href="https://en.wikipedia.org/wiki/Prelamin-A/C">LMNA</a> genes, but changes in other genes can also lead to the condition.
+        </p>
+      </section>      
+
+      <section>
+        <div class="section-head">
+          <h2>Genetics</h2>
+        </div>
+
+        <p>
+        There are several genes that cause EDMD. Each gene is classified as a specific subtype of EDMD.
+        </p>
+
+        <p data-i18n-rich="what-is-edmd-genetics">
+        Changes in these genes result in non-working <a href="https://en.wikipedia.org/wiki/Nuclear_envelope">nuclear envelope</a> proteins. The nuclear envelope is the membrane that surrounds and protects the DNA in cells. When nuclear envelope proteins do not work correctly, the three core symptoms of EDMD – <a href="https://en.wikipedia.org/wiki/Contracture">joint contractures</a>, muscle weakness, and heart involvement – develop.
+        </p>
+
+        <p>
+        The following table shows the seven EDMD subtypes and their associated gene, protein, and inheritance pattern.
+        </p>
+
+        <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Subtype</th>
+              <th>Gene</th>
+              <th>Protein</th>
+              <th>Inheritance Pattern</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>EDMD 1</td>
+              <td>EMD</td>
+              <td>Emerin</td>
+              <td>X-linked</td>
+            </tr>
+            <tr>
+              <td>EDMD 2</td>
+              <td>LMNA</td>
+              <td>Lamin A/C</td>
+              <td>Autosomal dominant</td>
+            </tr>
+            <tr>
+              <td>EDMD 3</td>
+              <td>LMNA</td>
+              <td>Lamin A/C</td>
+              <td>Autosomal recessive</td>
+            </tr>
+            <tr>
+              <td>EDMD 4</td>
+              <td>SYNE1</td>
+              <td>Nesprin-1</td>
+              <td>Autosomal dominant</td>
+            </tr>
+            <tr>
+              <td>EDMD 5</td>
+              <td>SYNE2</td>
+              <td>Nesprin-2</td>
+              <td>Autosomal dominant</td>
+            </tr>
+            <tr>
+              <td>EDMD 6</td>
+              <td>FHL1</td>
+              <td>Four-and-a-half LIM domains 1</td>
+              <td>X-linked</td>
+            </tr>
+            <tr>
+              <td>EDMD 7</td>
+              <td>TMEM43</td>
+              <td>Transmembrane protein 43</td>
+              <td>Autosomal dominant</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+        <p class="edmd-note">Less frequently associated EDMD genes include TOR1AIP1, SUN1, SUN2 and TTNN.</p>
+
+        <div class="impact-cards">
+          <article>
+            <h3>X-linked</h3>
+            <p>Often linked to EMD variants. Usually affects males more directly, with female carriers at some risk.</p>
+          </article>
+          <article>
+            <h3>Autosomal dominant</h3>
+            <p>Often linked to LMNA variants. One altered copy can be enough to cause disease.</p>
+          </article>
+          <article>
+            <h3>Autosomal recessive</h3>
+            <p>Two altered copies are needed. Parents may be carriers without obvious symptoms.</p>
+          </article>
+        </div><br><br>
+
+
+
+
+      </section>
+
+      <section>
+        <div class="section-head">
+          <h2>Diagnosis and care</h2>
+        </div>
+        <div data-i18n-rich="what-is-edmd-care">
+          <p>Emery-Dreifuss muscular dystrophy most commonly results in three symptom groups: muscle weakness, joint stiffness, and heart problems.</p>
+          <p>At a young age, EDMD may first appear as muscle weakness and stiff elbows or ankles, often with toe walking. After the teenage years and into early adulthood, heart problems may become more common.</p>
+          <p>The best way to diagnose EDMD is through genetic testing. This can reveal mutations associated with EDMD, including findings from exome or genome sequencing and targeted muscular dystrophy panels.</p>
+          <p>Doctors may also use other clues when genetic testing is not yet available or indicated. EDMD often causes elevated <a href="https://en.wikipedia.org/wiki/Creatine_kinase">Creatine Kinase</a>, which can be measured with a blood test. Heart rhythm and structure changes can be tracked with <a href="https://en.wikipedia.org/wiki/Electrocardiography">EKGs</a> and <a href="https://en.wikipedia.org/wiki/Echocardiography">echocardiograms</a>. Muscle biopsy and physical exam findings can also support diagnosis.</p>
+          <p>As of 2026, there is no cure for EDMD, and care focuses on symptom management. Treatment may include cardiology care, medications, pacemakers, implanted defibrillators (<a href="https://en.wikipedia.org/wiki/Cardiac_resynchronization_therapy">CRT-D</a>), physical therapy, and contracture management.</p>
+          <p>Some people may need mobility supports over time, and respiratory support such as <a href="https://en.wikipedia.org/wiki/Continuous_positive_airway_pressure">CPAP or BiPAP</a> can be helpful when breathing weakness develops.</p>
+        </div>
+
+
+        <div class="impact-cards">
+          <article>
+            <h3>Diagnosis</h3>
+            <p>Diagnosis usually combines symptoms, exam findings, heart testing, and genetic testing.</p>
+          </article>
+          <article>
+            <h3>Heart follow-up</h3>
+            <p>Ask how often ECG, Holter, and echocardiogram are needed for your situation.</p>
+          </article>
+          <article>
+            <h3>Daily management</h3>
+            <p>Discuss physical therapy, mobility supports, and emergency planning with your specialists.</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <p class="kicker">Visual Guide</p>
+          <h2>EDMD pathway</h2>
+        </div>
+        <div class="timeline-graphic">
+          <div>Symptoms appear</div>
+          <div>Testing and diagnosis</div>
+          <div>Care planning</div>
+          <div>Long-term monitoring</div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-badges">
+        <a href="https://globalgenes.org/" target="_blank" rel="noreferrer" aria-label="Global Genes member">
+          <img src="global_genes.png" alt="Global Genes" />
+        </a>
+        <a href="https://rarediseases.org/" target="_blank" rel="noreferrer" aria-label="NORD member">
+          <img src="nord_member.png" alt="NORD Member" />
+        </a>
+        <a href="https://everylifefoundation.org/" target="_blank" rel="noreferrer" aria-label="EveryLife Foundation member">
+          <img src="community_congress_member.png" alt="EveryLife Foundation" />
+        </a>
+      </div>
+      <p><a href="financial-transparency.html">Financial Transparency</a> | <a href="privacy.html">Privacy</a></p>
+      <p>Draft for cureEDMD.org | Not medical advice. For emergencies, contact local emergency services.</p>
+      <p>Email: info@cureEDMD.org</p>
+    </footer>
+    <script src="translations.js"></script>
+    <script src="translations-extended.js"></script>
+    <script src="translations-supplemental.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
+

@@ -1,0 +1,237 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cureEDMD.org | Research</title>
+    <meta name="description" content="Current EDMD research priorities and partner labs in plain language." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script>
+      (function () {
+        var storageKey = "cureedmd-preview-theme";
+        var themes = { harbor: true, meadow: true, ember: true, "ember-beacon": true, "ember-stride": true, "ember-bloom": true, "ember-pulse": true, nocturne: true, linen: true };
+        var params = new URLSearchParams(window.location.search);
+        var theme = params.has("theme") ? String(params.get("theme") || "").trim().toLowerCase() : "";
+
+        if (!params.has("theme")) {
+          try {
+            theme = String(window.localStorage.getItem(storageKey) || "").trim().toLowerCase();
+          } catch (error) {
+            theme = "";
+          }
+        }
+
+        if (["default", "classic", "none", "base"].includes(theme)) theme = "";
+
+        if (theme && themes[theme]) {
+          document.documentElement.setAttribute("data-theme", theme);
+          document.documentElement.style.colorScheme = theme === "nocturne" ? "dark" : "light";
+        } else {
+          document.documentElement.style.colorScheme = "light";
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles-themes.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a href="index.html" class="brand" aria-label="cureEDMD home">
+        <img class="brand-mark" src="cureEDMDlogo.png" alt="" aria-hidden="true" />
+        
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">Menu</button>
+      <nav id="mainNav" class="main-nav" aria-label="Primary navigation">
+        
+        <a href="who-we-are.html">Who We Are</a>
+        <a href="what-is-edmd.html">What Is EDMD</a>
+        <a class="active" href="research.html">Research</a>
+        <a href="resources.html">Resources</a>
+        <a href="news-updates.html">News</a>
+        <a href="help-change-lives.html">Help Change Lives</a>
+      </nav>
+      <div class="header-tools">
+        <label class="visually-hidden" for="languageSelect">Language</label>
+        <select id="languageSelect" class="language-select" aria-label="Select language"></select>
+        <a class="btn btn-solid" href="help-change-lives.html">Donate</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section>
+        <div class="section-head">
+          <h1>Research</h1>
+          <p>
+            Based on cureEDMD source pages, current research focus is in two main areas: treatment-target discovery and
+            gene therapy.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="photo-grid">
+          <figure class="photo-card">
+            <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=900&q=80" alt="Laboratory workspace placeholder" />
+            <figcaption>Lab workspace placeholder</figcaption>
+          </figure>
+          <figure class="photo-card">
+            <img src="https://images.unsplash.com/photo-1511174511562-5f7f18b874f8?auto=format&fit=crop&w=900&q=80" alt="Research discussion placeholder" />
+            <figcaption>Research discussion placeholder</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section>
+        <div class="impact-cards">
+          <article>
+            <h3>Priority 1: Find useful treatment targets</h3>
+            <p>
+              Identify pathways in muscle and heart cells that might be treated with medicine. This includes checking
+              whether existing FDA-approved medicines could help EDMD.
+            </p>
+          </article>
+          <article>
+            <h3>Priority 2: Advance gene therapy</h3>
+            <p>
+              Develop gene-based approaches for EDMD forms linked to EMD and LMNA, with realistic steps toward future
+              clinical translation.
+            </p>
+          </article>
+          <article>
+            <h3>Why patient data matters</h3>
+            <p>
+              Natural history and registry data help define trial-ready outcomes and make studies stronger.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <p class="kicker">Partner Labs</p>
+          <h2>Featured researchers</h2>
+        </div>
+
+        <div class="researcher-grid">
+          <article class="researcher-card">
+            <img src="https://www.duffield.cornell.edu/wp-content/uploads/2024/06/jan-lammerding-768x768.jpg" alt="Portrait of Jan Lammerding" />
+            <div>
+              <h3>Jan Lammerding, Ph.D.</h3>
+              <p>Cornell University researcher on nuclear mechanobiology, muscular dystrophy, and LMNA-related disease.</p>
+              <p><a href="https://www.duffield.cornell.edu/people/jan-lammerding/" target="_blank" rel="noreferrer">Cornell profile</a></p>
+              <p><a href="https://lammerding.wicmb.cornell.edu/" target="_blank" rel="noreferrer">Lab website</a></p>
+            </div>
+          </article>
+          <article class="researcher-card">
+            <img src="https://www.pathology.columbia.edu/sites/default/files/styles/cola_media_400/public/cups-profile/hero/111e5db0-e5dc-11ea-9e6a-7500c6711ca0.png?itok=d8kGaR8t" alt="Portrait image for Howard J. Worman" />
+            <div>
+              <h3>Howard J. Worman, M.D.</h3>
+              <p>Columbia University physician-scientist whose work includes LMNA, emerin, and nuclear envelope disease.</p>
+              <p><a href="https://www.pathology.columbia.edu/profile/howard-j-worman-md" target="_blank" rel="noreferrer">Columbia profile</a></p>
+              <p><a href="https://www.columbia.edu/~hjw14/" target="_blank" rel="noreferrer">Lab home page</a></p>
+            </div>
+          </article>
+          <article class="researcher-card">
+            <img src="https://recherche-myologie.fr/wp-content/uploads/2020/01/Antoine-Muchir-@Harcourt-2019.png" alt="Portrait of Antoine Muchir" />
+            <div>
+              <h3>Antoine Muchir</h3>
+              <p>INSERM research leader working on cardiomyopathies, nuclear envelope biology, and LMNA-linked disease.</p>
+              <p><a href="https://recherche-myologie.fr/profile/antoine-muchir/" target="_blank" rel="noreferrer">Profile page</a></p>
+              <p><a href="https://scholar.google.fr/citations?user=o2t5Nr0AAAAJ&hl=fr" target="_blank" rel="noreferrer">Google Scholar</a></p>
+            </div>
+          </article>
+          <article class="researcher-card">
+            <img src="https://www.institut-myologie.org/wp-content/uploads/2024/06/Equipe-Gisele-Bonne-Institut-de-Myologie-2024.jpg" alt="Institute of Myology team photo featuring GisÃ¨le Bonne" />
+            <div>
+              <h3>GisÃ¨le Bonne, Ph.D.</h3>
+              <p>Institute of Myology team leader focused on Emery-Dreifuss muscular dystrophy and other laminopathies.</p>
+              <p><a href="https://www.institut-myologie.org/en/recherche-2/centre-de-recherche-en-myologie/team-1-gisele-bonne/" target="_blank" rel="noreferrer">Team page</a></p>
+              <p><a href="https://recherche-myologie.fr/profile/gisele-bonne/" target="_blank" rel="noreferrer">Profile page</a></p>
+            </div>
+          </article>
+        </div>
+
+        <div class="section-head researcher-links-head">
+          <p class="kicker">More researchers and labs</p>
+          <h2>Additional names to explore</h2>
+          <p>
+            These broader links cover related collaborators and additional Institute of Myology and Columbia/Cornell
+            pages where LMNA and EDMD work appears.
+          </p>
+        </div>
+        <div class="researcher-links">
+          <a href="https://www.institut-myologie.org/en/scientific-profiles/" target="_blank" rel="noreferrer">Institute of Myology scientific profiles</a>
+          <a href="https://www.pathology.columbia.edu/our-faculty" target="_blank" rel="noreferrer">Columbia Pathology faculty directory</a>
+          <a href="https://www.duffield.cornell.edu/people/" target="_blank" rel="noreferrer">Cornell Duffield faculty directory</a>
+          <a href="https://www.institut-myologie.org/en/recherche-2/centre-de-recherche-en-myologie/" target="_blank" rel="noreferrer">Center of Research in Myology</a>
+          <a href="https://www.institut-myologie.org/en/recherche-2/centre-de-recherche-en-myologie/team-1-gisele-bonne/" target="_blank" rel="noreferrer">EDMD and laminopathy team page</a>
+          <a href="https://www.pathology.columbia.edu/profile/howard-j-worman-md#research" target="_blank" rel="noreferrer">Howard Worman research section</a>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <h2>Research roadmap</h2>
+        </div>
+        <div class="timeline-graphic">
+          <div>Find targets</div>
+          <div>Test drugs</div>
+          <div>Expand registries</div>
+          <div>Prepare trials</div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <h2>Study participation</h2>
+          <p>
+            EDMD Foundation study pages explain this clearly: long-term follow studies and genetic studies give families
+            and clinicians better answers over time.
+          </p>
+        </div>
+        <div class="impact-cards">
+          <article>
+            <h3>Follow studies</h3>
+            <p>Track real-world changes over years so future care guidance is based on stronger evidence.</p>
+          </article>
+          <article>
+            <h3>Genetic studies</h3>
+            <p>Improve diagnosis and reveal shared pathways with other better-studied conditions.</p>
+          </article>
+          <article>
+            <h3>Action</h3>
+            <p>Join available registries and studies when eligible. Participation is a key driver of progress.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-badges">
+        <a href="https://globalgenes.org/" target="_blank" rel="noreferrer" aria-label="Global Genes member">
+          <img src="global_genes.png" alt="Global Genes" />
+        </a>
+        <a href="https://rarediseases.org/" target="_blank" rel="noreferrer" aria-label="NORD member">
+          <img src="nord_member.png" alt="NORD Member" />
+        </a>
+        <a href="https://everylifefoundation.org/" target="_blank" rel="noreferrer" aria-label="EveryLife Foundation member">
+          <img src="community_congress_member.png" alt="EveryLife Foundation" />
+        </a>
+      </div>
+      <p><a href="financial-transparency.html">Financial Transparency</a> | <a href="privacy.html">Privacy</a></p>
+      <p>Draft for cureEDMD.org | Not medical advice. For emergencies, contact local emergency services.</p>
+      <p>Email: info@cureEDMD.org</p>
+    </footer>
+    <script src="translations.js"></script>
+    <script src="translations-extended.js"></script>
+    <script src="translations-supplemental.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+

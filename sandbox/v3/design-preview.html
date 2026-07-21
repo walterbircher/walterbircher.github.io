@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cureEDMD.org | Design Concepts</title>
+    <meta
+      name="description"
+      content="Five alternate visual directions for cureEDMD.org with shared content and core functionality intact."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #f7f9fd;
+        --ink: #1c2942;
+        --ink-soft: #485f82;
+        --card: rgba(255, 255, 255, 0.82);
+        --line: rgba(28, 41, 66, 0.12);
+        --shadow: 0 22px 46px rgba(28, 41, 66, 0.1);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Manrope", sans-serif;
+        color: var(--ink);
+        background:
+            radial-gradient(circle at 12% 10%, rgba(255, 242, 0, 0.24), transparent 24%),
+            radial-gradient(circle at 88% 14%, rgba(71, 175, 218, 0.22), transparent 22%),
+            linear-gradient(180deg, #ffffff 0%, #f7f9fd 55%, #edf2fa 100%);
+      }
+
+      a {
+        color: inherit;
+      }
+
+      main {
+        width: min(1180px, calc(100% - 2rem));
+        margin: 0 auto;
+        padding: 2.25rem 0 3.5rem;
+      }
+
+      .hero {
+        display: grid;
+        gap: 1.6rem;
+        grid-template-columns: 1.15fr 0.85fr;
+        align-items: center;
+        padding: clamp(1.5rem, 3vw, 2.25rem);
+        border: 1px solid var(--line);
+        border-radius: 2rem;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.65));
+        box-shadow: var(--shadow);
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        margin-bottom: 0.9rem;
+        padding: 0.35rem 0.65rem;
+        border-radius: 999px;
+        background: rgba(71, 175, 218, 0.16);
+        color: #2f6fae;
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: "Newsreader", serif;
+        letter-spacing: -0.02em;
+      }
+
+      h1 {
+        margin: 0 0 0.7rem;
+        font-size: clamp(2.2rem, 5vw, 4.2rem);
+        line-height: 0.96;
+      }
+
+      h2 {
+        margin: 0 0 0.6rem;
+        font-size: clamp(1.45rem, 3vw, 2.2rem);
+      }
+
+      p {
+        margin: 0;
+        color: var(--ink-soft);
+        line-height: 1.6;
+      }
+
+      .hero-card {
+        padding: 1.2rem;
+        border-radius: 1.4rem;
+        background: linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(237, 244, 255, 0.92));
+        border: 1px solid rgba(99, 135, 188, 0.14);
+      }
+
+      .hero-card ul {
+        margin: 0.85rem 0 0;
+        padding-left: 1.1rem;
+        color: var(--ink);
+      }
+
+      .hero-card li + li {
+        margin-top: 0.45rem;
+      }
+
+      .concept-grid {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        margin-top: 1.35rem;
+      }
+
+      .concept-card {
+        display: grid;
+        gap: 1rem;
+        padding: 1.1rem;
+        border-radius: 1.4rem;
+        border: 1px solid var(--line);
+        background: var(--card);
+        box-shadow: var(--shadow);
+      }
+
+      .concept-card p {
+        min-height: 4.7rem;
+      }
+
+      .swatches {
+        display: flex;
+        gap: 0.45rem;
+      }
+
+      .swatches span {
+        width: 1.2rem;
+        height: 1.2rem;
+        border-radius: 50%;
+        border: 1px solid rgba(24, 33, 38, 0.12);
+      }
+
+      .concept-meta {
+        display: grid;
+        gap: 0.35rem;
+        font-size: 0.9rem;
+        color: var(--ink-soft);
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.65rem;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 2.8rem;
+        padding: 0.7rem 0.95rem;
+        border-radius: 999px;
+        font-weight: 800;
+        text-decoration: none;
+        border: 1px solid transparent;
+      }
+
+      .btn-solid {
+        background: #47afda;
+        color: #fff;
+      }
+
+      .btn-ghost {
+        border-color: rgba(24, 33, 38, 0.14);
+        background: rgba(255, 255, 255, 0.78);
+      }
+
+      .helper {
+        margin-top: 1.4rem;
+        padding: 1rem 1.1rem;
+        border-radius: 1.2rem;
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.7);
+      }
+
+      .helper strong {
+        color: var(--ink);
+      }
+
+      .ember-i .swatches span:nth-child(1) { background: #fff8fa; }
+      .ember-i .swatches span:nth-child(2) { background: #6387bc; }
+      .ember-i .swatches span:nth-child(3) { background: #ee304b; }
+      .ember-i .swatches span:nth-child(4) { background: #fff200; }
+
+      .ember-ii .swatches span:nth-child(1) { background: #fff6fa; }
+      .ember-ii .swatches span:nth-child(2) { background: #4ea4d2; }
+      .ember-ii .swatches span:nth-child(3) { background: #f33b57; }
+      .ember-ii .swatches span:nth-child(4) { background: #fff200; }
+
+      .ember-iii .swatches span:nth-child(1) { background: #f6f9ff; }
+      .ember-iii .swatches span:nth-child(2) { background: #3f9fd0; }
+      .ember-iii .swatches span:nth-child(3) { background: #e83856; }
+      .ember-iii .swatches span:nth-child(4) { background: #f7ea4c; }
+
+      .ember-iv .swatches span:nth-child(1) { background: #fafcff; }
+      .ember-iv .swatches span:nth-child(2) { background: #5b9fcb; }
+      .ember-iv .swatches span:nth-child(3) { background: #d94561; }
+      .ember-iv .swatches span:nth-child(4) { background: #f3e55b; }
+
+      .ember-v .swatches span:nth-child(1) { background: #fff4f8; }
+      .ember-v .swatches span:nth-child(2) { background: #47afda; }
+      .ember-v .swatches span:nth-child(3) { background: #ee304b; }
+      .ember-v .swatches span:nth-child(4) { background: #fff200; }
+
+      @media (max-width: 1100px) {
+        .concept-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 860px) {
+        .hero {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 640px) {
+        main {
+          width: min(100% - 1rem, 100%);
+          padding-top: 1rem;
+        }
+
+        .concept-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .actions {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <div>
+          <span class="eyebrow">Design Review</span>
+          <h1>Five Ember Signal variants for the cureEDMD site.</h1>
+          <p>
+            Each variant keeps the same content, navigation, and interactions. The Ember core style stays in place,
+            while each option shifts saturation balance, contrast, and surface tone so you can choose the best campaign
+            direction.
+          </p>
+        </div>
+
+        <aside class="hero-card">
+          <h2>How to use this</h2>
+          <ul>
+            <li>Open any concept from the homepage preview button.</li>
+            <li>Click around the site to see that concept carry across pages.</li>
+            <li>Use the base site link if your team wants to compare against the current version.</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="concept-grid">
+        <article class="concept-card ember-i">
+          <div>
+            <h2>Ember Signal I</h2>
+            <div class="swatches"><span></span><span></span><span></span><span></span></div>
+          </div>
+          <p>Balanced baseline Ember style with clean white surfaces and direct advocacy energy.</p>
+          <div class="concept-meta">
+            <strong>Layout mood:</strong>
+            <span>Clear, active, confident</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-solid" href="index.html?theme=ember">Open variant</a>
+            <a class="btn btn-ghost" href="help-change-lives.html?theme=ember">See interior page</a>
+          </div>
+        </article>
+
+        <article class="concept-card ember-ii">
+          <div>
+            <h2>Ember Signal II</h2>
+            <div class="swatches"><span></span><span></span><span></span><span></span></div>
+          </div>
+          <p>Red-forward version with a stronger campaign pulse and warmer momentum through the hero.</p>
+          <div class="concept-meta">
+            <strong>Layout mood:</strong>
+            <span>Urgent, spirited, movement-led</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-solid" href="index.html?theme=ember-beacon">Open variant</a>
+            <a class="btn btn-ghost" href="research.html?theme=ember-beacon">See interior page</a>
+          </div>
+        </article>
+
+        <article class="concept-card ember-iii">
+          <div>
+            <h2>Ember Signal III</h2>
+            <div class="swatches"><span></span><span></span><span></span><span></span></div>
+          </div>
+          <p>Blue-leaning variant with sharper clarity and more clinical-research confidence.</p>
+          <div class="concept-meta">
+            <strong>Layout mood:</strong>
+            <span>Precise, modern, study-ready</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-solid" href="index.html?theme=ember-stride">Open variant</a>
+            <a class="btn btn-ghost" href="financial-transparency.html?theme=ember-stride">See interior page</a>
+          </div>
+        </article>
+
+        <article class="concept-card ember-iv">
+          <div>
+            <h2>Ember Signal IV</h2>
+            <div class="swatches"><span></span><span></span><span></span><span></span></div>
+          </div>
+          <p>Lighter bloom variant with soft atmosphere and high readability for long content pages.</p>
+          <div class="concept-meta">
+            <strong>Layout mood:</strong>
+            <span>Open, bright, family-friendly</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-solid" href="index.html?theme=ember-bloom">Open variant</a>
+            <a class="btn btn-ghost" href="resources.html?theme=ember-bloom">See interior page</a>
+          </div>
+        </article>
+
+        <article class="concept-card ember-v">
+          <div>
+            <h2>Ember Signal V</h2>
+            <div class="swatches"><span></span><span></span><span></span><span></span></div>
+          </div>
+          <p>Highest-energy Ember option with bold red accents and strongest campaign emphasis.</p>
+          <div class="concept-meta">
+            <strong>Layout mood:</strong>
+            <span>Bold, energetic, action-first</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-solid" href="index.html?theme=ember-pulse">Open variant</a>
+            <a class="btn btn-ghost" href="news-updates.html?theme=ember-pulse">See interior page</a>
+          </div>
+        </article>
+      </section>
+
+      <section class="helper">
+        <p>
+          <strong>Current baseline:</strong>
+          <a href="index.html?theme=classic">open the existing site style</a> if you want a control option for the
+          review discussion.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
