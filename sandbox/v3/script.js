@@ -1,5 +1,5 @@
 const railMessages = [
-  "Latest updates: monthly community progress posts now planned",
+  "EDMD Conference planned for April 2-4, 2027 at Hyatt Centric Chicago; room-block interest is open now",
   "Registry participation drive active for eligible EDMD families",
   "Research partner updates and milestones posted quarterly"
 ];
@@ -13,18 +13,20 @@ const heroSlides = [
     alt: "Family walking together outdoors"
   },
   {
-    title: "Clear Guidance",
-    text: "Plain-language education, practical tools, and next steps for care and research.",
+    title: "Clear\nGuidance",
+    text: "Plain-language education, practical tools, and next steps for care.",
     image:
       "https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&w=1100&q=80",
+    backgroundImage: "Marie_cureEDMD.webp",
     alt: "Group of people collaborating around a table"
   },
   {
     title: "Research Progress",
-    text: "Registries, follow studies, and partnerships help future EDMD trials.",
+    text: "Patient registries, study participation, and research partnerships help fuel EDMD discoveries.",
     image:
       "https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=1100&q=80",
-    alt: "Clinician discussing care with family"
+    backgroundImage: "man_daughter_zoo.webp",
+    alt: "A father and daughter spending time together at the zoo"
   }
 ];
 
@@ -55,17 +57,20 @@ const stories = [
   {
     quote:
       "Once someone explained EDMD in plain language, we felt less overwhelmed and more ready to act.",
-    byline: "Parent caregiver"
+    byline: "Parent caregiver",
+    image: "man_daughter_zoo.webp"
   },
   {
     quote:
       "I needed resources for adult life, not just childhood care. Peer support filled that gap.",
-    byline: "Adult living with EDMD"
+    byline: "Adult living with EDMD",
+    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=80"
   },
   {
     quote:
       "Families ask the same early questions. A simple diagnosis guide and registry explanation helps right away.",
-    byline: "Neuromuscular clinic coordinator"
+    byline: "Neuromuscular clinic coordinator",
+    image: "https://images.pexels.com/photos/9870779/pexels-photo-9870779.jpeg?auto=compress&cs=tinysrgb&w=1200"
   }
 ];
 
@@ -102,6 +107,10 @@ const DEFAULT_LANGUAGE = "en";
 const LANGUAGE_STORAGE_KEY = "cureedmd-language";
 const PREVIEW_THEME_QUERY_KEY = "theme";
 const PREVIEW_THEME_STORAGE_KEY = "cureedmd-preview-theme";
+const STYLE_LAB_QUERY_KEY = "styleLab";
+const STYLE_LAB_MESSAGE_READY = "cureedmd-style-lab:ready";
+const STYLE_LAB_MESSAGE_UPDATE = "cureedmd-style-lab:update";
+const isStyleLabPreview = new URLSearchParams(window.location.search).get(STYLE_LAB_QUERY_KEY) === "1";
 const supportedLanguages = translationCatalog?.languages || [{ code: "en", label: "English" }];
 const supportedLanguageCodes = new Set(supportedLanguages.map(({ code }) => code));
 const PREVIEW_THEMES = {
@@ -153,6 +162,8 @@ const storyCard = document.querySelector("#storyCard");
 const regionPanel = document.querySelector("#regionPanel");
 const donationRangeInput = document.querySelector("#donationRange");
 const donationResult = document.querySelector("#donationResult");
+const newsletterForm = document.querySelector("#newsletterForm");
+const newsletterStatus = document.querySelector("#newsletterStatus");
 
 function normalizeTranslationKey(value) {
   if (translationCatalog?.normalizeKey) {
@@ -197,6 +208,10 @@ function storePreviewTheme(theme) {
 }
 
 function getPreviewTheme() {
+  if (isStyleLabPreview) {
+    return "";
+  }
+
   const url = new URL(window.location.href);
 
   if (url.searchParams.has(PREVIEW_THEME_QUERY_KEY)) {
@@ -263,11 +278,76 @@ function renderPreviewChip() {
 }
 
 function initPreviewTheme() {
+  if (isStyleLabPreview) {
+    applyPreviewTheme("");
+    renderPreviewChip();
+    return;
+  }
+
   const theme = getPreviewTheme();
   storePreviewTheme(theme);
   applyPreviewTheme(theme);
   syncPreviewThemeLinks();
   renderPreviewChip();
+}
+
+function postStyleLabReady() {
+  const message = { type: STYLE_LAB_MESSAGE_READY };
+
+  if (window.parent && window.parent !== window) {
+    window.parent.postMessage(message, "*");
+  }
+
+  if (window.opener && !window.opener.closed) {
+    window.opener.postMessage(message, "*");
+  }
+}
+
+function applyStyleLabVariables(variables) {
+  if (!variables || typeof variables !== "object") return;
+
+  Object.entries(variables).forEach(([name, value]) => {
+    if (!/^--[a-z0-9-]+$/i.test(name) || typeof value !== "string") return;
+    document.documentElement.style.setProperty(name, value);
+  });
+}
+
+function preventStyleLabNavigation() {
+  document.addEventListener(
+    "click",
+    (event) => {
+      const link = event.target.closest("a[href]");
+      if (!link) return;
+
+      const href = (link.getAttribute("href") || "").trim();
+      if (!href || href.startsWith("#")) return;
+
+      event.preventDefault();
+    },
+    true
+  );
+
+  document.addEventListener(
+    "submit",
+    (event) => {
+      event.preventDefault();
+    },
+    true
+  );
+}
+
+function initStyleLabPreview() {
+  if (!isStyleLabPreview) return;
+
+  window.addEventListener("message", (event) => {
+    const message = event.data;
+    if (!message || message.type !== STYLE_LAB_MESSAGE_UPDATE) return;
+
+    applyStyleLabVariables(message.payload?.variables);
+  });
+
+  preventStyleLabNavigation();
+  postStyleLabReady();
 }
 
 function getStoredLanguage() {
@@ -753,7 +833,7 @@ function renderHeroDots() {
 }
 
 function applyHeroSlide(index) {
-  if (!heroTitle || !heroText || !heroPhoto) return;
+  if (!heroTitle || !heroText || !heroPhoto || !heroSection) return;
 
   const localizedSlides = getLocalizedCollection("heroSlides", heroSlides);
   const current = localizedSlides[index];
@@ -762,6 +842,13 @@ function applyHeroSlide(index) {
   heroText.textContent = current.text;
   heroPhoto.src = current.image;
   heroPhoto.alt = current.alt;
+
+  if (current.backgroundImage) {
+    heroSection.style.backgroundImage = `url('${current.backgroundImage}')`;
+  } else {
+    heroSection.style.backgroundImage = "url('man_daughter_zoo.webp')";
+  }
+
   renderHeroDots();
 }
 
@@ -858,17 +945,21 @@ function initCounters() {
         if (!entry.isIntersecting || seen.has(entry.target)) return;
 
         seen.add(entry.target);
+        entry.target.closest(".stat-card")?.classList.add("is-visible");
         const target = Number(entry.target.dataset.count);
         const format = entry.target.dataset.format || "number";
-        let current =
+        const startValue =
           Number(String(entry.target.textContent || "").replace(/[^0-9-]/g, "")) || 0;
-        const step = Math.max(1, Math.ceil(target / 90));
+        const duration = 1500;
+        let startTime;
 
-        const tick = () => {
-          current += step;
-          if (current >= target) current = target;
+        const tick = (timestamp) => {
+          if (!startTime) startTime = timestamp;
+          const progress = Math.min((timestamp - startTime) / duration, 1);
+          const easedProgress = 1 - Math.pow(1 - progress, 3);
+          const current = Math.round(startValue + (target - startValue) * easedProgress);
           entry.target.textContent = formatCounterValue(current, format);
-          if (current < target) requestAnimationFrame(tick);
+          if (progress < 1) requestAnimationFrame(tick);
         };
 
         requestAnimationFrame(tick);
@@ -891,7 +982,14 @@ function updateStory() {
   if (!storyCard) return;
   const localizedStories = getLocalizedCollection("stories", stories);
   const story = localizedStories[storyIndex];
-  storyCard.innerHTML = `<p>&ldquo;${story.quote}&rdquo;</p><p><strong>${story.byline}</strong></p>`;
+  const storyImage = stories[storyIndex]?.image;
+  storyCard.style.backgroundImage = `url('${storyImage}')`;
+  storyCard.innerHTML = `
+    <div class="story-copy">
+      <p class="story-quote">&ldquo;${story.quote}&rdquo;</p>
+      <p class="story-byline">${story.byline}</p>
+      <a class="story-read-more" href="stories.html">READ THE FULL STORY</a>
+    </div>`;
 }
 
 function initRegions() {
@@ -1011,3 +1109,51 @@ if (nextStoryButton) {
     updateStory();
   });
 }
+
+if (newsletterForm) {
+  newsletterForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    const submitButton = newsletterForm.querySelector('button[type="submit"]');
+    const formData = new FormData(newsletterForm);
+
+    if (submitButton) {
+      submitButton.disabled = true;
+    }
+    if (newsletterStatus) {
+      newsletterStatus.textContent = "Signing you up...";
+    }
+
+    try {
+      const response = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          firstName: formData.get("firstName"),
+          lastName: formData.get("lastName"),
+          email: formData.get("email"),
+          website: formData.get("website"),
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Newsletter submission failed");
+      }
+
+      newsletterForm.reset();
+      if (newsletterStatus) {
+        newsletterStatus.textContent = "Thanks for signing up for cureEDMD updates!";
+      }
+    } catch (error) {
+      if (newsletterStatus) {
+        newsletterStatus.textContent = "We couldn't sign you up right now. Please try again.";
+      }
+    } finally {
+      if (submitButton) {
+        submitButton.disabled = false;
+      }
+    }
+  });
+}
+
+initStyleLabPreview();

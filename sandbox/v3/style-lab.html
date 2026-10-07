@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cureEDMD.org | v3 Style Lab</title>
+    <meta
+      name="description"
+      content="Internal style lab for exploring real-time palette, gradient, and shadow adjustments on the v3 cureEDMD homepage."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style-lab.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <main id="main" class="style-lab">
+      <section class="lab-shell">
+        <aside class="lab-sidebar" aria-labelledby="styleLabTitle">
+          <p class="eyebrow">Internal Tool</p>
+          <h1 id="styleLabTitle">v3 Style Lab</h1>
+          <p class="intro-copy">
+            Adjust the current v3 homepage palette, gradients, and depth in real time. This tool only changes the
+            live preview and the exported token block.
+          </p>
+
+          <div class="intro-actions">
+            <a class="link-chip" href="design-preview.html">Back to design preview</a>
+            <a class="link-chip" href="index.html?theme=classic" target="_blank" rel="noreferrer">Open current homepage</a>
+          </div>
+
+          <form id="styleLabForm" class="lab-form" novalidate>
+            <section class="control-section" aria-labelledby="paletteHeading">
+              <div class="section-copy">
+                <h2 id="paletteHeading">Palette</h2>
+                <p>These colors feed the exported root tokens and the live preview.</p>
+              </div>
+              <div id="paletteControls" class="control-grid"></div>
+            </section>
+
+            <section class="control-section" aria-labelledby="depthHeading">
+              <div class="section-copy">
+                <h2 id="depthHeading">Depth</h2>
+                <p>Dial in how lifted the homepage surfaces and buttons feel.</p>
+              </div>
+              <div id="depthControls" class="control-grid"></div>
+            </section>
+
+            <section class="control-section" aria-labelledby="atmosphereHeading">
+              <div class="section-copy">
+                <h2 id="atmosphereHeading">Atmosphere</h2>
+                <p>Tune the page glows and tinted surfaces without changing layout.</p>
+              </div>
+              <div id="atmosphereControls" class="control-grid"></div>
+            </section>
+          </form>
+
+          <p class="lab-note">
+            No source files are modified by this tool. When you land on a direction you like, use the exported CSS as
+            the implementation handoff.
+          </p>
+        </aside>
+
+        <section class="lab-main">
+          <section class="preview-card" aria-labelledby="previewHeading">
+            <div class="card-head">
+              <div>
+                <p class="eyebrow eyebrow-muted">Live Preview</p>
+                <h2 id="previewHeading">v3 homepage</h2>
+              </div>
+              <p class="card-copy">The preview is the real homepage running in style-lab mode, not a mock.</p>
+            </div>
+
+            <div class="preview-toolbar">
+              <div class="toolbar-group">
+                <span class="toolbar-label">Viewport</span>
+                <div id="viewportButtons" class="button-row" role="group" aria-label="Choose preview viewport"></div>
+              </div>
+
+              <div class="toolbar-group toolbar-group-actions">
+                <button id="resetLab" class="lab-action" type="button">Reset to current v3</button>
+                <button id="openPreviewTab" class="lab-action lab-action-primary" type="button">Open homepage in new tab</button>
+              </div>
+            </div>
+
+            <div class="preview-stage">
+              <div class="preview-canvas">
+                <iframe
+                  id="styleLabPreview"
+                  class="preview-frame"
+                  title="Live v3 homepage preview"
+                  src="index.html?theme=classic&amp;styleLab=1"
+                ></iframe>
+              </div>
+            </div>
+          </section>
+
+          <section class="export-card" aria-labelledby="exportHeading">
+            <div class="card-head">
+              <div>
+                <p class="eyebrow eyebrow-muted">Export</p>
+                <h2 id="exportHeading">Resolved token block</h2>
+              </div>
+              <p class="card-copy">Copy this `:root` block into `v3/styles.css` when a direction feels right.</p>
+            </div>
+
+            <textarea id="cssExport" class="export-output" readonly spellcheck="false" aria-label="Resolved CSS token export"></textarea>
+
+            <div class="button-row export-actions">
+              <button id="copyCss" class="lab-action lab-action-primary" type="button">Copy CSS</button>
+              <button id="downloadPreset" class="lab-action" type="button">Download preset JSON</button>
+            </div>
+
+            <p id="labStatus" class="lab-status" role="status" aria-live="polite"></p>
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <script src="style-lab.js"></script>
+  </body>
+</html>
