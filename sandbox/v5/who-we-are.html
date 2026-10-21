@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>cureEDMD.org | Who We Are</title>
+<meta content="A minimal overview of what cureEDMD is and why it exists." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script>
+      (function () {
+        var storageKey = "cureedmd-v5-preview-theme";
+        var themes = { harbor: true, meadow: true, ember: true, "ember-beacon": true, "ember-stride": true, "ember-bloom": true, "ember-pulse": true, nocturne: true, linen: true };
+        var params = new URLSearchParams(window.location.search);
+        var theme = params.has("theme") ? String(params.get("theme") || "").trim().toLowerCase() : "";
+
+        if (!params.has("theme")) {
+          try {
+            theme = String(window.localStorage.getItem(storageKey) || "").trim().toLowerCase();
+          } catch (error) {
+            theme = "";
+          }
+        }
+
+        if (["default", "classic", "none", "base"].includes(theme)) theme = "";
+
+        if (theme && themes[theme]) {
+          document.documentElement.setAttribute("data-theme", theme);
+          document.documentElement.style.colorScheme = theme === "nocturne" ? "dark" : "light";
+        } else {
+          document.documentElement.style.colorScheme = "light";
+        }
+      })();
+    </script>
+<link href="styles.css" rel="stylesheet"/>
+<link href="styles-themes.css" rel="stylesheet"/>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<a aria-label="cureEDMD home" class="brand" href="index.html">
+<img alt="" aria-hidden="true" class="brand-mark" src="cure_edmd_logo.png"/>
+</a>
+<button aria-controls="mainNav" aria-expanded="false" class="menu-toggle" id="menuToggle">Menu</button>
+<nav aria-label="Primary navigation" class="main-nav" id="mainNav">
+<a class="nav-conference" href="conference.html">Conference</a>
+<a class="active" href="who-we-are.html">Who We Are</a>
+<a href="what-is-edmd.html">What Is EDMD</a>
+<a href="research.html">Research</a>
+<a href="resources.html">Resources</a>
+
+<a href="news-updates.html">News</a>
+<a href="stories.html">Stories</a>
+<a href="help-change-lives.html">Help Change Lives</a>
+<a href="contact-us.html">Contact Us</a>
+</nav>
+<div class="header-tools">
+<label class="visually-hidden" for="languageSelect">Language</label>
+<select aria-label="Select language" class="language-select" id="languageSelect"></select>
+<a class="btn btn-solid" href="help-change-lives.html">Donate<svg aria-hidden="true" class="icon-heart" focusable="false" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 6 3.99 4 6.5 4c1.54 0 3.04.8 3.94 2.09C11.46 4.8 12.96 4 14.5 4 17.01 4 19 6 19 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path></svg></a>
+</div>
+</header>
+<main class="lean-page who-page" id="main">
+<div class="page-banner who-banner">
+<img alt="Attendees listening to a speaker at a community presentation" height="3000" src="meet_us.webp" width="4500"/>
+<div class="banner-copy">
+<h1>Who We Are</h1>
+</div>
+</div>
+<section class="page-intro">
+<div class="section-head">
+<div class="collaborative-intro">
+<h2>A Collaborative Effort to Reimagine EDMD Care</h2>
+<p class="lean-lede">cureEDMD brings together patients, researchers, clinicians, and investors to accelerate progress for people affected by Emery-Dreifuss muscular dystrophy.</p>
+</div>
+<div class="accomplishments-layout">
+<div class="accomplishments-copy-column">
+<h3 class="accomplishments-heading">What We’ve Accomplished Thus Far</h3>
+<p class="accomplishments-copy">cureEDMD was officially founded in 2025 by a family with lived experiences with EDMD. Even before the start of cureEDMD, the founders had raised over a million dollars for EDMD research.</p>
+</div>
+<div aria-label="$1.2 million raised for EDMD research: Lammerding Lab at Cornell University; Worman Lab at Columbia University; Valdez Lab at Brown University; Fralin Biomedical Institute at Virginia Tech." class="accomplishments-infographic" role="img">
+<svg aria-hidden="true" class="accomplishments-diagram" viewbox="0 0 760 400">
+<g class="accomplishments-branches">
+<path d="M120 144C234 144 244 62 358 62"></path>
+<path d="M120 181C244 181 242 154 358 154"></path>
+<path d="M120 219C244 219 242 246 358 246"></path>
+<path d="M120 256C234 256 244 338 358 338"></path>
+</g>
+<g fill="#173b5f">
+<circle cx="358" cy="62" r="10"></circle>
+<circle cx="358" cy="154" r="10"></circle>
+<circle cx="358" cy="246" r="10"></circle>
+<circle cx="358" cy="338" r="10"></circle>
+</g>
+<circle class="accomplishments-funding-circle" cx="120" cy="200" r="76"></circle>
+<text class="accomplishments-amount" x="120" y="195">$1.2<tspan class="accomplishments-million" dy="29" x="120">million</tspan></text>
+<rect class="accomplishments-label-panel" height="70" rx="12" width="356" x="382" y="27"></rect>
+<text class="accomplishments-lab" x="404" y="57">Lammerding Lab<tspan class="accomplishments-institution" dy="25" x="404">Cornell University</tspan></text>
+<rect class="accomplishments-label-panel" height="70" rx="12" width="356" x="382" y="119"></rect>
+<text class="accomplishments-lab" x="404" y="149">Worman Lab<tspan class="accomplishments-institution" dy="25" x="404">Columbia University</tspan></text>
+<rect class="accomplishments-label-panel" height="70" rx="12" width="356" x="382" y="211"></rect>
+<text class="accomplishments-lab" x="404" y="241">Valdez Lab<tspan class="accomplishments-institution" dy="25" x="404">Brown University</tspan></text>
+<rect class="accomplishments-label-panel" height="70" rx="12" width="356" x="382" y="303"></rect>
+<text class="accomplishments-lab" x="404" y="333">Fralin Biomedical Institute<tspan class="accomplishments-institution" dy="25" x="404">Virginia Tech</tspan></text>
+</svg>
+</div>
+</div>
+<section aria-labelledby="meet-us-title" class="meet-us-section">
+<h3 class="meet-us-heading" id="meet-us-title">Meet Us</h3>
+<p class="meet-us-copy">The family behind cureEDMD has the desire to remain anonymous. Meet the other people that make cureEDMD what it is.</p>
+<div class="meet-us-photos">
+<figure class="meet-us-person">
+<img alt="Ann Schmidt" height="428" loading="lazy" src="Ann_headshot.JPG" width="640"/>
+<figcaption><strong>Ann Schmidt, MS, CGC</strong><em class="team-role">Volunteer Consultant, Patient Engagement &amp; Research Advocacy</em></figcaption>
+<details class="team-bio"><summary><span class="visually-hidden">Read bio</span><span class="visually-hidden"> for Ann Schmidt</span><svg aria-hidden="true" class="bio-chevron" focusable="false" height="20" viewbox="0 0 24 24" width="20"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></summary><p lang="en" translate="no">Ann is a board-certified genetic counselor with more than 25 years of experience spanning pediatric genetics, hereditary cancer genetics, telehealth, genomic policy, genetics payment integrity, and clinical billing integrity. Throughout her career, Ann has been committed to helping patients and families understand complex genetic information and navigate their healthcare journeys. Her passion for rare disease advocacy extends beyond her professional work through volunteering with the Wisconsin Rare Disease Alliance and cureEDMD. She believes that listening to patients and families and building a connected, informed community are essential to advancing research and improving the lives of those affected by EDMD.</p></details>
+</figure>
+<figure class="meet-us-person">
+<img alt="Walter Bircher" height="225" loading="lazy" src="Walter_Bircher.jpeg" width="224"/>
+<figcaption><strong>Walter Bircher, PhD</strong><em>Affected by EDMD</em></figcaption>
+<details class="team-bio"><summary><span class="visually-hidden">Read bio</span><span class="visually-hidden"> for Walter Bircher</span><svg aria-hidden="true" class="bio-chevron" focusable="false" height="20" viewbox="0 0 24 24" width="20"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></summary><p lang="en" translate="no">Walter Bircher is a robotics engineer and Member of Technical Staff at Microsoft, where he works on Physical AI. He earned his PhD in robotic manipulation at Yale University and previously developed robotic hardware at Amazon. His experience also includes NASA’s Jet Propulsion Laboratory and Honeybee Robotics. Walter lives with EDMD and brings his technical background and personal perspective to cureEDMD.</p><p class="team-bio-source"><a href="https://walterbircher.github.io/" rel="noreferrer" target="_blank">Walter’s personal website</a></p></details>
+</figure><figure class="meet-us-person"><div aria-label="Photo of Laura Bordone coming soon" class="portrait-placeholder" role="img"><span aria-hidden="true">LB</span><small>Photo coming soon</small></div><figcaption><strong>Laura Bordone, Ph.D.</strong><em>Scientist &amp; EDMD Family Member</em></figcaption><details class="team-bio"><summary><span class="visually-hidden">Read bio for Laura Bordone</span><svg aria-hidden="true" class="bio-chevron" height="20" viewbox="0 0 24 24" width="20"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2"></path></svg></summary><p lang="en" translate="no">Laura is a scientist with a family member affected by EDMD. She participates in cureEDMD researcher meetings, bringing both her scientific background and her family perspective to the conversation.</p></details></figure>
+<figure class="meet-us-person">
+<img alt="Gabriella Snyder" height="450" loading="lazy" src="Gabriella Snyder.jpg" width="400"/>
+<figcaption><strong>Gabriella Snyder</strong><em>Genetic Counseling Master’s Student</em></figcaption>
+</figure>
+</div>
+</section>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="footer-badges">
+<a aria-label="Global Genes member" href="https://globalgenes.org/" rel="noreferrer" target="_blank">
+<img alt="Global Genes" src="global_genes.png"/>
+</a>
+<a aria-label="NORD member" href="https://rarediseases.org/" rel="noreferrer" target="_blank">
+<img alt="NORD Member" src="nord_member.png"/>
+</a>
+<a aria-label="EveryLife Foundation member" href="https://everylifefoundation.org/" rel="noreferrer" target="_blank">
+<img alt="EveryLife Foundation" src="community_congress_member.png"/>
+</a>
+</div>
+<p><a href="financial-transparency.html">Financial Transparency</a> | <a href="privacy.html">Privacy</a></p>
+<p>Draft for cureEDMD.org | Not medical advice. For emergencies, contact local emergency services.</p>
+<p>Email: info@cureEDMD.org</p>
+<p class="copyright">© <span data-copyright-year="">2026</span> cureEDMD. All rights reserved.</p>
+</footer>
+<script src="translations.js"></script>
+<script src="translations-extended.js"></script>
+<script src="translations-supplemental.js"></script>
+<script src="translations-v4.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

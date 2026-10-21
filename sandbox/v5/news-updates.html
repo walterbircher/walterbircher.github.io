@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cureEDMD.org | News and Updates</title>
+    <meta name="description" content="Short updates on research, registries, and community progress at cureEDMD." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script>
+      (function () {
+        var storageKey = "cureedmd-v5-preview-theme";
+        var themes = { harbor: true, meadow: true, ember: true, "ember-beacon": true, "ember-stride": true, "ember-bloom": true, "ember-pulse": true, nocturne: true, linen: true };
+        var params = new URLSearchParams(window.location.search);
+        var theme = params.has("theme") ? String(params.get("theme") || "").trim().toLowerCase() : "";
+
+        if (!params.has("theme")) {
+          try {
+            theme = String(window.localStorage.getItem(storageKey) || "").trim().toLowerCase();
+          } catch (error) {
+            theme = "";
+          }
+        }
+
+        if (["default", "classic", "none", "base"].includes(theme)) theme = "";
+
+        if (theme && themes[theme]) {
+          document.documentElement.setAttribute("data-theme", theme);
+          document.documentElement.style.colorScheme = theme === "nocturne" ? "dark" : "light";
+        } else {
+          document.documentElement.style.colorScheme = "light";
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles-themes.css" />
+  </head>
+  <body class="news-body">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a href="index.html" class="brand" aria-label="cureEDMD home">
+        <img class="brand-mark" src="cure_edmd_logo.png" alt="" aria-hidden="true" />
+        
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">Menu</button>
+      <nav id="mainNav" class="main-nav" aria-label="Primary navigation">
+<a class="nav-conference" href="conference.html">Conference</a>
+        
+        <a href="who-we-are.html">Who We Are</a>
+        <a href="what-is-edmd.html">What Is EDMD</a>
+        <a href="research.html">Research</a>
+        <a href="resources.html">Resources</a>
+        
+        <a class="active" href="news-updates.html">News</a>
+        <a href="stories.html">Stories</a>
+        <a href="help-change-lives.html">Help Change Lives</a>
+        <a href="contact-us.html">Contact Us</a>
+      </nav>
+      <div class="header-tools">
+        <label class="visually-hidden" for="languageSelect">Language</label>
+        <select id="languageSelect" class="language-select" aria-label="Select language"></select>
+        <a class="btn btn-solid" href="help-change-lives.html">Donate<svg class="icon-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 6 3.99 4 6.5 4c1.54 0 3.04.8 3.94 2.09C11.46 4.8 12.96 4 14.5 4 17.01 4 19 6 19 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></a>
+      </div>
+    </header>
+
+    <main id="main" class="lean-page news-page">
+      <div class="page-banner news-banner">
+        <img src="chicago_skyline.webp" alt="Chicago skyline" width="9500" height="4062" />
+        <div class="news-banner-copy banner-copy">
+          <h1>News</h1>
+          <p class="lean-lede">Short updates on research, registries, and community progress. The goal is one visible update each month, plus a deeper research update each quarter.</p>
+        </div>
+      </div>
+
+      <section class="conference-spotlight" id="conference-2027" aria-labelledby="conference-2027-title">
+        <div class="conference-card">
+          <h2 id="conference-2027-title">EDMD conference planned at the Hyatt Centric in downtown Chicago</h2>
+          <p>
+            “Emery-Dreifuss Muscular Dystrophy: Connecting Discovery, Care and Therapeutic Innovation” conference would likely begin mid- to late afternoon on Friday, April 2, 2027 and end by early afternoon on Sunday, April 4, 2027.
+          </p>
+          <div class="conference-actions"><a class="btn btn-outline" href="conference.html">Visit the conference page</a>
+            <a class="btn btn-solid" href="mailto:info@cureEDMD.org?subject=EDMD%20Conference%202027%20registration%20updates&body=Please%20send%20me%20conference%20registration%20updates%20for%20the%20EDMD%20conference%20planned%20for%20April%202-4,%202027%20in%20Chicago.">Get registration updates</a>
+            <a class="btn btn-solid" href="mailto:info@cureEDMD.org?subject=EDMD%20Conference%202027%20hotel%20interest&body=Please%20note%20my%20family%27s%20interest%20in%20Hyatt%20Centric%20rooms%20for%20the%20EDMD%20conference%20on%20April%202-4,%202027.%0A%0ANames:%0ANumber%20of%20rooms:%0ANights:%0AQuestions:">Share hotel interest</a>
+            <a class="btn btn-outline" href="mailto:info@cureEDMD.org?subject=EDMD%20Conference%202027%20updates&body=Please%20keep%20me%20updated%20about%20the%20EDMD%20conference%20planned%20for%20April%202-4,%202027%20in%20Chicago.">Request conference updates</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="latest-updates-section" aria-labelledby="latest-updates">
+        <div class="section-head">
+          <h2 id="latest-updates">Latest Updates</h2>
+          <p>A short running log of visible progress.</p>
+        </div>
+        <div class="news-log">
+          <article class="news-log-item partnership-update" aria-labelledby="partnership-update-title">
+            <p class="news-stamp">August 2026</p>
+            <div class="partnership-copy">
+              <h2 id="partnership-update-title">Steps made towards Global Genes partnership</h2>
+              <p>Global Genes, a leading rare disease patient advocacy organization, in conjunction with the University of Notre Dame Institute for Rare Diseases, recently completed a Global Genes Research Acceleration Program action plan for cureEDMD. cureEDMD was selected for this program based on our mission. Global Genes and Notre Dame conducted background research surveys and interviewed top researchers, leading clinicians, and cureEDMD officers to produce a comprehensive final report recommending specific, concrete steps cureEDMD can take to further advance our mission. cureEDMD is extremely thankful to Global Genes, Notre Dame, and the expert participants for all of the effort put into this outstanding report.</p>
+            </div>
+          </article>
+          <article class="news-log-item">
+            <p class="news-stamp">July 2026</p>
+            <p>Planning is underway for an EDMD conference in downtown Chicago on April 2-4, 2027. Use the buttons above to share hotel-room interest or request future updates.</p>
+          </article>
+          <article class="news-log-item">
+            <p class="news-stamp">Q2 2026</p>
+            <p>Registry outreach copy was rewritten in plain language for families and caregivers.</p>
+          </article>
+          <article class="news-log-item">
+            <p class="news-stamp">May 2026</p>
+            <p>Research summaries were tightened to make treatment-target and gene-therapy work easier to follow.</p>
+          </article>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-badges">
+        <a href="https://globalgenes.org/" target="_blank" rel="noreferrer" aria-label="Global Genes member">
+          <img src="global_genes.png" alt="Global Genes" />
+        </a>
+        <a href="https://rarediseases.org/" target="_blank" rel="noreferrer" aria-label="NORD member">
+          <img src="nord_member.png" alt="NORD Member" />
+        </a>
+        <a href="https://everylifefoundation.org/" target="_blank" rel="noreferrer" aria-label="EveryLife Foundation member">
+          <img src="community_congress_member.png" alt="EveryLife Foundation" />
+        </a>
+      </div>
+      <p><a href="financial-transparency.html">Financial Transparency</a> | <a href="privacy.html">Privacy</a></p>
+      <p>Draft for cureEDMD.org | Not medical advice. For emergencies, contact local emergency services.</p>
+      <p>Email: info@cureEDMD.org</p>
+      <p class="copyright">&copy; <span data-copyright-year>2026</span> cureEDMD. All rights reserved.</p>
+    </footer>
+    <script src="translations.js"></script>
+    <script src="translations-extended.js"></script>
+    <script src="translations-supplemental.js"></script>
+    <script src="translations-v4.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
