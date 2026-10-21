@@ -3,7 +3,7 @@
 Created from v4; v4 files remain unchanged.
 
 Changes:
-- Dedicated conference page with Chicago skyline, planned April 2–4, 2027 dates, hotel/agenda placeholders, and registration-coming-soon button. No registration integration.
+- Dedicated conference page with Chicago skyline, planned April 2â€“4, 2027 dates, hotel/agenda placeholders, and registration-coming-soon button. No registration integration.
 - Conference linked from primary navigation, home page, and news.
 - Laura Bordone added after Walter with a photo placeholder and supplied background. Ray is not listed in the source team page.
 - Featured researchers sorted by surname: Lammerding, Valdez, Wallrath, Worman.
