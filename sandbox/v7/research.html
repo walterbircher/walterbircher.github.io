@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>cureEDMD.org | Research</title>
+<meta content="Explore the EDMD research of Jan Lammerding, Howard Worman, and Lori Wallrath." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script>
+      (function () {
+        var storageKey = "cureedmd-v7-preview-theme";
+        var themes = { harbor: true, meadow: true, ember: true, "ember-beacon": true, "ember-stride": true, "ember-bloom": true, "ember-pulse": true, nocturne: true, linen: true };
+        var params = new URLSearchParams(window.location.search);
+        var theme = params.has("theme") ? String(params.get("theme") || "").trim().toLowerCase() : "";
+
+        if (!params.has("theme")) {
+          try {
+            theme = String(window.localStorage.getItem(storageKey) || "").trim().toLowerCase();
+          } catch (error) {
+            theme = "";
+          }
+        }
+
+        if (["default", "classic", "none", "base"].includes(theme)) theme = "";
+
+        if (theme && themes[theme]) {
+          document.documentElement.setAttribute("data-theme", theme);
+          document.documentElement.style.colorScheme = theme === "nocturne" ? "dark" : "light";
+        } else {
+          document.documentElement.style.colorScheme = "light";
+        }
+      })();
+    </script>
+<link href="styles.css" rel="stylesheet"/>
+<link href="styles-themes.css" rel="stylesheet"/>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<a aria-label="cureEDMD home" class="brand" href="index.html">
+<img alt="" aria-hidden="true" class="brand-mark" src="cure_edmd_logo.png"/>
+</a>
+<button aria-controls="mainNav" aria-expanded="false" class="menu-toggle" id="menuToggle">Menu</button>
+<nav aria-label="Primary navigation" class="main-nav" id="mainNav">
+<a class="nav-conference" href="conference.html">Conference</a>
+<a href="who-we-are.html">Who We Are</a>
+<a href="what-is-edmd.html">What Is EDMD</a>
+<a class="active" href="research.html">Research</a>
+<a href="resources.html">Resources</a>
+<a href="news-updates.html">News</a>
+<a href="stories.html">Stories</a>
+<a href="help-change-lives.html">Help Change Lives</a>
+<a href="contact-us.html">Contact Us</a>
+</nav>
+<div class="header-tools">
+<label class="visually-hidden" for="languageSelect">Language</label>
+<select aria-label="Select language" class="language-select" id="languageSelect"></select>
+<a class="btn btn-solid" href="help-change-lives.html">Donate<svg aria-hidden="true" class="icon-heart" focusable="false" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 6 3.99 4 6.5 4c1.54 0 3.04.8 3.94 2.09C11.46 4.8 12.96 4 14.5 4 17.01 4 19 6 19 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path></svg></a>
+</div>
+</header>
+<main id="main">
+<section class="research-hero">
+<div class="section-head">
+<p class="kicker">Research</p>
+<h1>Our Research Strategy</h1>
+<p>cureEDMD pursues two complementary approaches to developing treatments and cures for EDMD. These are research and development goals; benefit for people with EDMD must be established through appropriate studies.</p></div>
+</section>
+<section aria-label="Our Research Strategy" class="research-strategy">
+<div class="strategy-grid">
+<article><h2>Repurposed Drugs</h2><p>Investigate whether existing medicines can address EDMD disease pathways and advance promising candidates toward clinical evaluation.</p><div class="strategy-details permanent-content"><div><p>Finding a mechanism, or “target”, in skeletal or cardiac muscle cells that could be influenced by a therapeutic drug and then searching for a drug that has already been FDA-approved for another indication that addresses the target. While there is no guarantee such a drug, or combination of drugs, can be found, this is a much quicker and less costly approach than trying to develop a new drug.</p><p>Significant progress has already been made on this approach, facilitated by cureEDMD-associated funding, to the point that drugs may be screened for efficacy within the next few years. More broadly, processes for screening for existing drugs that help against disease targets are advancing, including through use of artificial intelligence (AI) techniques.    </p></div></div></article>
+<article><h2>Gene Therapy</h2><p>Support approaches addressing the underlying genetic causes of EDMD.</p><div class="strategy-details permanent-content"><div><p>Gene therapy for EDMD. By replacing or repairing the gene that is missing or defective it might be possible to treat or, if done early enough, even cure the disease. Gene therapy research is very costly, but gene therapy for EDMD can benefit from all of the work that has already been done for other muscle diseases, including Duchenne muscular dystrophy. Fortunately the defective <em>EMD</em> gene in X-linked EDMD, which encodes for emerin, is very small at only about 1200 base pairs, and can easily fit into existing delivery vectors already developed for other diseases. For autosomal dominant EDMD caused by <em>LMNA</em> gene mutations, repairing the gene will more likely be required.</p></div></div></article>
+</div>
+<section aria-labelledby="broader-treatment-title" class="strategy-details research-next-steps"><h2 id="broader-treatment-title">Developing new drugs and broader treatment potential</h2><p>Another approach would be to try to develop a new drug that addresses targets identified in EDMD. This could include targets downstream of the implicated genes themselves. This might have a higher probability of success than searching for existing drugs that are effective, but it is very costly (probably $10 million or more) and most likely very time consuming, on the order of several years at least even with sufficient funding. cureEDMD intends to seek or help motivate such funding once reasonably high-probability disease targets are identified.  </p><p>It is possible that a drug that is effective in EDMD would also help in related diseases such as limb-girdle muscular dystrophy, due to similar disease mechanisms. This might increase the interest of an existing pharmaceutical or biotech company, or a self- or capital-markets-funded startup, to pursue a therapeutic drug for EDMD.  </p></section></section>
+<!-- Additional profiles and topic navigation are retained but hidden for now. -->
+<section aria-labelledby="research-areas-title" class="topic-jump" hidden="">
+<div class="section-head section-head-compact">
+<h2 id="research-areas-title">Research Areas</h2>
+</div>
+<nav aria-label="Research areas" class="topic-nav topic-nav-compact">
+<a class="topic-chip" href="#genetics-research">Genetics</a>
+<a class="topic-chip" href="#cardiac-risk">Cardiac risk</a>
+<a class="topic-chip" href="#lmna-signaling">LMNA</a>
+<a class="topic-chip" href="#emerin">Emerin</a>
+<a class="topic-chip" href="#linc-complex">LINC complex</a>
+<a class="topic-chip" href="#fhl1">FHL1</a>
+<a class="topic-chip" href="#tmem43">TMEM43</a>
+</nav>
+</section>
+<section class="research-group" hidden="" id="genetics-research">
+<div class="section-head">
+<h2>Genetics and Natural History</h2>
+</div>
+<div class="research-entry-grid">
+<article class="research-entry" hidden="">
+<div class="entry-header">
+<img alt="" class="research-headshot" decoding="async" height="112" loading="lazy" src="gisele-bonne-portrait.jpg" width="112"/>
+<div>
+<h3>Gisèle Bonne, PhD</h3>
+<p class="entry-focus"><strong>Focus:</strong> EDMD genetics, laminopathies, disease models, and therapeutic development</p>
+</div>
+</div>
+<p class="entry-meta"><strong>Affiliation:</strong> Sorbonne Université, INSERM, and the Institut de Myologie, Paris</p>
+<p>
+              Gisèle Bonne is one of the central figures in modern EDMD research. In a landmark 1999 Nature
+              Genetics paper, she led the discovery that pathogenic variants in LMNA cause autosomal-dominant EDMD,
+              establishing the connection between lamin A/C and inherited muscle disease. That finding transformed EDMD
+              from a condition associated primarily with emerin deficiency into part of a much broader family of
+              nuclear-envelope disorders. Her group now combines genetics, international patient cohorts, disease
+              modeling, biomarker research, and experimental therapy development for LMNA-related skeletal and cardiac
+              disease.
+            </p>
+<div class="entry-links">
+<a href="https://www.institut-myologie.org/en/recherche-2/centre-de-recherche-en-myologie/team-1-gisele-bonne/" rel="noreferrer" target="_blank">Research profile</a>
+</div>
+</article>
+<article class="research-entry" hidden="">
+<div class="entry-header">
+<img alt="" class="research-headshot" decoding="async" height="112" loading="lazy" src="francesco-muntoni-portrait.png" width="112"/>
+<div>
+<h3>Francesco Muntoni, MD</h3>
+<p class="entry-focus"><strong>Focus:</strong> Pediatric neuromuscular disease, natural history, clinical trials, and genetic therapies</p>
+</div>
+</div>
+<p class="entry-meta"><strong>Affiliation:</strong> University College London and Great Ormond Street Hospital, London</p>
+<p>
+              Francesco Muntoni is one of the world's most prominent pediatric neuromuscular clinicians and
+              therapy-development leaders. His EDMD-relevant work includes the international LMNA natural-history study
+              that defined patterns of progression in early-onset disease and helped establish trial-ready clinical
+              measurements. More broadly, he has helped develop genetic therapies, outcome measures, and clinical-trial
+              infrastructure for rare muscular dystrophies through the Dubowitz Neuromuscular Centre and UCL Genetic
+              Therapy Accelerator. His importance to EDMD lies partly in his ability to translate rare-disease biology
+              into practical clinical studies.
+            </p>
+<div class="entry-links">
+<a href="https://www.worldmusclesociety.org/news/view/meet-the-members-professor-francesco-muntoni" rel="noreferrer" target="_blank">Research profile</a>
+</div>
+</article>
+<article class="research-entry" hidden="">
+<div class="entry-header">
+<img alt="" class="research-headshot" decoding="async" height="112" loading="lazy" src="eric-c-schirmer-portrait.jpg" width="112"/>
+<div>
+<h3>Eric C. Schirmer, PhD</h3>
+<p class="entry-focus"><strong>Focus:</strong> Cross-genotype EDMD pathways, nuclear-envelope biology, and biomarkers</p>
+</div>
+</div>
+<p class="entry-meta"><strong>Affiliation:</strong> University of Edinburgh</p>
+<p>
+              Eric Schirmer studies how nuclear-envelope proteins organize the genome and regulate tissue-specific gene
+              expression. In a 2022-2023 study of cells from patients carrying variants in seven different
+              EDMD-spectrum genes, his group identified recurring abnormalities in fibrosis, metabolism, muscle
+              signaling, RNA splicing, and mitochondrial function. The study was important because it searched for
+              shared disease pathways across genetically different forms of EDMD rather than assuming that every subtype
+              has an entirely separate mechanism. These shared signatures could inform future biomarker panels and
+              treatments that apply across multiple genotypes.
+            </p>
+<div class="entry-links">
+<a href="https://www.research.ed.ac.uk/en/persons/eric-schirmer/" rel="noreferrer" target="_blank">Research profile</a>
+</div>
+</article>
+</div>
+</section>
+<section class="research-group" hidden="" id="cardiac-risk">
+<div class="section-head">
+<h2>Cardiac Risk</h2>
+</div>
+<div class="research-entry-grid">
+<article class="research-entry" hidden="">
+<div class="entry-header">
+<img alt="" class="research-headshot" decoding="async" height="112" loading="lazy" src="elizabeth-m-mcnally-portrait.jpg" width="112"/>
+<div>
+<h3>Elizabeth M. McNally, MD, PhD</h3>
+<p class="entry-focus"><strong>Focus:</strong> Muscular dystrophy genetics, inherited cardiomyopathy, arrhythmias, and precision medicine</p>
+</div>
+</div>
+<p class="entry-meta"><strong>Affiliation:</strong> Northwestern University Feinberg School of Medicine, Chicago</p>
+<p>
+              Elizabeth McNally is a leading physician-scientist at the intersection of muscular dystrophy and
+              inherited heart disease. Her laboratory uses patient genomics, engineered cells, and animal models to
+              study genes including LMNA, SYNE1, and SYNE2 and to understand why people with related variants develop
+              different degrees of muscle weakness, arrhythmia, and heart failure. Recent work from her group supports
+              a multiple-hit model in which combinations of genetic variants can influence cardiomyopathy penetrance and
+              severity. This broader modifier-gene perspective is especially relevant to the substantial clinical
+              variability seen among people carrying the same EDMD-associated variant.
+            </p>
+<div class="entry-links">
+<a href="https://labs.feinberg.northwestern.edu/mcnally/" rel="noreferrer" target="_blank">Research profile</a>
+</div>
+</article>
+<article class="research-entry" hidden="">
+<div class="entry-header">
+<img alt="" class="research-headshot" decoding="async" height="112" loading="lazy" src="luisa-mestroni-portrait.jpg" width="112"/>
+<div>
+<h3>Luisa Mestroni, MD</h3>
+<p class="entry-focus"><strong>Focus:</strong> Familial cardiomyopathy, international registries, LMNA disease, and clinical translation</p>
+</div>
+</div>
+<p class="entry-meta"><strong>Affiliation:</strong> University of Colorado Anschutz Medical Campus</p>
+<p>
+              Luisa Mestroni is a major leader in the genetics of familial dilated cardiomyopathy and directs the
+              International Familial Cardiomyopathy Registry. Her program connects disease-gene discovery with
+              longitudinal patient follow-up, arrhythmia risk, heart failure, and experimental treatment. Her
+              LMNA-related translational work helped bring inhibition of the p38 MAPK pathway into phase 2 clinical
+              testing with ARRY-371797, moving a mechanism first identified in laboratory models into studies involving
+              patients. Whether or not a particular therapy ultimately succeeds, this bench-to-clinic pathway is an
+              important model for future EDMD drug development.
+            </p>
+<div class="entry-links">
+<a href="https://medschool.cuanschutz.edu/cardiology/research/basic-translational-research/mestroni-lab" rel="noreferrer" target="_blank">Research profile</a>
+</div>
+</article>
+<article class="research-entry" hidden="">
+<div class="entry-header">
+<img alt="" class="research-headshot" decoding="async" height="112" loading="lazy" src="karim-wahbi-portrait.jpg" width="112"/>
+<div>
+<h3>Karim Wahbi, MD, PhD</h3>
+<p class="entry-focus"><strong>Focus:</strong> Arrhythmia prediction, heart failure, cardiac surveillance, and patient registries</p>
+</div>
+</div>
+<p class="entry-meta"><strong>Affiliation:</strong> Cochin Hospital, AP-HP, and the Institut de Myologie, Paris</p>
+<p>
+              Karim Wahbi is among the most directly relevant cardiac researchers for people with EDMD. His landmark
+              clinical contribution was leading the development and validation of the 2019 LMNA-risk VTA model, which
+              estimates an individual's risk of life-threatening ventricular tachyarrhythmia using genetic and
+              clinical variables. The model helped move LMNA cardiac care toward gene-specific risk assessment rather
+              than relying exclusively on general cardiomyopathy criteria. His group also studies cardiac outcomes in
+              EMD-related disease and leads registries for laminopathies and emerinopathies.
+            </p>
+<div class="entry-links">
+<a href="https://www.institut-myologie.org/en/recherche-clinique/registers-and-databases/" rel="noreferrer" target="_blank">Research program</a>
+</div>
+</article>
+</div>
+</section>
+<section aria-labelledby="featured-title" class="research-group featured-researcher" id="lmna-signaling">
+<h2 id="featured-title">Featured Researchers</h2>
+<div class="research-entry-grid">
+<article class="research-entry" hidden="">
+<div class="entry-header">
+<img alt="" class="research-headshot" decoding="async" height="112" loading="lazy" src="dennis-e-discher-portrait.jpg" width="112"/>
+<div>
+<h3>Dennis E. Discher, PhD</h3>
+<p class="entry-focus"><strong>Focus:</strong> Lamin mechanobiology, tissue stiffness, and mechanically regulated cell behavior</p>
+</div>
+</div>
+<p class="entry-meta"><strong>Affiliation:</strong> University of Pennsylvania</p>
+<p>
+              Dennis Discher is one of the most influential researchers in cellular mechanobiology. In a landmark 2013
+              Science paper, his group showed that lamin A levels scale with the stiffness and mechanical demands of
+              tissues and influence matrix-directed cell differentiation. The study provided a powerful general
+              explanation for why abnormalities in lamin A/C can have their strongest effects in mechanically active
+              tissues such as skeletal muscle and the heart. Although the work was not limited to EDMD, it
+              fundamentally shaped how researchers think about lamins as adaptive regulators of nuclear mechanics.
+            </p>
+<div class="entry-links">
+<a href="https://www.med.upenn.edu/i3h/faculty-profile/4381249" rel="noreferrer" target="_blank">Research profile</a>
+</div>
+</article>
+<article class="research-entry" hidden="">
+<div class="entry-header">
+<img alt="" class="research-headshot" decoding="async" height="112" loading="lazy" src="tom-misteli-portrait.png" width="112"/>
+<div>
+<h3>Tom Misteli, PhD</h3>
+<p class="entry-focus"><strong>Focus:</strong> Nuclear architecture, genome organization, and lamin-chromatin interactions</p>
+</div>
+</div>
+<p class="entry-meta"><strong>Affiliation:</strong> National Cancer Institute, National Institutes of Health</p>
+<p>
+              Tom Misteli is a pioneer in genome cell biology and the study of how three-dimensional nuclear
+              organization affects gene regulation and disease. His group has mapped changes in chromatin organization
+              and lamin interactions caused by abnormal lamin A, particularly in progeria and other laminopathies.
+              Although this work is not specific to EDMD, it established methods and concepts for understanding how
+              LMNA variants can alter genome organization rather than acting only through mechanical weakness. This
+              broader genome-organization perspective remains highly relevant to muscle differentiation and disease
+              progression in EDMD.
+            </p>
+<div class="entry-links">
+<a href="https://irp.nih.gov/pi/tom-misteli" rel="noreferrer" target="_blank">Research profile</a>
+</div>
+</article>
+<article class="research-entry" hidden="">
+<div class="entry-header">
+<img alt="" class="research-headshot" decoding="async" height="112" loading="lazy" src="researcher-photo-placeholder.svg" width="112"/>
+<div>
+<h3>Antoine Muchir, PhD</h3>
+<p class="entry-focus"><strong>Focus:</strong> Disease signaling and preclinical treatment of LMNA- and EMD-related cardiomyopathy</p>
+</div>
+</div>
+<p class="entry-meta"><strong>Affiliation:</strong> Sorbonne Université, INSERM, and the Institut de Myologie, Paris</p>
+<p>
+              Antoine Muchir was the lead experimental investigator on the influential study identifying early MAPK
+              activation in an LMNA EDMD model. His subsequent work showed that pharmacologic inhibition of pathways
+              such as ERK and JNK could reduce fibrosis, improve cardiac function, or delay cardiomyopathy in
+              experimental models. These studies provided some of the earliest evidence that a molecular pathway
+              downstream of lamin dysfunction could be therapeutically targeted. His group continues to investigate
+              signaling, calcium regulation, fibrosis, and other modifiable mechanisms in striated-muscle
+              laminopathies.
+            </p>
+<div class="entry-links">
+<a href="https://www.institut-myologie.org/en/recherche-2/centre-de-recherche-en-myologie/team-9-signaling-pathways-striated-muscles/" rel="noreferrer" target="_blank">Research profile</a>
+</div>
+</article>
+<article class="research-entry" hidden="">
+<div class="entry-header">
+<img alt="" class="research-headshot" decoding="async" height="112" loading="lazy" src="stephen-g-young-portrait.webp" width="112"/>
+<div>
+<h3>Stephen G. Young, MD</h3>
+<p class="entry-focus"><strong>Focus:</strong> Lamin biology, genetically engineered disease models, and nuclear structure</p>
+</div>
+</div>
+<p class="entry-meta"><strong>Affiliation:</strong> University of California, Los Angeles</p>
+<p>
+              Stephen Young's laboratory has developed and characterized influential genetic models of nuclear-lamin
+              disease. In a widely cited 2006 study with Jan Lammerding and collaborators, the researchers demonstrated
+              that lamins A and C, but not lamin B1, are major determinants of nuclear mechanical stiffness. The result
+              clarified the specific structural role of A-type lamins and helped explain the nuclear fragility observed
+              in LMNA muscular dystrophies. His mouse models and molecular studies remain important tools for research
+              on laminopathies, cardiomyopathy, and nuclear-envelope function.
+            </p>
+<div class="entry-links">
+<a href="https://younglab.dgsom.ucla.edu/" rel="noreferrer" target="_blank">Research profile</a>
+</div>
+</article>
+<article class="research-entry">
+<div class="entry-header">
+<img alt="" class="research-headshot" decoding="async" height="112" loading="lazy" src="jan-lammerding-portrait.jpg" width="112"/>
+<div>
+<h3>Jan Lammerding, PhD</h3>
+<p class="entry-focus"><strong>Focus:</strong> Nuclear mechanics, mechanotransduction, DNA damage, and muscle-cell injury</p>
+</div>
+</div><p class="research-short-description">Investigating how nuclear-envelope proteins affect muscle cells and exploring LINC complex disruption as a potential treatment approach.</p>
+<p class="entry-meta"><strong>Affiliation:</strong> Cornell University</p>
+<div><p><a href="https://www.engineering.cornell.edu/people/jan-lammerding/">Jan Lammerding</a> is a professor in the Meinig School of Biomedical Engineering and the Weill Institute for Cell and Molecular Biology at Cornell University. He was appointed as the Associate Director of the Meinig School of Biomedical Engineering in 2024. He obtained a Diplom Ingenieur degree in Mechanical Engineering in his native Germany and a Bachelor of Engineering degree from the Thayer School of Engineering at Dartmouth College. Subsequently, he completed his Ph.D. in Biological Engineering at the Massachusetts Institute of Technology studying subcellular biomechanics and mechanotransduction signaling with Drs. Roger Kamm and Richard T. Lee (Brigham and Women’s Hospital/Harvard Medical School). Following a brief postdoctoral fellowship in Dr. Lee’s laboratory, he started his faculty career at Harvard Medical School/Brigham and Women’s Hospital while also teaching in the Department of Biological Engineering at the Massachusetts Institute for Technology before joining Cornell University in 2011.</p><p>Dr. Lammerding has published over 100 peer-reviewed articles, including in Nature, Science, and PNAS. He has won several prestigious awards, including the Keith Porter award of the American Society for Cell Biology (ASCB) for exceptional contributions to cell biology, a National Science Foundation CAREER Award, and the American Heart Association Scientist Development Grant. He was named one of the 2014 Young Innovators by the Cell and Molecular Bioengineering Journal. Dr. Lammerding is a Fellow of the Biomedical Engineering Society (BMES), the American Institute for Medical and Biological Engineering (AIMBE), and the American Society for Cell Biology (ASCB). The research in the Lammerding laboratory is supported by grants from the National Institutes of Health, the National Science Foundation, the Leducq Foundation, and the Volkswagen Foundation. </p><p>The <a href="https://lammerding.wicmb.cornell.edu/"><span>Lammerding laboratory</span></a> at Cornell University is researching the cellular functions affected by emerin and lamins, the nuclear-lamina proteins that are missing or faulty in EDMD, with the goal to identify novel therapeutic strategies to intervene in the mechanisms responsible for EDMD to treat the disease. One promising area of the lab’s research is called “LINC complex disruption”. The Linker of Nucleoskeleton and Cytoskeleton (LINC) complex is a large multi-protein structure that physically connects the cell nucleus with the surrounding cellular structures. The lab has found that disrupting the LINC complex shows very promising improvements in muscle function both in laboratory-cultured diseased muscle cells and in mouse models of EDMD (i.e., mice genetically engineered to have similar mutations as in human EDMD patients, thereby serving as ‘preclinical’ models to study the disease and to test new treatment approaches). In collaboration with researchers at Stanford University, the University of Pennsylvania, Duke University and the Institute of Myology/INSERM (Paris, France), supported in part through Networks of Excellence funded by the Leducq Foundation, the Lammerding lab is working to identify drugs that can target the LINC complex or achieve similar benefits as LINC complex disruption. </p><p>In parallel, the Lammerding lab is exploring additional treatment approaches that could substitute or complement LINC complex disruption to result in even more effective improvements. As this work progresses, the lab is investigating whether existing, FDA-approved drugs could be used off-label to help EDMD patients.  </p><p>The work of the Lammerding Lab has real potential to benefit EDMD patients in the coming years and is therefore a high priority for cureEDMD. Based on our current understanding of the disease mechanism, there is good reason to believe that any therapeutic progress on EDMD might also provide benefit for other laminopathies, including limb-girdle muscular dystrophy, congenital muscular dystrophy, and LMNA-associated dilated cardiomyopathy.</p></div><div class="entry-links">
+<a href="https://www.engineering.cornell.edu/people/jan-lammerding/" rel="noreferrer" target="_blank">Research profile</a>
+</div>
+</article><article class="research-entry">
+<div class="entry-header">
+<img alt="Gregorio Valdez" class="research-headshot" decoding="async" height="500" loading="lazy" src="Gregorio%20Valdez.jpg" width="334"/>
+<div>
+<h3>Gregorio “Greg” Valdez, PhD</h3><p class="entry-focus"><strong>Focus:</strong> Neuromuscular junctions, muscle aging, and muscular dystrophy</p>
+<p class="entry-meta">Brown University, Department of Molecular Biology, Cell Biology and Biochemistry</p>
+</div>
+</div>
+<p>Gregorio Valdez studies the nervous system and skeletal muscles, including neuromuscular junctions, aging, and muscular dystrophy.</p>
+<div class="entry-links"><a href="https://vivo.brown.edu/display/gvaldez1" rel="noreferrer" target="_blank">Research profile</a></div>
+</article><article class="research-entry">
+<div class="entry-header">
+<img alt="" class="research-headshot" decoding="async" height="112" loading="lazy" src="lori-l-wallrath-portrait.png" width="112"/>
+<div>
+<h3>Lori L. Wallrath, PhD</h3>
+<p class="entry-focus"><strong>Focus:</strong> LMNA muscular dystrophy models, chromatin, redox biology, and therapeutic pathways</p>
+</div>
+</div>
+<p class="entry-meta"><strong>Affiliation:</strong> University of Iowa Carver College of Medicine</p>
+<p>
+              Lori Wallrath develops fruit-fly models carrying patient-associated lamin mutations to investigate
+              skeletal-muscle and cardiac laminopathies. Her models have revealed abnormalities in nuclear
+              organization, nucleo-cytoskeletal coupling, oxidative stress, protein aggregation, and muscle function,
+              creating a tractable system for testing genetic and pharmacological modifiers. She also contributed to
+              the influential 2020 study showing that mutant lamins cause mechanically induced nuclear-envelope rupture
+              and DNA damage in skeletal muscle. Her work is particularly valuable because it connects fundamental
+              lamin biology with rapid in vivo screening for potentially modifiable disease pathways.
+            </p>
+<div class="entry-links">
+<a href="https://wallrath.lab.uiowa.edu/" rel="noreferrer" target="_blank">Research profile</a>
+</div>
+</article><article class="research-entry">
+<div class="entry-header">
+<img alt="Howard J. Worman" class="research-headshot" decoding="async" height="112" loading="lazy" src="howard_worman.png" width="112"/>
+<div>
+<h3>Howard J. Worman, MD</h3>
+<p class="entry-focus"><strong>Focus:</strong> Nuclear-envelope biology, laminopathies, and LMNA-related cardiomyopathy</p>
+</div>
+</div><p class="research-short-description">Studying disease pathways in heart and skeletal muscle and developing gene therapy approaches to restore emerin.</p>
+<p class="entry-meta"><strong>Affiliation:</strong> Columbia University</p>
+<div><p><a href="https://www.pathology.columbia.edu/profile/howard-j-worman-md">Howard J. Worman, M.D.</a> is Professor of Medicine and Pathology and Cell Biology at Columbia University and Attending Physician at New York-Presbyterian Hospital Columbia University Irving Medical Center. Dr. Worman received his BA from Cornell University and MD from the University of Chicago. He did an internship and residency in internal medicine at New York Hospital-Cornell Medical Center and a postdoctoral research fellowship in cell biology at Rockefeller University, where he started his research on the nuclear envelope.</p><p>Dr. Worman is internationally recognized for his nearly 40 years of research on the nuclear envelope and its role in disease, including Emery-Dreifuss muscular dystrophy (EDMD). In 1993, his laboratory characterized the human lamin A/C gene, which is mutated in autosomal dominant EDMD. In 1999, his group published one of the first studies of how emerin, the protein lacking in X-linked EDMD, is targeted to the nuclear envelope inner membrane. In 2013, his laboratory showed that emerin deficiency significantly worsened the muscular dystrophy in mice lacking lamina-associated polypeptide 1 from skeletal muscle, thus establishing the only vertebrate model system to date in which the effects of emerin disruption on muscle pathology can be studied (unlike humans, mice without emerin to not develop muscular dystrophy). Using various mouse and cellular models, Dr. Worman’s laboratory has conducted numerous studies dissecting gene expression and cell signaling abnormalities in heart and skeletal muscle that occur in EDMD. His laboratory has also tested several potential therapies in mouse models of EDMD.</p><p>Dr. Worman’s current research on EDMD is aimed at deciphering the common transcriptomic, proteomic and metabolomic alterations in heart cells with deletions of the genes encoding lamin A/C and emerin. This research could uncover potential therapeutic targets for  two different inherited types of EDMD. He is using mouse models to determine how depletion of lamin A/C from mature skeletal muscle fibers and satellite cells – the cells responsible for muscle regeneration – contribute to pathology in autosomal dominant EDMD. His laboratory is also working on developing gene therapy to restore emerin expression in heart and skeletal muscle that could be translated to patients with X-linked EDMD. </p><p>Dr. Worman is an author on over 225 scientific publications. In 1998, he was elected to membership in the American Society for Clinical Investigator and, in 2010, to the Association of American Physicians. He has served as a member of numerous NIH review panels, the MDA Medical Advisory Committee and the NIH Action Plan for the Muscular Dystrophies Mechanisms of Muscular Dystrophy Working Group. In addition to his academic activities, Dr. Worman is a consultant for pharmaceutical, biotechnology and clinical genomics companies, including those developing gene therapies, other treatments and diagnostics for muscular dystrophies.</p><p><br/></p></div><div class="entry-links">
+<a href="https://www.pathology.columbia.edu/profile/howard-j-worman-md" rel="noreferrer" target="_blank">Research profile</a>
+</div>
+</article></div>
+</section>
+<section class="research-group" hidden="" id="emerin">
+<div class="section-head">
+<h2>Emerin</h2>
+</div>
+<div class="research-entry-grid">
+<article class="research-entry" hidden="">
+<div class="entry-header">
+<img alt="" class="research-headshot" decoding="async" height="112" loading="lazy" src="giovanna-lattanzi-portrait.jpg" width="112"/>
+<div>
+<h3>Giovanna Lattanzi, PhD</h3>
+<p class="entry-focus"><strong>Focus:</strong> Emerin, laminopathies, muscle-cell mechanics, fibrosis, and gene correction</p>
+</div>
+</div>
+<p class="entry-meta"><strong>Affiliation:</strong> CNR Institute of Molecular Genetics "Luigi Luca Cavalli-Sforza," Bologna</p>
+<p>
+              Giovanna Lattanzi studies how emerin and lamin defects disrupt nuclear organization, cellular
+              differentiation, cytoskeletal connections, and profibrotic signaling. In recent 2026 work, her group
+              used CRISPR-corrected EDMD1 patient cells to show that restoring functional emerin rescued the
+              positioning of proteins involved in centrosome movement, mechanosignaling, and muscle differentiation.
+              The study provides direct evidence that correcting the underlying EMD variant can reverse measurable
+              disease-associated cellular abnormalities. This makes her program particularly relevant to the transition
+              from mechanism discovery toward mutation-correcting therapies.
+            </p>
+<div class="entry-links">
+<a href="https://www.nature.com/articles/s41419-026-08819-6" rel="noreferrer" target="_blank">Recent work</a>
+<a href="https://www.igm.cnr.it/en/institute/organization/staff/lattanzi-giovanna/" rel="noreferrer" target="_blank">Research profile</a>
+</div>
+</article>
+<article class="research-entry" hidden="">
+<div class="entry-header">
+<img alt="" class="research-headshot" decoding="async" height="112" loading="lazy" src="katherine-l-wilson-portrait.jpg" width="112"/>
+<div>
+<h3>Katherine L. Wilson, PhD</h3>
+<p class="entry-focus"><strong>Focus:</strong> Emerin, LEM-domain proteins, BAF, chromatin, and mechanotransduction</p>
+</div>
+</div>
+<p class="entry-meta"><strong>Affiliation:</strong> Johns Hopkins University School of Medicine</p>
+<p>
+              Katherine Wilson is one of the most influential researchers studying emerin, the protein absent or
+              dysfunctional in X-linked EDMD1. Her laboratory established much of the molecular framework describing
+              emerin's interactions with lamins, BAF, nuclear actin, nesprins, chromatin, and transcriptional
+              regulators. More recent work showed that acute loss of emerin alters actomyosin connectivity and impairs
+              cellular responses to changing mechanical environments, strengthening the connection between emerin and
+              mechanotransduction. Together, these findings help explain how loss of a widely expressed nuclear protein
+              can preferentially damage mechanically active muscle cells.
+            </p>
+<div class="entry-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/15773747/" rel="noreferrer" target="_blank">Foundational review</a>
+<a href="https://pure.johnshopkins.edu/en/publications/acute-downregulation-of-emerin-alters-actomyosin-cytoskeleton-con" rel="noreferrer" target="_blank">Recent work</a>
+<a href="https://www.hopkinsmedicine.org/research/labs/k/katherine-wilson-lab" rel="noreferrer" target="_blank">Research profile</a>
+</div>
+</article>
+</div>
+</section>
+<section class="research-group" hidden="" id="linc-complex">
+<div class="section-head">
+<h2>LINC Complex</h2>
+</div>
+<div class="research-entry-grid">
+<article class="research-entry" hidden="">
+<div class="entry-header">
+<img alt="" class="research-headshot" decoding="async" height="112" loading="lazy" src="brian-burke-portrait.jpg" width="112"/>
+<div>
+<h3>Brian Burke, PhD</h3>
+<p class="entry-focus"><strong>Focus:</strong> Nuclear-envelope architecture and the LINC complex</p>
+</div>
+</div>
+<p class="entry-meta"><strong>Affiliation:</strong> A*STAR Institute of Molecular and Cell Biology, Singapore</p>
+<p>
+              Brian Burke is one of the foundational figures in nuclear-envelope and LINC-complex biology. In a
+              landmark 2006 paper with Didier Hodzic and colleagues, his group formalized the concept of the LINC
+              complex, describing how SUN proteins and nesprins form a molecular bridge across the nuclear envelope.
+              This framework transformed understanding of how the cytoskeleton applies force to the nucleus and
+              provided the conceptual foundation for interpreting SYNE1-, SYNE2-, SUN1-, and SUN2-associated disease.
+              His later work has examined nuclear positioning in muscle and the therapeutic potential of modifying
+              LINC-complex connections.
+            </p>
+<div class="entry-links">
+<a href="https://www.a-star.edu.sg/imcb/our-people/research-directors/brian-burke" rel="noreferrer" target="_blank">Research profile</a>
+</div>
+</article>
+<article class="research-entry" hidden="">
+<div class="entry-header">
+<img alt="" class="research-headshot" decoding="async" height="112" loading="lazy" src="gregg-g-gundersen-portrait.jpg" width="112"/>
+<div>
+<h3>Gregg G. Gundersen, PhD</h3>
+<p class="entry-focus"><strong>Focus:</strong> Cytoskeletal force transmission, nuclear movement, and LINC-complex mechanics</p>
+</div>
+</div>
+<p class="entry-meta"><strong>Affiliation:</strong> Columbia University</p>
+<p>
+              Gregg Gundersen is a prominent researcher in cytoskeletal organization and nuclear positioning. His
+              laboratory helped provide direct experimental evidence that nesprin-SUN interactions transmit
+              actin-generated forces across the nuclear envelope. He also contributed to the study showing that
+              disease-associated SUN1 and SUN2 variants disrupt nucleo-cytoskeletal coupling and myonuclear
+              organization. This work clarifies the mechanical consequences of variants affecting the inner and outer
+              components of the LINC complex.
+            </p>
+<div class="entry-links">
+<a href="https://www.pathology.columbia.edu/profile/gregg-gundersen-phd" rel="noreferrer" target="_blank">Research profile</a>
+</div>
+</article>
+<article class="research-entry" hidden="">
+<div class="entry-header">
+<img alt="" class="research-headshot" decoding="async" height="112" loading="lazy" src="didier-hodzic-portrait.jpg" width="112"/>
+<div>
+<h3>Didier Hodzic, PhD</h3>
+<p class="entry-focus"><strong>Focus:</strong> SUN proteins, nesprins, nuclear positioning, and muscle disease models</p>
+</div>
+</div>
+<p class="entry-meta"><strong>Affiliation:</strong> Washington University School of Medicine in St. Louis</p>
+<p>
+              Didier Hodzic was a corresponding author on the foundational study defining the LINC complex and has
+              made major contributions to understanding SUN-nesprin interactions. His group subsequently developed
+              models in which disruption of nesprin-dependent nuclear positioning produced muscle abnormalities
+              resembling EDMD. This work demonstrated that incorrect positioning of muscle-cell nuclei is not merely a
+              visual feature of disease but can contribute directly to muscle dysfunction. His research provides an
+              important bridge between the molecular architecture of the LINC complex and disease at the tissue level.
+            </p>
+<div class="entry-links">
+<a href="https://pubmed.ncbi.nlm.nih.gov/16380439/" rel="noreferrer" target="_blank">Foundational paper</a>
+<a href="https://pubmed.ncbi.nlm.nih.gov/19164528/" rel="noreferrer" target="_blank">Disease-model work</a>
+<a href="https://physiology.wustl.edu/people/didier-hodzic-phd/" rel="noreferrer" target="_blank">Research profile</a>
+</div>
+</article>
+</div>
+</section>
+<section class="research-group" hidden="" id="fhl1">
+<div class="section-head">
+<h2>FHL1</h2>
+</div>
+<div class="research-entry-grid">
+<article class="research-entry" hidden="">
+<div class="entry-header">
+<img alt="" class="research-headshot" decoding="async" height="112" loading="lazy" src="carsten-g-bonnemann-portrait.png" width="112"/>
+<div>
+<h3>Carsten G. Bönnemann, MD</h3>
+<p class="entry-focus"><strong>Focus:</strong> Congenital and inherited muscle disease, FHL1 myopathies, and therapy development</p>
+</div>
+</div>
+<p class="entry-meta"><strong>Affiliation:</strong> St. Jude Children's Research Hospital, Memphis</p>
+<p>
+              Carsten Bönnemann is one of the world's leading authorities on congenital and inherited muscle
+              disorders. In a landmark 2008 Journal of Clinical Investigation paper, he and his collaborators used
+              proteomic and genetic approaches to identify FHL1 as the protein mutated in reducing-body myopathy. That
+              discovery opened the modern field of FHL1-related muscle disease and provided the foundation for
+              recognizing a broader spectrum that includes EDMD6. His program combines deep clinical
+              phenotyping, pathology, genomics, disease models, and therapeutic development for rare muscle disorders.
+            </p>
+<div class="entry-links">
+<a href="https://www.stjude.org/people/b/carsten-bonnemann.html" rel="noreferrer" target="_blank">Research profile</a>
+</div>
+</article>
+<article class="research-entry" hidden="">
+<div class="entry-header">
+<img alt="" class="research-headshot" decoding="async" height="112" loading="lazy" src="ju-chen-portrait.webp" width="112"/>
+<div>
+<h3>Ju Chen, PhD</h3>
+<p class="entry-focus"><strong>Focus:</strong> FHL1 function, sarcomere signaling, biomechanical stress, and cardiac remodeling</p>
+</div>
+</div>
+<p class="entry-meta"><strong>Affiliation:</strong> University of California, San Diego</p>
+<p>
+              Ju Chen is a distinguished cardiovascular and muscle biologist who has helped define the normal function
+              of FHL1. In an influential 2008 study, his group showed that FHL1 is part of a sarcomeric complex that
+              senses biomechanical stress and promotes cardiac hypertrophy. Mice lacking Fhl1 had a reduced
+              hypertrophic response and were protected from certain forms of pressure-induced cardiomyopathy. These
+              results provide a mechanistic framework for understanding how FHL1 variants can cause skeletal myopathy,
+              hypertrophic cardiomyopathy, and abnormal responses to mechanical stress.
+            </p>
+<div class="entry-links">
+<a href="https://profiles.ucsd.edu/ju.chen" rel="noreferrer" target="_blank">Research profile</a>
+</div>
+</article>
+<article class="research-entry" hidden="">
+<div class="entry-header">
+<img alt="" class="research-headshot" decoding="async" height="112" loading="lazy" src="christian-windpassinger-portrait.png" width="112"/>
+<div>
+<h3>Christian Windpassinger, MD</h3>
+<p class="entry-focus"><strong>Focus:</strong> Human genetics and the expanding FHL1 disease spectrum</p>
+</div>
+</div>
+<p class="entry-meta"><strong>Affiliation:</strong> Medical University of Graz, Austria</p>
+<p>
+              Christian Windpassinger helped establish FHL1 as a human muscle-disease gene through the discovery of
+              variants causing X-linked myopathy with postural muscle atrophy and generalized hypertrophy. This work
+              demonstrated that different FHL1 variants could cause phenotypes extending beyond reducing-body myopathy
+              and helped reveal the protein's unusually broad clinical spectrum. Subsequent studies connected FHL1
+              variants with EDMD, rigid-spine disease, cardiac involvement, and other overlapping syndromes. His
+              research is particularly relevant to understanding why the location and molecular effect of an FHL1
+              variant can produce very different skeletal and cardiac manifestations.
+            </p>
+<div class="entry-links">
+<a href="https://ris.medunigraz.at/en/persons/christian-windpassinger/" rel="noreferrer" target="_blank">Research profile</a>
+</div>
+</article>
+</div>
+</section>
+<section class="research-group" hidden="" id="tmem43">
+<div class="section-head">
+<h2>TMEM43</h2>
+</div>
+<div class="research-entry-grid">
+<article class="research-entry" hidden="">
+<div class="entry-header">
+<img alt="" class="research-headshot" decoding="async" height="112" loading="lazy" src="yukiko-k-hayashi-portrait.jpg" width="112"/>
+<div>
+<h3>Yukiko K. Hayashi, MD, PhD</h3>
+<p class="entry-focus"><strong>Focus:</strong> EDMD genetics, muscle pathology, and nuclear-envelope disease</p>
+</div>
+</div>
+<p class="entry-meta"><strong>Affiliation:</strong> Tokyo Medical University</p>
+<p>
+              Yukiko Hayashi was a senior investigator in the 2011 study linking TMEM43 variants to EDMD-related
+              myopathy. Her research has helped connect genetic findings with muscle pathology, nuclear deformities,
+              protein localization, and clinical presentation in EMD-, LMNA-, and TMEM43-associated disease. She has
+              continued to investigate how abnormalities of nuclear-envelope proteins affect muscle-cell nuclei and why
+              the resulting cellular abnormalities do not always correlate simply with clinical severity. Her work is
+              especially valuable for interpreting the pathological consequences of rare EDMD-associated variants.
+            </p>
+<div class="entry-links">
+<a href="https://researchmap.jp/yukiko_hayashi?lang=en" rel="noreferrer" target="_blank">Research profile</a>
+</div>
+</article>
+<article class="research-entry" hidden="">
+<div class="entry-header">
+<img alt="" class="research-headshot" decoding="async" height="112" loading="lazy" src="ichizo-nishino-portrait.jpg" width="112"/>
+<div>
+<h3>Ichizo Nishino, MD, PhD</h3>
+<p class="entry-focus"><strong>Focus:</strong> Muscle pathology, nuclear-envelope myopathies, and TMEM43-related EDMD</p>
+</div>
+</div>
+<p class="entry-meta"><strong>Affiliation:</strong> National Center of Neurology and Psychiatry, Tokyo</p>
+<p>
+              Ichizo Nishino is one of the world's leading researchers in muscle pathology and inherited myopathy.
+              His group helped lead the landmark 2011 study identifying TMEM43 variants in patients with an
+              EDMD-related myopathy, providing the principal basis for the EDMD7 classification. The study showed
+              abnormal nuclear morphology and disturbed localization or interaction of nuclear-envelope proteins,
+              directly connecting TMEM43 dysfunction with an EDMD-like skeletal-muscle phenotype. His broader work on
+              emerinopathies and laminopathies integrates genetics, pathology, imaging, and clinical characterization.
+            </p>
+<div class="entry-links">
+<a href="https://www.ncnp.go.jp/nin/guide/r2/index.html" rel="noreferrer" target="_blank">Research profile</a>
+</div>
+</article>
+<article class="research-entry" hidden="">
+<div class="entry-header">
+<img alt="" class="research-headshot" decoding="async" height="112" loading="lazy" src="terry-lynn-young-portrait.jpg" width="112"/>
+<div>
+<h3>Terry-Lynn Young, PhD</h3>
+<p class="entry-focus"><strong>Focus:</strong> TMEM43 genetics, arrhythmogenic cardiomyopathy, and precision disease models</p>
+</div>
+</div>
+<p class="entry-meta"><strong>Affiliation:</strong> Memorial University of Newfoundland, Canada</p>
+<p>
+              Terry-Lynn Young led the genetics team responsible for a landmark 2008 discovery linking the TMEM43
+              p.S358L founder variant to a severe, highly penetrant form of arrhythmogenic cardiomyopathy in
+              Newfoundland families. The study documented exceptionally high risks of ventricular arrhythmia and
+              premature death, particularly among affected men. Although this phenotype is generally classified as
+              arrhythmogenic cardiomyopathy rather than EDMD, it established TMEM43 as a major cardiac disease gene and
+              remains central to understanding the cardiac risk associated with TMEM43 dysfunction. Her team has since
+              moved toward patient-derived cardiomyocytes and gene-editing approaches to investigate disease mechanisms
+              and potential treatments.
+            </p>
+<div class="entry-links">
+<a href="https://www.mun.ca/medicine/biomed/faculty/tlyoung.php" rel="noreferrer" target="_blank">Research profile</a>
+</div>
+</article>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="footer-badges">
+<a aria-label="Global Genes member" href="https://globalgenes.org/" rel="noreferrer" target="_blank">
+<img alt="Global Genes" src="global_genes.png"/>
+</a>
+<a aria-label="NORD member" href="https://rarediseases.org/" rel="noreferrer" target="_blank">
+<img alt="NORD Member" src="nord_member.png"/>
+</a>
+<a aria-label="EveryLife Foundation member" href="https://everylifefoundation.org/" rel="noreferrer" target="_blank">
+<img alt="EveryLife Foundation" src="community_congress_member.png"/>
+</a>
+</div>
+<p><a href="financial-transparency.html">Financial Transparency</a> | <a href="privacy.html">Privacy</a></p>
+<p>Draft for cureEDMD.org | Not medical advice. For emergencies, contact local emergency services.</p>
+<p>Email: info@cureEDMD.org</p>
+<p class="copyright">© <span data-copyright-year="">2026</span> cureEDMD. All rights reserved.</p>
+</footer>
+
+<script src="translations.js"></script>
+<script src="translations-extended.js"></script>
+<script src="translations-supplemental.js"></script>
+<script src="translations-v4.js"></script>
+<script src="translations-v6.js"></script><script src="script.js"></script>
+</body>
+</html>

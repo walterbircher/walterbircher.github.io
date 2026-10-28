@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>cureEDMD.org | Home</title>
+<meta content="cureEDMD is a patient and family-led, scientist-supported foundation focused on better care, better treatments, and a cure for EDMD." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script>
+      (function () {
+        var storageKey = "cureedmd-v7-preview-theme";
+        var themes = { harbor: true, meadow: true, ember: true, "ember-beacon": true, "ember-stride": true, "ember-bloom": true, "ember-pulse": true, nocturne: true, linen: true };
+        var params = new URLSearchParams(window.location.search);
+        var isStyleLabPreview = params.get("styleLab") === "1";
+        var theme = params.has("theme") ? String(params.get("theme") || "").trim().toLowerCase() : "";
+
+        if (isStyleLabPreview) {
+          theme = "";
+        } else if (!params.has("theme")) {
+          try {
+            theme = String(window.localStorage.getItem(storageKey) || "").trim().toLowerCase();
+          } catch (error) {
+            theme = "";
+          }
+        }
+
+        if (["default", "classic", "none", "base"].includes(theme)) theme = "";
+
+        if (theme && themes[theme]) {
+          document.documentElement.setAttribute("data-theme", theme);
+          document.documentElement.style.colorScheme = theme === "nocturne" ? "dark" : "light";
+        } else {
+          document.documentElement.style.colorScheme = "light";
+        }
+      })();
+    </script>
+<link href="styles.css" rel="stylesheet"/>
+<link href="styles-themes.css" rel="stylesheet"/>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="siteHeader">
+<a aria-label="cureEDMD home" class="brand" href="index.html">
+<img alt="" aria-hidden="true" class="brand-mark" src="cure_edmd_logo.png"/>
+</a>
+<button aria-controls="mainNav" aria-expanded="false" class="menu-toggle" id="menuToggle">
+        Menu
+      </button>
+<nav aria-label="Primary navigation" class="main-nav" id="mainNav">
+<a class="nav-conference" href="conference.html">Conference</a>
+<a href="who-we-are.html">Who We Are</a>
+<a href="what-is-edmd.html">What Is EDMD</a>
+<a href="research.html">Research</a>
+<a href="resources.html">Resources</a>
+<a href="news-updates.html">News</a>
+<a href="stories.html">Stories</a>
+<a href="help-change-lives.html">Help Change Lives</a>
+<a href="contact-us.html">Contact Us</a>
+</nav>
+<div class="header-tools">
+<label class="visually-hidden" for="languageSelect">Language</label>
+<select aria-label="Select language" class="language-select" id="languageSelect"></select>
+<a class="btn btn-solid" href="help-change-lives.html">Donate<svg aria-hidden="true" class="icon-heart" focusable="false" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 6 3.99 4 6.5 4c1.54 0 3.04.8 3.94 2.09C11.46 4.8 12.96 4 14.5 4 17.01 4 19 6 19 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path></svg></a>
+</div>
+</header>
+<section aria-labelledby="conference-banner-title" class="conference-banner">
+<div class="conference-banner-inner">
+<div class="conference-banner-copy">
+<h2 id="conference-banner-title">2027 EDMD Conference</h2>
+<p class="conference-date-location">April 2–4, 2027 · Downtown Chicago</p>
+<p>
+            The very first EDMD conference titled “Emery-Dreifuss Muscular Dystrophy: Connecting Discovery, Care and Therapeutic Innovation” is happening at Northwestern Medicine. Hotel-block interest is open now, and early responses will help reserve rooms and shape future updates.
+          </p>
+</div>
+<div class="conference-banner-actions">
+<a class="btn btn-solid" href="conference.html">See Conference Details</a>
+</div>
+</div>
+</section>
+<main id="main">
+<section class="hero" id="home">
+<div class="hero-backdrop"></div>
+<div class="hero-content">
+<h1 id="heroTitle">Cure EDMD Together</h1>
+<p id="heroText">Singularly focused on developing treatments and cures for EDMD.</p>
+<div class="hero-actions">
+<a class="btn btn-solid" href="who-we-are.html" id="heroPrimaryAction">Who We Are</a>
+<a class="btn btn-outline btn-blue" href="research.html" id="heroSecondaryAction">Research</a>
+</div>
+<div aria-label="Hero slide navigation" class="hero-dots" id="heroDots"></div>
+</div>
+<figure class="hero-photo-wrap">
+<img alt="A father and daughter spending time together at the zoo" id="heroPhoto" src="man_daughter_zoo.webp"/>
+</figure>
+</section>
+<div class="mission-quick-links-band">
+<section class="home-intro">
+<div>
+<h2>Our Mission and Vision</h2>
+<p>
+              Emery-Dreifuss muscular dystrophy (EDMD) is a rare genetic neuromuscular condition that affects the joints, muscles, and heart. The mission of cureEDMD is to foster collaboration between patients, families, researchers, and drug developers to enable effective treatments that improve the lifespan and quality of life for those affected by EDMD.
+            </p>
+</div>
+</section>
+<section class="quick-links-panel">
+<div class="impact-cards">
+<article class="newly-diagnosed-card">
+<img alt="Newly diagnosed support illustration" src="Newl_diagnosed_filler.webp"/>
+<h3>Newly diagnosed?</h3>
+<p>Start with simple, plain-language information about symptoms, genetics, and care planning.</p>
+<a aria-label="Learn what EDMD is" class="quick-card-link" href="what-is-edmd.html"></a>
+</article>
+<article class="newly-diagnosed-card">
+<img alt="Practical tools and resources illustration" src="practical_tools.webp"/>
+<h3>Need practical tools?</h3>
+<p>Access EDMD support communities, patient registries, and one-page resources.</p>
+<a aria-label="Explore EDMD resources" class="quick-card-link" href="resources.html"></a>
+</article>
+<article class="help-now-card">
+<img alt="Volunteer supporting the cureEDMD mission" src="Volunteer.webp"/>
+<h3>Want to help now?</h3>
+<p>Donate, volunteer, and connect with the mission in ways that fit your capacity.</p>
+<a aria-label="Learn how to help cureEDMD" class="quick-card-link" href="help-change-lives.html"></a>
+</article>
+</div>
+</section>
+</div>
+<section class="impact-section">
+<div class="section-head">
+<h2>Making an Impact Together</h2>
+</div>
+<div class="stat-grid">
+<article class="stat-card">
+<h3 data-count="1200000" data-format="currency">$0</h3>
+<p>Raised for EDMD research discoveries and breakthroughs</p>
+</article>
+<article class="stat-card">
+<h3 data-count="200">0</h3>
+<p>Families supported through education, advocacy, and community resources</p>
+</article>
+<article class="stat-card">
+<h3 data-count="4">0</h3>
+<p>Academic labs receive EDMD research funding</p>
+</article>
+<article class="stat-card">
+<h3 data-count="1">0</h3>
+<p>Shared mission uniting families, researchers, and partners</p>
+</article>
+</div>
+</section>
+<section class="news-section">
+<div class="section-head">
+<h2>Latest News and Updates</h2>
+<p>Stay up to date on all things cureEDMD-related, including research breakthroughs.</p>
+<a class="all-news-link" href="news-updates.html">Read all news articles</a>
+</div>
+<div class="news-strip">
+<article class="news-card">
+<img alt="Researcher working in a laboratory" src="laboratory-research-news.jpg"/>
+<div class="news-card-content">
+<h3>EDMD Conference Planned for Chicago on April 2-4, 2027</h3>
+<a class="news-read-more" href="news-updates.html">READ MORE</a>
+</div>
+</article>
+<article class="news-card">
+<img alt="cureEDMD logo" class="news-logo-image" src="cure_edmd_logo.png"/>
+<div class="news-card-content">
+<h3>Now Announcing a Revised Look and Vision for cureEDMD</h3>
+<a class="news-read-more" href="news-updates.html">READ MORE</a>
+</div>
+</article>
+</div>
+</section>
+<section class="stories" id="stories">
+<div class="section-head">
+<h2>Stories</h2>
+</div>
+<div class="story-stage">
+<button aria-label="Previous story" class="ghost story-nav" id="prevStory">&lt;</button>
+<article id="storyCard"></article>
+<button aria-label="Next story" class="ghost story-nav" id="nextStory">&gt;</button>
+</div>
+</section>
+<section class="donate" id="donate">
+<div class="section-head">
+<h2>Every donation counts</h2>
+<p>
+            Contributions help fund EDMD research and conferences. Sharing resources and joining studies are other ways to help.
+          </p>
+</div>
+<label for="donationRange">Choose an amount</label>
+<input id="donationRange" max="1000" min="25" step="25" type="range" value="250"/>
+<p id="donationResult">$250 helps fund EDMD research and conferences.</p>
+<div class="hero-actions">
+<a class="btn btn-solid" href="https://give.rarevillage.org/campaign/691055/donate" rel="noreferrer" target="_blank">Donate Now</a>
+<a class="btn btn-outline" href="help-change-lives.html">Volunteer and Partner</a>
+</div>
+</section>
+<section aria-labelledby="newsletterTitle" class="newsletter-signup">
+<div class="newsletter-inner">
+<h2 id="newsletterTitle">Sign Up for cureEDMD News and Updates</h2>
+<form class="newsletter-form" id="newsletterForm">
+<div class="newsletter-fields">
+<label class="visually-hidden" for="newsletterFirstName">First Name</label>
+<input autocomplete="given-name" id="newsletterFirstName" name="firstName" placeholder="First Name" type="text"/>
+<label class="visually-hidden" for="newsletterLastName">Last Name</label>
+<input autocomplete="family-name" id="newsletterLastName" name="lastName" placeholder="Last Name" type="text"/>
+<label class="visually-hidden" for="newsletterEmail">Email</label>
+<input autocomplete="email" id="newsletterEmail" name="email" placeholder="Email" required="" type="email"/>
+<div aria-hidden="true" class="visually-hidden">
+<label for="newsletterWebsite">Website</label>
+<input autocomplete="off" id="newsletterWebsite" name="website" tabindex="-1" type="text"/>
+</div>
+</div>
+<button type="submit">Sign Up</button>
+</form>
+<p aria-live="polite" class="newsletter-status" id="newsletterStatus" role="status"></p>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="footer-badges">
+<a aria-label="Global Genes member" href="https://globalgenes.org/" rel="noreferrer" target="_blank">
+<img alt="Global Genes" src="global_genes.png"/>
+</a>
+<a aria-label="NORD member" href="https://rarediseases.org/" rel="noreferrer" target="_blank">
+<img alt="NORD Member" src="nord_member.png"/>
+</a>
+<a aria-label="EveryLife Foundation member" href="https://everylifefoundation.org/" rel="noreferrer" target="_blank">
+<img alt="EveryLife Foundation" src="community_congress_member.png"/>
+</a>
+</div>
+<p><a href="financial-transparency.html">Financial Transparency</a> | <a href="privacy.html">Privacy</a></p>
+<p>Draft for cureEDMD.org | Not medical advice. For emergencies, contact local emergency services.</p>
+<p>Email: info@cureEDMD.org</p>
+<p class="copyright">© <span data-copyright-year="">2026</span> cureEDMD. All rights reserved.</p>
+</footer>
+<script src="translations.js"></script>
+<script src="translations-extended.js"></script>
+<script src="translations-supplemental.js"></script>
+<script src="translations-v4.js"></script>
+<script src="translations-v6.js"></script><script src="script.js"></script>
+</body>
+</html>
