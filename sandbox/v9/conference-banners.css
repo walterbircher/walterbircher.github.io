@@ -1,0 +1,68 @@
+/* Shared conference banners */
+.conference-promo{--conference-wave-height:clamp(3.5rem,7vw,7rem);position:relative;isolation:isolate;overflow:hidden;width:100%;margin:0 0 calc(-1 * var(--conference-wave-height));z-index:1;background:transparent;color:#173b5f}
+.conference-promo::before{content:"";position:absolute;z-index:-1;inset:0;background-color:#fff;mask-image:linear-gradient(#000,#000),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 180' preserveAspectRatio='none'%3E%3Cpath d='M0 0H1440V38C760 180 340 -65 0 22Z'/%3E%3C/svg%3E");mask-size:100% calc(100% - var(--conference-wave-height) + 1px),100% var(--conference-wave-height);mask-position:top,bottom;mask-repeat:no-repeat;background:linear-gradient(90deg,#fff 0%,rgba(255,255,255,.96) 15%,rgba(255,255,255,.7) 35%,rgba(255,255,255,0) 70%),url("chicago_skyline.webp") 58% center/cover no-repeat}
+.conference-promo-inner{display:grid;grid-template-columns:minmax(0,1fr);align-items:center;gap:clamp(1.5rem,3vw,3rem);max-width:1500px;margin-inline:auto;padding:clamp(2.5rem,5vw,5rem) clamp(1.5rem,4vw,4rem) clamp(6rem,9vw,9rem)}
+.conference-promo-copy{min-width:0;text-align:left}
+.conference-promo-copy p{font-family:"Source Sans 3",sans-serif}
+.conference-promo .conference-promo-copy :is(h1,h2){margin:0;color:#173b5f;font-family:"Farro",sans-serif;font-size:clamp(2.5rem,4.6vw,4.75rem);font-weight:700;line-height:1.15;letter-spacing:normal;text-wrap:balance}
+.conference-promo-copy :is(h1,h2) span{display:block;color:var(--sea)}
+.conference-promo .conference-promo-date{margin:1.25rem 0 0;color:#173b5f;font-size:clamp(1rem,1.8vw,1.65rem);font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.conference-promo-date span{color:#e94f58;padding-inline:.5em}
+.conference-promo .conference-promo-host{max-width:42ch;margin:.85rem 0 0;color:#173b5f;font-size:clamp(1rem,1.4vw,1.2rem);line-height:1.5}
+.conference-promo .conference-promo-partner{display:block;width:fit-content;max-width:100%;margin:1.25rem 0 0}
+.conference-promo .conference-promo-partner:is(:hover,:focus-visible){background:transparent}
+.conference-promo-partner img{display:block;width:min(19rem,100%);height:auto}
+.conference-promo .btn{font-family:"Farro",sans-serif;font-weight:700;display:inline-block;margin-top:1.5rem;background:#e94f58;border-color:#e94f58;color:#fff}
+.conference-promo .btn:hover{background:#c63c46;border-color:#c63c46}
+.conference-promo-waves{position:absolute;bottom:-1px;left:0;width:100%;height:var(--conference-wave-height);pointer-events:none}
+@media(max-width:700px){.conference-promo::before{inset:0;background:linear-gradient(90deg,rgba(255,255,255,.98),rgba(255,255,255,.9)),url("chicago_skyline.webp") center/cover no-repeat}.conference-promo-inner{grid-template-columns:1fr;gap:1.25rem;padding:1.5rem 1.5rem 5rem}.conference-promo .conference-promo-copy :is(h1,h2){font-size:clamp(2rem,8vw,3.25rem)}.conference-promo .conference-promo-date{line-height:1.6;letter-spacing:.02em}}
+.conference-page > .conference-promo + .page-intro{padding-top:calc(clamp(2rem,5vw,4rem) + clamp(3.5rem,7vw,7rem))}
+.conference-page > .conference-promo{margin:0 0 calc(-1 * var(--conference-wave-height))}
+
+/* Straight banner edges with normal document flow. */
+.conference-promo,
+.conference-page > .conference-promo {
+  margin: 0;
+}
+.conference-promo::before {
+  mask-image: none;
+}
+.conference-promo-inner {
+  padding-bottom: clamp(2.5rem, 5vw, 5rem);
+}
+.conference-page > .conference-promo + .page-intro {
+  padding-top: clamp(2rem, 5vw, 4rem);
+}
+@media (max-width: 700px) {
+  .conference-promo-inner { padding-bottom: 2rem; }
+}
+
+/* A single straight divider separates the banner from the following section. */
+.conference-promo {
+  border-bottom: 6px solid #173b5f;
+}
+
+/* Registration and hotel booking share a responsive row with distinct colors. */
+.conference-page .conference-booking-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .75rem;
+  margin-top: 1rem;
+}
+.conference-page .conference-booking-actions > .btn {
+  display: inline-block;
+  margin: 0;
+  font-family: "Farro", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+.conference-page .conference-booking-actions > .conference-hotel-button {
+  background: #173b5f;
+  border-color: #173b5f;
+  color: #fff;
+}
+.conference-page .conference-booking-actions > .conference-hotel-button:is(:hover, :focus-visible) {
+  background: #102c48;
+  border-color: #102c48;
+}

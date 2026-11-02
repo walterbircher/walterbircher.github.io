@@ -1,0 +1,16 @@
+/* Privacy uses the site's heading fonts, navy palette, and readable body copy. */
+.privacy-page { padding: 0 clamp(1.25rem, 4vw, 3rem) 4rem; }
+.privacy-page > .privacy-intro,
+.privacy-page > .privacy-content { width: min(100%, 78ch); margin-inline: auto; }
+.privacy-page > .privacy-intro { margin-top: clamp(2rem, 5vw, 4rem); margin-bottom: 2rem; }
+.privacy-page .section-head { display: block; text-align: left; }
+.privacy-page h1 { margin: 0 0 1rem; color: #173b5f; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.2; }
+.privacy-page h2 { margin: 0 0 .65rem; color: #173b5f; font-size: clamp(1.2rem, 2.3vw, 1.55rem); line-height: 1.35; }
+.privacy-page :is(p, li) { font-family: "Source Sans 3", sans-serif; font-size: 1.1rem; line-height: 1.75; color: #241c25; text-align: left; }
+.privacy-page p { margin: 0 0 1rem; }
+.privacy-page .privacy-intro p { max-width: 60ch; margin-bottom: 0; }
+.privacy-topic { margin: 0; padding: 1.75rem 0; border-top: 1px solid var(--line); }
+.privacy-topic p:last-child { margin-bottom: 0; }
+.privacy-page ul { margin: .5rem 0 0; padding-left: 1.4rem; }
+.privacy-page li + li { margin-top: .4rem; }
+.privacy-page .privacy-updated { margin: 1.5rem 0 0; font-size: .95rem; color: #625667; }
