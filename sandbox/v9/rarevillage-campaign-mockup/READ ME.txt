@@ -1,0 +1,41 @@
+cureEDMD donation campaign — design preview for Ray
+November 3, 2026
+
+START HERE
+Open index.html in Edge, Chrome, Firefox, or Safari.
+This single file includes its images and fonts and works offline. You can
+email the HTML file on its own. Download/open the attachment in a browser
+to use the interactive preview; email viewers may not render HTML attachments.
+
+For the easiest static review, share cureEDMD-donation-mockup.pdf.
+The PDF is one continuous page intended for scrolling on a screen, with all
+FAQ answers expanded. The desktop and mobile PNG files show both layouts.
+cureEDMD-first-look.png is a shorter screenshot of the top of the page.
+
+THE PROPOSED CHANGES
+- Use the new cureEDMD website's logo, navy/coral/blue palette, Farro headings,
+  Source Sans 3 body text, and rounded buttons.
+- Keep text left aligned and give the campaign copy more breathing room.
+- Add the family photo already used on the new homepage.
+- Give the donation choices a clear panel with one-time and monthly options.
+- Keep Rare Village's fiscal-sponsorship role and donor-support details visible.
+- Retain the original campaign illustration, mission, appeal, and FAQ copy.
+
+The one-time and monthly amount choices match the existing campaign.
+The incomplete contact address in the original copy (info@cureEDMD) has been
+completed to info@cureEDMD.org. Additional short headings organize the copy.
+
+WHY CAMPAIGN ACCESS WOULD HELP
+This shows the visual continuity we could aim for when someone clicks Donate
+on the new cureEDMD website. Campaign-editor access would let us check which
+branding, layout, image, and typography controls Rare Village's platform
+provides, then apply the supported improvements. The exact layout is a proposal;
+the live platform's customization options still need to be checked.
+
+This is a local mockup. Continue opens a preview message only. No personal or
+payment information is requested, no money is collected, and the live campaign
+has not been changed. Website/email links still point to the real organizations.
+
+Source campaign:
+https://give.rarevillage.org/campaign/691055/donate
+Styling and family photo: cureEDMD local website, v9.
