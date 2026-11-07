@@ -4343,7 +4343,7 @@ const dynamic = {
           ],
           [
             "Investigación",
-            "research.html"
+            "strategy.html"
           ]
         ],
         "text": "Centrados exclusivamente en desarrollar tratamientos y curas para la EDMD.",
@@ -4373,7 +4373,7 @@ const dynamic = {
         "actions": [
           [
             "Investigación",
-            "research.html"
+            "strategy.html"
           ],
           [
             "Inscríbase en un registro",
@@ -4475,7 +4475,7 @@ const dynamic = {
           ],
           [
             "Recherche",
-            "research.html"
+            "strategy.html"
           ]
         ],
         "text": "Entièrement consacrés au développement de traitements et de remèdes pour l’EDMD.",
@@ -4505,7 +4505,7 @@ const dynamic = {
         "actions": [
           [
             "Recherche",
-            "research.html"
+            "strategy.html"
           ],
           [
             "Rejoindre un registre",
@@ -4607,7 +4607,7 @@ const dynamic = {
           ],
           [
             "Pesquisa",
-            "research.html"
+            "strategy.html"
           ]
         ],
         "text": "Focados exclusivamente no desenvolvimento de tratamentos e curas para a EDMD.",
@@ -4637,7 +4637,7 @@ const dynamic = {
         "actions": [
           [
             "Pesquisa",
-            "research.html"
+            "strategy.html"
           ],
           [
             "Participar de um registro",
@@ -4739,7 +4739,7 @@ const dynamic = {
           ],
           [
             "Forschung",
-            "research.html"
+            "strategy.html"
           ]
         ],
         "text": "Ganz auf die Entwicklung von Behandlungen und Heilungsmöglichkeiten für EDMD konzentriert.",
@@ -4769,7 +4769,7 @@ const dynamic = {
         "actions": [
           [
             "Forschung",
-            "research.html"
+            "strategy.html"
           ],
           [
             "An einem Register teilnehmen",
@@ -4871,7 +4871,7 @@ const dynamic = {
           ],
           [
             "Ricerca",
-            "research.html"
+            "strategy.html"
           ]
         ],
         "text": "Dedicati esclusivamente allo sviluppo di trattamenti e cure per la EDMD.",
@@ -4901,7 +4901,7 @@ const dynamic = {
         "actions": [
           [
             "Ricerca",
-            "research.html"
+            "strategy.html"
           ],
           [
             "Iscriviti a un registro",
@@ -5003,7 +5003,7 @@ const dynamic = {
           ],
           [
             "研究",
-            "research.html"
+            "strategy.html"
           ]
         ],
         "text": "专注于开发 EDMD 的治疗方法和治愈方案。",
@@ -5033,7 +5033,7 @@ const dynamic = {
         "actions": [
           [
             "研究",
-            "research.html"
+            "strategy.html"
           ],
           [
             "加入患者登记",
@@ -5135,7 +5135,7 @@ const dynamic = {
           ],
           [
             "研究",
-            "research.html"
+            "strategy.html"
           ]
         ],
         "text": "EDMDの治療法と根治療法の開発に専念しています。",
@@ -5165,7 +5165,7 @@ const dynamic = {
         "actions": [
           [
             "研究",
-            "research.html"
+            "strategy.html"
           ],
           [
             "患者レジストリに参加",
@@ -5267,7 +5267,7 @@ const dynamic = {
           ],
           [
             "연구",
-            "research.html"
+            "strategy.html"
           ]
         ],
         "text": "EDMD 치료법과 완치법 개발에 전념합니다.",
@@ -5297,7 +5297,7 @@ const dynamic = {
         "actions": [
           [
             "연구",
-            "research.html"
+            "strategy.html"
           ],
           [
             "환자 등록에 참여",

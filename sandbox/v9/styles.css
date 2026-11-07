@@ -300,6 +300,72 @@ main a:not(.btn):focus-visible {
   white-space: nowrap;
 }
 
+/* The navigation mode is selected from measured content width in script.js. */
+.site-header.nav-inline,
+.site-header.nav-wrap {
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+}
+
+.site-header.nav-inline .main-nav {
+  position: static;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-self: center;
+}
+
+.site-header.nav-inline .menu-toggle,
+.site-header.nav-wrap .menu-toggle {
+  display: none;
+}
+
+.site-header.nav-wrap .main-nav {
+  position: static;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  justify-self: stretch;
+  width: 100%;
+  padding-block: 0;
+  row-gap: 0.05rem;
+}
+
+.site-header.nav-collapsed {
+  grid-template-columns: auto auto minmax(0, 1fr);
+}
+
+.site-header.nav-collapsed .menu-toggle {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--line);
+  background: var(--card, #fff);
+  border-radius: 999px;
+  padding: 0.4rem 0.8rem;
+  font-weight: 700;
+}
+
+.site-header.nav-collapsed .main-nav {
+  position: absolute;
+  top: 100%;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.55rem;
+  width: max-content;
+  max-width: calc(100vw - 2rem);
+  padding: 0.8rem;
+  background: var(--card, #fff);
+  border: 1px solid var(--line);
+  border-radius: 0.8rem;
+  box-shadow: var(--shadow);
+}
+
+.site-header.nav-collapsed .main-nav.open {
+  display: flex;
+}
+
 .language-select,
 .language-select-native {
   position: absolute;
@@ -769,6 +835,12 @@ h2 {
   max-width: 68ch;
 }
 
+.research-hero .section-head-wide,
+.section-head-wide p {
+  max-width: none;
+  width: 100%;
+}
+
 .edmd-note {
   margin: 1rem 0 1.25rem;
   color: var(--ink-soft);
@@ -863,7 +935,7 @@ h2 {
   display: block;
 }
 
-.research-hero .section-head {
+.research-hero .section-head:not(.section-head-wide) {
   max-width: 46rem;
 }
 
@@ -3989,10 +4061,6 @@ summary {
     justify-content: center;
   }
 
-  .site-header {
-    grid-template-columns: auto auto 1fr;
-  }
-
   .hero,
   .map-layout {
     grid-template-columns: 1fr;
@@ -4000,35 +4068,6 @@ summary {
 
   .document-grid {
     grid-template-columns: 1fr;
-  }
-
-  .main-nav {
-    position: absolute;
-    top: 100%;
-    right: 1rem;
-    background: #fff;
-    border: 1px solid var(--line);
-    padding: 0.8rem;
-    border-radius: 0.8rem;
-    box-shadow: var(--shadow);
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 0.55rem;
-  }
-
-  .main-nav.open {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: inline-flex;
-    border: 1px solid var(--line);
-    background: #fff;
-    border-radius: 999px;
-    padding: 0.4rem 0.8rem;
-    font-weight: 700;
   }
 
   .resource-card {
@@ -4355,23 +4394,6 @@ tbody tr:last-child td {
   .meet-us-person { width: 100%; max-width: 28rem; }
 }
 
-/* Keep larger navigation labels comfortable on narrower desktop screens. */
-@media (min-width: 1181px) and (max-width: 1400px) {
-  .site-header { grid-template-columns: auto auto 1fr; }
-  .main-nav {
-    position: absolute; top: 100%; right: 1rem;
-    background: var(--card, #fff); border: 1px solid var(--line);
-    padding: 0.8rem; border-radius: 0.8rem; box-shadow: var(--shadow);
-    display: none; flex-direction: column; align-items: flex-start;
-    justify-content: flex-start; gap: 0.55rem;
-  }
-  .main-nav.open { display: flex; }
-  .menu-toggle {
-    display: inline-flex; border: 1px solid var(--line); background: var(--card, #fff);
-    border-radius: 999px; padding: 0.4rem 0.8rem; font-weight: 700;
-  }
-}
-
 /* Expanded team biographies share the full width of the portrait grid. */
 .team-bio-panel {
   grid-column: 1 / -1;
@@ -4478,13 +4500,13 @@ tbody tr:last-child td {
 .team-bio-slot { grid-column: 1 / -1; width: 100%; min-width: 0; overflow: clip; }
 @media (min-width: 641px) { .team-bio-slot { grid-row: 2; } }
 
-@media (max-width: 1400px) {
-  .main-nav {
+@media (max-width: 900px) {
+  .site-header.nav-collapsed .main-nav {
     opacity: 0; transform: translateY(-6px);
     transition: opacity 180ms ease, transform 180ms ease, display 180ms allow-discrete;
   }
-  .main-nav.open { opacity: 1; transform: translateY(0); }
-  @starting-style { .main-nav.open { opacity: 0; transform: translateY(-6px); } }
+  .site-header.nav-collapsed .main-nav.open { opacity: 1; transform: translateY(0); }
+  @starting-style { .site-header.nav-collapsed .main-nav.open { opacity: 0; transform: translateY(-6px); } }
 }
 @media (prefers-reduced-motion: reduce) {
   details:not(.team-bio)::details-content,
@@ -4553,7 +4575,6 @@ body .conference-banner .btn.btn-solid:is(:hover, :focus-visible) {
 .conference-register { margin-top: 1rem; }
 #registration { scroll-margin-top: 8rem; }
 @media (min-width: 641px) { .meet-us-photos { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
-@media (min-width: 1401px) and (max-width: 1600px) { .main-nav { gap: .65rem; } .main-nav a { font-size: .85rem; } }
 
 /* Emphasize the conference and keep research disclosures independent. */
 /* Conference navigation uses a branded blue tint and sweep. */
@@ -4581,7 +4602,7 @@ body .conference-banner .btn.btn-solid:is(:hover, :focus-visible) {
 }
 .research-strategy .strategy-grid > article { border: 0; border-radius: 0; }
 .research-strategy .strategy-grid { align-items: start; }
-.research-hero .section-head > p:last-child { max-width: 48rem; line-height: 1.6; margin-bottom: 0; }
+.research-hero .section-head > p:last-child { line-height: 1.6; margin-bottom: 0; }
 
 /* Share heading and teaser rows so both disclosure controls line up. */
 @media (min-width: 641px) {
@@ -5054,11 +5075,6 @@ main a.all-news-link::after {
 main,.site-footer{overflow-wrap:anywhere}
 main :is(section,article,div,li){min-width:0}
 .other-ways-section .plain-action-list li:nth-child(2) strong{white-space:normal}
-@media(min-width:1401px) and (max-width:1800px){
-html:not([lang="en"]) .site-header{grid-template-columns:auto auto 1fr}
-html:not([lang="en"]) .main-nav{position:absolute;top:100%;right:1rem;display:none;flex-direction:column;align-items:flex-start;gap:.55rem;background:var(--card,#fff);border:1px solid var(--line);padding:.8rem;border-radius:.8rem;box-shadow:var(--shadow)}
-html:not([lang="en"]) .main-nav.open{display:flex}
-html:not([lang="en"]) .menu-toggle{display:inline-flex;border:1px solid var(--line);background:var(--card,#fff);border-radius:999px;padding:.4rem .8rem;font-weight:700}}
 .who-page .meet-us-photos{display:grid;grid-template-columns:1fr;gap:2rem}
 .who-page .meet-us-person{display:grid;grid-template-columns:9rem minmax(0,1fr);gap:.75rem 1.5rem;align-items:start;text-align:left;margin:0;min-width:0;max-width:none;width:100%}
 .who-page .meet-us-person>img,.who-page .meet-us-person>.portrait-placeholder{grid-column:1;grid-row:1/3;width:9rem;height:10rem;margin:0;object-fit:cover}
@@ -5068,6 +5084,7 @@ html:not([lang="en"]) .menu-toggle{display:inline-flex;border:1px solid var(--li
 .research-strategy .strategy-grid{display:grid;grid-template-columns:1fr;gap:2rem}
 .research-strategy .strategy-grid>article{display:block;grid-row:auto;padding:1.25rem;background:transparent;border-radius:.6rem}
 .research-strategy .strategy-grid>article>.strategy-details{margin-top:1rem}
+.research-strategy .strategy-question{font-weight:700}
 .permanent-content p+p{margin-top:1rem}
 .registry-accordion .permanent-content{padding:1.15rem 0;border:0}
 .resources-note-card .registry-accordion .permanent-content,.resources-note-card .registry-accordion .permanent-content *{color:#fff}

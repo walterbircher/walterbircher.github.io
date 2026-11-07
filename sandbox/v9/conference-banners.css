@@ -9,9 +9,9 @@
 .conference-promo .conference-promo-date{margin:1.25rem 0 0;color:#173b5f;font-size:clamp(1rem,1.8vw,1.65rem);font-weight:700;letter-spacing:.06em;text-transform:uppercase}
 .conference-promo-date span{color:#e94f58;padding-inline:.5em}
 .conference-promo .conference-promo-host{max-width:42ch;margin:.85rem 0 0;color:#173b5f;font-size:clamp(1rem,1.4vw,1.2rem);line-height:1.5}
-.conference-promo .conference-promo-partner{display:block;width:fit-content;max-width:100%;margin:1.25rem 0 0}
+.conference-promo .conference-promo-partner{display:block;width:fit-content;max-width:100%;margin:1.25rem 0 0;padding:0;background:transparent;border-radius:0}
 .conference-promo .conference-promo-partner:is(:hover,:focus-visible){background:transparent}
-.conference-promo-partner img{display:block;width:min(19rem,100%);height:auto}
+.conference-promo-partner img{display:block;width:min(25rem,100%);height:auto}
 .conference-promo .btn{font-family:"Farro",sans-serif;font-weight:700;display:inline-block;margin-top:1.5rem;background:#e94f58;border-color:#e94f58;color:#fff}
 .conference-promo .btn:hover{background:#c63c46;border-color:#c63c46}
 .conference-promo-waves{position:absolute;bottom:-1px;left:0;width:100%;height:var(--conference-wave-height);pointer-events:none}

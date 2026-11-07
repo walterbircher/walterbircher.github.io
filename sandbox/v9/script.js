@@ -7,7 +7,7 @@ const railMessages = [
 const heroSlides = [
   {
     title: "Cure EDMD Together",
-    actions: [["Who We Are", "who-we-are.html"], ["Research", "research.html"]],
+    actions: [["Who We Are", "who-we-are.html"], ["Strategy", "strategy.html"]],
     text: "Singularly focused on developing treatments and cures for EDMD.",
     image:
       "beach-dinner-table.jpg",
@@ -25,7 +25,7 @@ const heroSlides = [
   },
   {
     title: "Research Progress",
-    actions: [["Research", "research.html"], ["Join a Registry", "resources.html#registries"]],
+    actions: [["Strategy", "strategy.html"], ["Join a Registry", "resources.html#registries"]],
     text: "Patient registries, study participation, and research partnerships help fuel EDMD discoveries.",
     image:
       "researcher-in-medical-laboratory.jpg",
@@ -635,6 +635,7 @@ function applyLanguage(language, { persist = true, syncCounters = true } = {}) {
   applyTextTranslations();
   applyAttributeTranslations();
   syncResearchBioControls();
+  document.dispatchEvent(new CustomEvent("cureedmd:languagechange"));
 }
 
 function syncResearchBioControls() {
@@ -1061,14 +1062,105 @@ function initDonationRange() {
 }
 
 function initMobileMenu() {
+  const header = document.querySelector(".site-header");
   const toggle = document.querySelector("#menuToggle");
   const nav = document.querySelector("#mainNav");
-  if (!toggle || !nav) return;
+  const brand = header?.querySelector(".brand");
+  const tools = header?.querySelector(".header-tools");
+  if (!header || !toggle || !nav || !brand || !tools) return;
+
+  const COLLAPSED_MAX_WIDTH = 900;
+  const FIT_SAFETY_MARGIN = 24;
+  let frame = 0;
+
+  const closeMenu = ({ returnFocus = false } = {}) => {
+    const wasOpen = nav.classList.contains("open");
+    nav.classList.remove("open");
+    toggle.setAttribute("aria-expanded", "false");
+    if (returnFocus && wasOpen) toggle.focus();
+  };
+
+  const getNumericStyle = (styles, property) => Number.parseFloat(styles[property]) || 0;
+
+  const getNaturalNavWidth = () => {
+    const navStyles = window.getComputedStyle(nav);
+    const links = Array.from(nav.children);
+    const gap = getNumericStyle(navStyles, "columnGap") || getNumericStyle(navStyles, "gap");
+    const padding = getNumericStyle(navStyles, "paddingLeft") + getNumericStyle(navStyles, "paddingRight");
+    return links.reduce((total, link) => total + link.getBoundingClientRect().width, 0)
+      + Math.max(0, links.length - 1) * gap
+      + padding;
+  };
+
+  const setMode = (mode) => {
+    const className = `nav-${mode}`;
+    if (header.classList.contains(className)) return;
+    header.classList.remove("nav-inline", "nav-wrap", "nav-collapsed");
+    header.classList.add(className);
+    header.dataset.navMode = mode;
+    if (mode !== "collapsed") closeMenu();
+  };
+
+  const updateMode = () => {
+    frame = 0;
+    if (window.innerWidth <= COLLAPSED_MAX_WIDTH) {
+      setMode("collapsed");
+      return;
+    }
+
+    // Make the links measurable when returning from the hidden dropdown state.
+    if (header.classList.contains("nav-collapsed")) setMode("wrap");
+
+    const headerStyles = window.getComputedStyle(header);
+    const horizontalPadding = getNumericStyle(headerStyles, "paddingLeft")
+      + getNumericStyle(headerStyles, "paddingRight");
+    const gridGap = getNumericStyle(headerStyles, "columnGap") || getNumericStyle(headerStyles, "gap");
+    const availableWidth = header.clientWidth
+      - horizontalPadding
+      - brand.getBoundingClientRect().width
+      - tools.getBoundingClientRect().width
+      - (gridGap * 2)
+      - FIT_SAFETY_MARGIN;
+
+    setMode(getNaturalNavWidth() <= availableWidth ? "inline" : "wrap");
+  };
+
+  const scheduleUpdate = () => {
+    if (frame) window.cancelAnimationFrame(frame);
+    frame = window.requestAnimationFrame(updateMode);
+  };
 
   toggle.addEventListener("click", () => {
+    if (!header.classList.contains("nav-collapsed")) return;
     const isOpen = nav.classList.toggle("open");
     toggle.setAttribute("aria-expanded", String(isOpen));
   });
+
+  nav.addEventListener("click", (event) => {
+    if (event.target.closest("a")) closeMenu();
+  });
+
+  document.addEventListener("click", (event) => {
+    if (nav.classList.contains("open") && !header.contains(event.target)) closeMenu();
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && nav.classList.contains("open")) closeMenu({ returnFocus: true });
+  });
+
+  document.addEventListener("cureedmd:languagechange", scheduleUpdate);
+  window.addEventListener("resize", scheduleUpdate, { passive: true });
+
+  if ("ResizeObserver" in window) {
+    const observer = new ResizeObserver(scheduleUpdate);
+    observer.observe(header);
+    observer.observe(brand);
+    observer.observe(nav);
+    observer.observe(tools);
+  }
+
+  if (document.fonts?.ready) document.fonts.ready.then(scheduleUpdate);
+  scheduleUpdate();
 }
 
 function initReveals() {
