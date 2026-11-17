@@ -274,6 +274,50 @@
   }
 })();
 
+// Production conference-registration language.
+(function () {
+  const catalog = window.CURE_TRANSLATIONS;
+  if (!catalog || !catalog.text) return;
+  const updates = {
+    es: {
+      "Register for Conference": "Registrarse para la conferencia",
+      "Registration is now open. There is no conference registration fee.": "La inscripción ya está abierta. No hay cuota de inscripción para la conferencia."
+    },
+    fr: {
+      "Register for Conference": "S’inscrire à la conférence",
+      "Registration is now open. There is no conference registration fee.": "Les inscriptions sont ouvertes. L’inscription à la conférence est gratuite."
+    },
+    pt: {
+      "Register for Conference": "Inscreva-se na conferência",
+      "Registration is now open. There is no conference registration fee.": "As inscrições estão abertas. Não há taxa de inscrição para a conferência."
+    },
+    de: {
+      "Register for Conference": "Für die Konferenz anmelden",
+      "Registration is now open. There is no conference registration fee.": "Die Anmeldung ist jetzt geöffnet. Für die Konferenz fällt keine Anmeldegebühr an."
+    },
+    it: {
+      "Register for Conference": "Iscriviti alla conferenza",
+      "Registration is now open. There is no conference registration fee.": "Le iscrizioni sono ora aperte. Non è prevista alcuna quota di iscrizione alla conferenza."
+    },
+    zh: {
+      "Register for Conference": "注册参加会议",
+      "Registration is now open. There is no conference registration fee.": "会议注册现已开放，且不收取注册费。"
+    },
+    ja: {
+      "Register for Conference": "カンファレンスに登録",
+      "Registration is now open. There is no conference registration fee.": "カンファレンスへの登録を受付中です。登録料はかかりません。"
+    },
+    ko: {
+      "Register for Conference": "컨퍼런스 등록",
+      "Registration is now open. There is no conference registration fee.": "컨퍼런스 등록이 시작되었습니다. 등록비는 없습니다."
+    }
+  };
+  for (const [language, record] of Object.entries(updates)) {
+    if (!catalog.text[language]) catalog.text[language] = {};
+    Object.assign(catalog.text[language], record);
+  }
+})();
+
 // Preserve the revised opening sentence currently used on the Strategy page.
 (function () {
   const catalog = window.CURE_TRANSLATIONS;
