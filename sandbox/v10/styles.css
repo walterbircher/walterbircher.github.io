@@ -5064,6 +5064,36 @@ main a.all-news-link::after {
 .conference-page .conference-deadlines li + li {
   margin-top: .85rem;
 }
+
+/* Embedded Google registration form preview. */
+.conference-registration-embed {
+  width: min(100%, 760px);
+  margin: 2rem auto 2.5rem;
+  overflow: hidden;
+  border: 1px solid rgba(23, 59, 95, 0.18);
+  border-radius: 1rem;
+  background: #f7fbfd;
+  box-shadow: 0 1rem 2.5rem rgba(23, 59, 95, 0.1);
+  scroll-margin-top: 9rem;
+}
+.conference-registration-embed-header {
+  padding: 1.25rem clamp(1rem, 3vw, 2rem);
+  border-bottom: 4px solid #173b5f;
+  background: #fff;
+}
+.conference-registration-embed-header h3 { margin: 0 0 .35rem; color: #173b5f; }
+.conference-registration-embed-header p { margin: 0; }
+.conference-registration-frame {
+  display: block;
+  width: 100%;
+  height: min(72rem, 78vh);
+  min-height: 42rem;
+  border: 0;
+  background: #f7fbfd;
+}
+@media (max-width: 700px) {
+  .conference-registration-frame { height: 75vh; min-height: 38rem; }
+}
 .conference-page #registration > p a {
   color: #173b5f;
 }
